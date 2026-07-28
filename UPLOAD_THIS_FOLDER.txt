@@ -1,0 +1,13 @@
+CLOUDFLARE PAGES ROOT UPLOAD
+
+Upload the FILES INSIDE this folder, or upload the accompanying ZIP.
+The deployment root must immediately contain:
+
+index.html
+404.html
+_redirects
+project_progress_snapshot.json
+
+Do not upload a parent folder containing another nested deployment folder.
+After upload, test the generated *.pages.dev URL first.
+Then attach os.englishkidshub.com under Pages > Custom domains.
