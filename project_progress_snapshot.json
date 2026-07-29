@@ -1,158 +1,218 @@
 {
-  "snapshot_date": "2026-07-29",
-  "source": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
-  "integrity_note": "Recorded progress only. No claim of direct live staff contact.",
+  "snapshot_date": "2026-07-30",
+  "report": "Ringkasan COO: Progress Projek & Pasukan",
+  "integrity_note": "Based on the latest available records. No claim of direct contact with team members. Percentages are operational visual indicators and are not formal completion certification.",
   "executive_summary": {
-    "closed": [
-      "Coloring Book Vol. 3 development",
-      "Ceritera"
+    "completed": [
+      "Coloring Book Vol. 3 completed and development closed",
+      "Ceritera closed",
+      "Current Cuddle Paws promotional landing page prepared",
+      "CEO operating schedule and daily progress checkpoints prepared"
     ],
-    "active": [
-      "Cuddle Paws promotion",
-      "Smart Adventure",
-      "Question-bank audit",
-      "EKH OS / Command Center",
-      "Website",
-      "Worksheet Studio",
-      "Marketing and content"
+    "in_progress": [
+      "Reo question-bank audit and final handoff to Jeff",
+      "Jeff Smart Adventure development and integration",
+      "Blanc Worksheet Studio / generator",
+      "Candice Command Centre coordination and documentation",
+      "Kamal Facebook Pages visual assets",
+      "Cuddle Paws RM10.90 promotion for the first 50 buyers"
     ],
-    "hold": [
-      "Smart English until Smart Adventure is complete and stable"
+    "new_hold": [],
+    "new_verified_blocker": [],
+    "operational_dependencies": [
+      "Jeff depends on Reo's audit completion",
+      "Marketing depends on Kamal's visual assets",
+      "Generator depends on Blanc's development progress"
     ],
-    "blockers": [
-      "7,000-question bank not import-ready",
-      "Hosting, DNS and SSL still require final verification"
+    "decisions_pending": [
+      "Priority between Reo audit closure and Smart Adventure development",
+      "Generator development priority after current tasks",
+      "Next marketing and pricing plan after the first 50 buyers"
     ]
   },
+  "three_next_actions": [
+    "Review Reo's audit progress and set the formal handoff date to Jeff",
+    "Review the latest Smart Adventure, generator and Command Centre status",
+    "Continue Cuddle Paws promotion while monitoring buyers and preparing staged pricing"
+  ],
+  "candice_focus": [
+    "Confirm Command Centre components that are technically complete",
+    "Collect Jeff and Blanc updates in a consistent status format",
+    "Record unresolved access, deployment, database, hosting or integration issues",
+    "Do not mark tasks complete without test evidence or technical verification"
+  ],
   "projects": [
     {
       "code": "CP",
-      "name": "Cuddle Paws / Coloring Book",
-      "label": "Sales and marketing active",
-      "progress": 78,
-      "owner": "Farah / Kamal / Mario / Zack",
-      "summary": "Vol. 1, Vol. 2 and Vol. 3 are complete. Product development is closed and the current phase is sales and marketing.",
-      "team": "Farah, Kamal, Mario, Zack, Syakila, Paula, Tabby",
-      "next": "Obtain Facebook Pages visuals from Kamal and continue content, promotion and CTA support through Zack and Mario as required.",
-      "risk": "Sales response remains unverified. The permanent price after the first 50 buyers has not been finalised.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "name": "Cuddle Paws — Sales & Marketing",
+      "label": "Promotion remains active",
+      "progress": 82,
+      "owner": "Kamal / Zack / Mario",
+      "summary": "All three colouring-book volumes are complete. The current operational phase is promotion and sales, including the RM10.90 offer for the first 50 buyers.",
+      "team": "Kamal, Zack, Mario, Farah, Syakila, Tabby",
+      "next": "Continue promotion, monitor buyer count and prepare the staged price adjustment after the first 50 buyers.",
+      "risk": "Marketing output still depends on Kamal's Facebook Pages visual assets. The next pricing tier remains an owner decision.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "All three digital colouring books completed",
-        "Vol. 3 development task formally closed",
-        "Promotion set at RM10.90 for the first 50 buyers"
+        "Coloring Book Vol. 1, Vol. 2 and Vol. 3 completed",
+        "Current Cuddle Paws promotional landing page prepared",
+        "RM10.90 first-50-buyers promotion remains active"
       ],
       "stage": "in-progress"
     },
     {
       "code": "SA",
       "name": "Smart Adventure",
-      "label": "Audit and level freeze pending",
-      "progress": 62,
-      "owner": "Reo / Jeff / Alya / Ilica",
-      "summary": "The 7,000-question bank is not yet import-ready. Education audit, repair and final Level 1–6 freeze remain incomplete.",
-      "team": "Reo, Ilica, Guy, Alya, Jeff, Candice, Kyo, Haikal, Mario",
-      "next": "Complete the full question audit, repair records and approve the final level freeze before any production import.",
-      "risk": "Production import before audit closure could introduce incorrect levels, language defects or unresolved Question_ID issues.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "label": "Audit handoff remains the key dependency",
+      "progress": 64,
+      "owner": "Reo / Jeff",
+      "summary": "Reo continues the question-bank audit while Jeff continues application development. The formal audit handoff to Jeff remains the immediate release dependency.",
+      "team": "Reo, Jeff, Ilica, Guy, Alya, Candice, Kyo, Haikal",
+      "next": "Set an official audit handoff date, then confirm the latest runtime, integration and technical progress with Jeff.",
+      "risk": "Jeff's integration and build progress depends on the completeness and quality of Reo's audited content.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Development continues under Jeff",
-        "Question integrity and repair queue remain controlled by Alya",
-        "Curriculum and age-level review remain assigned"
+        "Application development remains active",
+        "Education audit remains assigned and controlled",
+        "No new blocker has been verified since the previous review"
       ],
       "stage": "review"
     },
     {
       "code": "SE",
       "name": "Smart English",
-      "label": "Dependency hold",
+      "label": "Inherited dependency hold",
       "progress": 30,
       "owner": "Reo / Jeff / Candice",
-      "summary": "Smart English remains on hold until Smart Adventure is complete, stable and its access/import route is verified.",
+      "summary": "No new status change was recorded in the 30 July review. The earlier dependency hold remains inherited until evidence confirms Smart Adventure stability and readiness.",
       "team": "Reo, Jeff, Candice, Arian",
-      "next": "Resume only after Smart Adventure stability and import/access verification.",
-      "risk": "Starting now would divide education and technical focus before the primary dependency is closed.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "next": "Review the hold only after Smart Adventure audit, integration and stability evidence is available.",
+      "risk": "Resuming without dependency closure could split technical and curriculum focus.",
+      "evidence": "No new HOLD project recorded on 30 July; prior Smart English dependency status retained pending evidence",
       "completed": [
-        "Hold condition formally recorded"
+        "Dependency condition remains documented"
       ],
       "stage": "blocked"
     },
     {
       "code": "OS",
-      "name": "EKH OS / Command Center",
-      "label": "Production operating system",
-      "progress": 84,
-      "owner": "Candice / Mia / Kyo",
-      "summary": "EKH OS is the current Single Source of Truth. Secure login, Staff Drive and sign-out have passed owner production smoke testing.",
-      "team": "Candice, Mia, Kyo, Baran, Xion",
-      "next": "Continue data flow, manual/batch import, dashboard, RBAC/RLS, audit trail and controlled release verification.",
-      "risk": "Historical ChatGPT records cannot be transferred automatically; operational records must be entered or imported through controlled processes.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan and EKH OS v1.7.3 production verification",
+      "name": "EKH OS / Command Centre",
+      "label": "Technical coordination and documentation active",
+      "progress": 88,
+      "owner": "Candice / Mia",
+      "summary": "Candice continues Command Centre coordination and operational documentation. Secure authentication, owner access, Staff Drive and appearance controls are part of the current production baseline.",
+      "team": "Candice, Mia, Kyo, Xion, Baran",
+      "next": "Confirm which Command Centre components are technically complete and document any unresolved access, deployment, database, hosting or integration issue.",
+      "risk": "No task should be marked complete without test evidence or technical verification.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Supabase login operational",
-        "Secure Staff Drive operational",
-        "Owner sign-out verified",
-        "Cloudflare deployment completed"
+        "Owner authentication and active role confirmed",
+        "Secure Staff Drive and sign-out verified",
+        "Theme, typography and card-system release work prepared",
+        "CEO operations schedule and daily progress checkpoints prepared"
       ],
       "stage": "in-progress"
     },
     {
       "code": "WEB",
       "name": "Website & Product Pages",
-      "label": "Infrastructure verification pending",
-      "progress": 55,
+      "label": "Cuddle Paws landing page completed; remaining pages continue",
+      "progress": 62,
       "owner": "Xion / Candice",
-      "summary": "Landing and access pages for Smart Adventure and Smart English remain in progress. The domain has been purchased.",
+      "summary": "The current Cuddle Paws promotional landing page has been prepared and used as the promotion baseline. Other website and product-page work remains under ongoing technical coordination.",
       "team": "Xion, Candice, Kamal, Haikal",
-      "next": "Complete landing/access pages and verify hosting, DNS and SSL.",
-      "risk": "Final production hosting, DNS and SSL evidence has not been recorded.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "next": "Confirm the latest status of remaining product pages and explicitly record unresolved hosting, DNS, SSL or integration items.",
+      "risk": "Completion must not be claimed without deployment and infrastructure verification.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Domain purchased",
-        "Website and product-page scope defined"
+        "Cuddle Paws promotional landing page prepared",
+        "Current promotion baseline established"
       ],
       "stage": "in-progress"
     },
     {
       "code": "WS",
       "name": "Worksheet Studio / Generator",
-      "label": "Generator checkpoint required",
-      "progress": 48,
+      "label": "Development continues under Blanc",
+      "progress": 50,
       "owner": "Blanc",
-      "summary": "Coding, stable templates, BM/BI roadmap and reduced dependency on heavy assets still require a formal checkpoint.",
+      "summary": "Blanc continues Worksheet Studio and generator development. The priority order after the current task remains an owner decision.",
       "team": "Blanc, Candice, Kyo, Nene, Reo, Guy, Haikal",
-      "next": "Bos and Blanc to close generator blockers and confirm regression testing, stable modules and production-candidate freeze.",
-      "risk": "No confirmed stable module or production candidate is recorded in the report.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "next": "Collect Blanc's latest checkpoint in the same status format used for Smart Adventure and Command Centre.",
+      "risk": "The generator remains dependent on Blanc's development progress and evidence of stable modules.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Generator work remains active",
-        "BM and BI roadmap requirement recorded"
+        "Generator development remains active",
+        "No new blocker has been verified in the latest review"
       ],
-      "stage": "blocked"
+      "stage": "in-progress"
+    },
+    {
+      "code": "CB3",
+      "name": "Coloring Book Vol. 3",
+      "label": "Development closed",
+      "progress": 100,
+      "owner": "Farah",
+      "summary": "Coloring Book Vol. 3 has been fully completed and its development task is formally closed.",
+      "team": "Farah, Guy",
+      "next": "No development action. Reopen only for an approved correction or new production requirement.",
+      "risk": "No active production risk recorded.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
+      "completed": [
+        "Volume completed in full",
+        "Development task formally closed"
+      ],
+      "stage": "completed"
+    },
+    {
+      "code": "LP",
+      "name": "Cuddle Paws Promotional Landing Page",
+      "label": "Current version completed",
+      "progress": 100,
+      "owner": "Xion / Candice",
+      "summary": "The current promotional landing page has been prepared and is being used as the basis for Cuddle Paws promotion.",
+      "team": "Xion, Candice, Kamal, Mario",
+      "next": "Maintain the page and revise only when promotional pricing, evidence or CTA changes are approved.",
+      "risk": "Future price changes must be reflected consistently across the page and promotional content.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
+      "completed": [
+        "Current landing-page version prepared",
+        "Page adopted as promotion baseline"
+      ],
+      "stage": "completed"
+    },
+    {
+      "code": "OPS",
+      "name": "CEO Operations Schedule & Checkpoints",
+      "label": "Prepared",
+      "progress": 100,
+      "owner": "Mia / Candice",
+      "summary": "The CEO operating schedule and daily progress checkpoints have been prepared for operational monitoring.",
+      "team": "Mia, Candice",
+      "next": "Continue using the schedule and update records when verified progress is received.",
+      "risk": "The schedule does not replace evidence-based technical or project verification.",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
+      "completed": [
+        "CEO operating schedule prepared",
+        "Daily progress checkpoints prepared"
+      ],
+      "stage": "completed"
     },
     {
       "code": "CE",
       "name": "Ceritera",
-      "label": "Closed",
+      "label": "Project closed",
       "progress": 100,
       "owner": "Oliver",
-      "summary": "Ceritera has been formally closed and is no longer an active project or blocker.",
+      "summary": "Ceritera remains formally closed as a completed project.",
       "team": "Oliver, Kyo",
-      "next": "Reopen only when a new reproducible request is approved.",
+      "next": "Reopen only after a new owner-approved requirement.",
       "risk": "No active risk recorded.",
-      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Application task formally closed"
+        "Application project formally closed"
       ],
       "stage": "completed"
     }
-  ],
-  "priority_actions": [
-    "Kamal: prepare Facebook Pages visuals",
-    "Reo: complete question audit and final level freeze",
-    "Jeff: report Smart Adventure runtime, bugs and dependencies",
-    "Blanc: close generator blockers and confirm stable modules",
-    "Candice: continue EKH OS data, access and technical controls",
-    "Zack and Mario: activate when content, campaign or pricing work is required"
   ]
 }

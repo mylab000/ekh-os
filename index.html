@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="EKH OS v1.7.3.2 theme selector, typography controls, hybrid card system, secure Staff Drive and activities hotfix" name="description"/>
+<meta content="EKH OS v1.7.3.3 theme selector, typography controls, hybrid card system, secure Staff Drive and activities hotfix" name="description"/>
 <meta content="#17153b" name="theme-color"/>
-<title>EKH OS v1.7.3.2 — Aurora Control System</title>
+<title>EKH OS v1.7.3.3 — Aurora Control System</title>
 <style>
 :root{
   --bg:#f4f6fb;
@@ -1219,7 +1219,7 @@ body.auth-ready #ekhAuthGate{display:none!important}
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet"/>
 
 <style id="ekh-v1731-ui-system">
-/* EKH OS v1.7.3.2 — Theme, typography, card system and activities hotfix */
+/* EKH OS v1.7.3.3 — Theme, typography, card system and activities hotfix */
 :root{
   --ekh-font-heading:'Plus Jakarta Sans',Inter,system-ui,sans-serif;
   --ekh-font-body:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -1316,7 +1316,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 
 
 <style>
-/* EKH OS v1.7.3.2 — Staff Drive heading glyph repair */
+/* EKH OS v1.7.3.3 — Staff Drive heading glyph repair */
 .v173-drive-heading h2{
   font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif!important;
   font-feature-settings:"liga" 0,"clig" 0,"calt" 0!important;
@@ -1369,7 +1369,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 <strong>EKH OS</strong>
 <span>Operating System</span>
 </div>
-<span class="build-chip">v1.7.3.2</span>
+<span class="build-chip">v1.7.3.3</span>
 </div>
 <div class="workspace-switcher">
 <div class="workspace-icon">EK</div>
@@ -1562,73 +1562,101 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 </section>
 <!-- PROJECTS -->
 <section class="view colour-page" id="projects">
-<header class="v172-page-head"><div><span class="section-kicker">PORTFOLIO FLOW</span><h2>Projects</h2><p>Current recorded progress as at 29 July 2026. Open a card for detail, next gate and risk.</p></div><div class="v172-view-actions"><button class="secondary-button">29 Jul 2026</button><button class="primary-button" id="exportProjectSnapshot">Export snapshot</button></div></header>
-<div class="v172-kanban-toolbar"><div id="v172ProjectFilters"><button class="active" data-project-filter="all">All</button><button data-project-filter="in-progress">Active</button><button data-project-filter="review">Review</button><button data-project-filter="blocked">Hold</button><button data-project-filter="completed">Closed</button></div><label>Search <input id="v172ProjectSearch" placeholder="Project or owner" type="search"/></label></div>
-<div class="v172-kanban-board"><section class="v172-kanban-column" data-kanban-column="planning"><header><span>Planning</span><b>0</b></header><div><p class="v172-empty-column">No projects</p></div></section><section class="v172-kanban-column" data-kanban-column="in-progress"><header><span>In Progress</span><b>3</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">CP</span><div><strong>Cuddle Paws / Coloring Book</strong><small>Sales and marketing active</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>78%</span><div class="v172-progress"><i style="width:78%"></i></div><span>Farah / Kamal / Mario / Zack</span></div>
-<div class="v172-project-detail"><p>Vol. 1, Vol. 2 and Vol. 3 are complete. Product development is closed and the current phase is sales and marketing.</p><div class="v172-detail-grid">
-<section><b>Team</b><span>Farah, Kamal, Mario, Zack, Syakila, Paula, Tabby</span></section>
-<section><b>Next gate</b><span>Obtain Facebook Pages visuals from Kamal and continue content, promotion and CTA support through Zack and Mario as required.</span></section>
-<section><b>Control / risk</b><span>Sales response remains unverified. The permanent price after the first 50 buyers has not been finalised.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>All three digital colouring books completed</li><li>Vol. 3 development task formally closed</li><li>Promotion set at RM10.90 for the first 50 buyers</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">OS</span><div><strong>EKH OS / Command Center</strong><small>Production operating system</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>84%</span><div class="v172-progress"><i style="width:84%"></i></div><span>Candice / Mia / Kyo</span></div>
-<div class="v172-project-detail"><p>EKH OS is the current Single Source of Truth. Secure login, Staff Drive and sign-out have passed owner production smoke testing.</p><div class="v172-detail-grid">
-<section><b>Team</b><span>Candice, Mia, Kyo, Baran, Xion</span></section>
-<section><b>Next gate</b><span>Continue data flow, manual/batch import, dashboard, RBAC/RLS, audit trail and controlled release verification.</span></section>
-<section><b>Control / risk</b><span>Historical ChatGPT records cannot be transferred automatically; operational records must be entered or imported through controlled processes.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan and EKH OS v1.7.3 production verification</span></section>
-</div><details><summary>Completed work</summary><ul><li>Supabase login operational</li><li>Secure Staff Drive operational</li><li>Owner sign-out verified</li><li>Cloudflare deployment completed</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">WEB</span><div><strong>Website &amp; Product Pages</strong><small>Infrastructure verification pending</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>55%</span><div class="v172-progress"><i style="width:55%"></i></div><span>Xion / Candice</span></div>
-<div class="v172-project-detail"><p>Landing and access pages for Smart Adventure and Smart English remain in progress. The domain has been purchased.</p><div class="v172-detail-grid">
+<header class="v172-page-head"><div><span class="section-kicker">PORTFOLIO FLOW</span><h2>Projects</h2><p>COO-recorded project progress as at 30 July 2026. Open a card for evidence, dependency and next action.</p></div><div class="v172-view-actions"><button class="secondary-button" type="button">30 Jul 2026</button><button class="primary-button" id="exportProjectSnapshot" type="button">Export snapshot</button></div></header>
+<div class="attention-strip"><span class="attention-symbol">i</span><div class="attention-copy"><strong>No newly verified blocker or status change</strong><span>Operational dependencies remain: Jeff depends on Reo's audit, marketing depends on Kamal's visual assets, and the generator depends on Blanc's development evidence.</span></div></div>
+<div class="v172-kanban-toolbar"><div id="v172ProjectFilters"><button class="active" data-project-filter="all" type="button">All</button><button data-project-filter="in-progress" type="button">Active</button><button data-project-filter="review" type="button">Review</button><button data-project-filter="blocked" type="button">Hold</button><button data-project-filter="completed" type="button">Closed</button></div><label>Search <input id="v172ProjectSearch" placeholder="Project, owner or dependency" type="search"/></label></div>
+<div class="v172-kanban-board"><section class="v172-kanban-column" data-kanban-column="planning"><header><span>Planning</span><b>0</b></header><div><p class="v172-empty-column">No recorded projects</p></div></section><section class="v172-kanban-column" data-kanban-column="in-progress"><header><span>In Progress</span><b>4</b></header><div><article class="v172-project-card" data-project-card data-project-stage="in-progress">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">CP</span><div><strong>Cuddle Paws — Sales &amp; Marketing</strong><small>Promotion remains active</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>82%</span><div class="v172-progress"><i style="width:82%"></i></div><span>Kamal / Zack / Mario</span></div>
+<div class="v172-project-detail"><p>All three colouring-book volumes are complete. The current operational phase is promotion and sales, including the RM10.90 offer for the first 50 buyers.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Kamal, Zack, Mario, Farah, Syakila, Tabby</span></section>
+<section><b>Next action / gate</b><span>Continue promotion, monitor buyer count and prepare the staged price adjustment after the first 50 buyers.</span></section>
+<section><b>Dependency / control</b><span>Marketing output still depends on Kamal&#x27;s Facebook Pages visual assets. The next pricing tier remains an owner decision.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Coloring Book Vol. 1, Vol. 2 and Vol. 3 completed</li><li>Current Cuddle Paws promotional landing page prepared</li><li>RM10.90 first-50-buyers promotion remains active</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="in-progress">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">OS</span><div><strong>EKH OS / Command Centre</strong><small>Technical coordination and documentation active</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>88%</span><div class="v172-progress"><i style="width:88%"></i></div><span>Candice / Mia</span></div>
+<div class="v172-project-detail"><p>Candice continues Command Centre coordination and operational documentation. Secure authentication, owner access, Staff Drive and appearance controls are part of the current production baseline.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Candice, Mia, Kyo, Xion, Baran</span></section>
+<section><b>Next action / gate</b><span>Confirm which Command Centre components are technically complete and document any unresolved access, deployment, database, hosting or integration issue.</span></section>
+<section><b>Dependency / control</b><span>No task should be marked complete without test evidence or technical verification.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Owner authentication and active role confirmed</li><li>Secure Staff Drive and sign-out verified</li><li>Theme, typography and card-system release work prepared</li><li>CEO operations schedule and daily progress checkpoints prepared</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="in-progress">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">WEB</span><div><strong>Website &amp; Product Pages</strong><small>Cuddle Paws landing page completed; remaining pages continue</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>62%</span><div class="v172-progress"><i style="width:62%"></i></div><span>Xion / Candice</span></div>
+<div class="v172-project-detail"><p>The current Cuddle Paws promotional landing page has been prepared and used as the promotion baseline. Other website and product-page work remains under ongoing technical coordination.</p><div class="v172-detail-grid">
 <section><b>Team</b><span>Xion, Candice, Kamal, Haikal</span></section>
-<section><b>Next gate</b><span>Complete landing/access pages and verify hosting, DNS and SSL.</span></section>
-<section><b>Control / risk</b><span>Final production hosting, DNS and SSL evidence has not been recorded.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>Domain purchased</li><li>Website and product-page scope defined</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="review"><header><span>Review / QA</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">SA</span><div><strong>Smart Adventure</strong><small>Audit and level freeze pending</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>62%</span><div class="v172-progress"><i style="width:62%"></i></div><span>Reo / Jeff / Alya / Ilica</span></div>
-<div class="v172-project-detail"><p>The 7,000-question bank is not yet import-ready. Education audit, repair and final Level 1–6 freeze remain incomplete.</p><div class="v172-detail-grid">
-<section><b>Team</b><span>Reo, Ilica, Guy, Alya, Jeff, Candice, Kyo, Haikal, Mario</span></section>
-<section><b>Next gate</b><span>Complete the full question audit, repair records and approve the final level freeze before any production import.</span></section>
-<section><b>Control / risk</b><span>Production import before audit closure could introduce incorrect levels, language defects or unresolved Question_ID issues.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>Development continues under Jeff</li><li>Question integrity and repair queue remain controlled by Alya</li><li>Curriculum and age-level review remain assigned</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="blocked"><header><span>Blocked / Hold</span><b>2</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">SE</span><div><strong>Smart English</strong><small>Dependency hold</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>30%</span><div class="v172-progress"><i style="width:30%"></i></div><span>Reo / Jeff / Candice</span></div>
-<div class="v172-project-detail"><p>Smart English remains on hold until Smart Adventure is complete, stable and its access/import route is verified.</p><div class="v172-detail-grid">
-<section><b>Team</b><span>Reo, Jeff, Candice, Arian</span></section>
-<section><b>Next gate</b><span>Resume only after Smart Adventure stability and import/access verification.</span></section>
-<section><b>Control / risk</b><span>Starting now would divide education and technical focus before the primary dependency is closed.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>Hold condition formally recorded</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">WS</span><div><strong>Worksheet Studio / Generator</strong><small>Generator checkpoint required</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>48%</span><div class="v172-progress"><i style="width:48%"></i></div><span>Blanc</span></div>
-<div class="v172-project-detail"><p>Coding, stable templates, BM/BI roadmap and reduced dependency on heavy assets still require a formal checkpoint.</p><div class="v172-detail-grid">
+<section><b>Next action / gate</b><span>Confirm the latest status of remaining product pages and explicitly record unresolved hosting, DNS, SSL or integration items.</span></section>
+<section><b>Dependency / control</b><span>Completion must not be claimed without deployment and infrastructure verification.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Cuddle Paws promotional landing page prepared</li><li>Current promotion baseline established</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="in-progress">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">WS</span><div><strong>Worksheet Studio / Generator</strong><small>Development continues under Blanc</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>50%</span><div class="v172-progress"><i style="width:50%"></i></div><span>Blanc</span></div>
+<div class="v172-project-detail"><p>Blanc continues Worksheet Studio and generator development. The priority order after the current task remains an owner decision.</p><div class="v172-detail-grid">
 <section><b>Team</b><span>Blanc, Candice, Kyo, Nene, Reo, Guy, Haikal</span></section>
-<section><b>Next gate</b><span>Bos and Blanc to close generator blockers and confirm regression testing, stable modules and production-candidate freeze.</span></section>
-<section><b>Control / risk</b><span>No confirmed stable module or production candidate is recorded in the report.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>Generator work remains active</li><li>BM and BI roadmap requirement recorded</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="ready"><header><span>Ready to Publish</span><b>0</b></header><div><p class="v172-empty-column">No projects</p></div></section><section class="v172-kanban-column" data-kanban-column="completed"><header><span>Completed</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">CE</span><div><strong>Ceritera</strong><small>Closed</small></div></div><span class="v172-chevron">⌄</span></button>
+<section><b>Next action / gate</b><span>Collect Blanc&#x27;s latest checkpoint in the same status format used for Smart Adventure and Command Centre.</span></section>
+<section><b>Dependency / control</b><span>The generator remains dependent on Blanc&#x27;s development progress and evidence of stable modules.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Generator development remains active</li><li>No new blocker has been verified in the latest review</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="review"><header><span>Review / QA</span><b>1</b></header><div><article class="v172-project-card" data-project-card data-project-stage="review">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">SA</span><div><strong>Smart Adventure</strong><small>Audit handoff remains the key dependency</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>64%</span><div class="v172-progress"><i style="width:64%"></i></div><span>Reo / Jeff</span></div>
+<div class="v172-project-detail"><p>Reo continues the question-bank audit while Jeff continues application development. The formal audit handoff to Jeff remains the immediate release dependency.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Reo, Jeff, Ilica, Guy, Alya, Candice, Kyo, Haikal</span></section>
+<section><b>Next action / gate</b><span>Set an official audit handoff date, then confirm the latest runtime, integration and technical progress with Jeff.</span></section>
+<section><b>Dependency / control</b><span>Jeff&#x27;s integration and build progress depends on the completeness and quality of Reo&#x27;s audited content.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Application development remains active</li><li>Education audit remains assigned and controlled</li><li>No new blocker has been verified since the previous review</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="blocked"><header><span>Hold / Dependency</span><b>1</b></header><div><article class="v172-project-card" data-project-card data-project-stage="blocked">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">SE</span><div><strong>Smart English</strong><small>Inherited dependency hold</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>30%</span><div class="v172-progress"><i style="width:30%"></i></div><span>Reo / Jeff / Candice</span></div>
+<div class="v172-project-detail"><p>No new status change was recorded in the 30 July review. The earlier dependency hold remains inherited until evidence confirms Smart Adventure stability and readiness.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Reo, Jeff, Candice, Arian</span></section>
+<section><b>Next action / gate</b><span>Review the hold only after Smart Adventure audit, integration and stability evidence is available.</span></section>
+<section><b>Dependency / control</b><span>Resuming without dependency closure could split technical and curriculum focus.</span></section>
+<section><b>Evidence</b><span>No new HOLD project recorded on 30 July; prior Smart English dependency status retained pending evidence</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Dependency condition remains documented</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="ready"><header><span>Ready to Publish</span><b>0</b></header><div><p class="v172-empty-column">No recorded projects</p></div></section><section class="v172-kanban-column" data-kanban-column="completed"><header><span>Completed</span><b>4</b></header><div><article class="v172-project-card" data-project-card data-project-stage="completed">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">CB3</span><div><strong>Coloring Book Vol. 3</strong><small>Development closed</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>100%</span><div class="v172-progress"><i style="width:100%"></i></div><span>Farah</span></div>
+<div class="v172-project-detail"><p>Coloring Book Vol. 3 has been fully completed and its development task is formally closed.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Farah, Guy</span></section>
+<section><b>Next action / gate</b><span>No development action. Reopen only for an approved correction or new production requirement.</span></section>
+<section><b>Dependency / control</b><span>No active production risk recorded.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Volume completed in full</li><li>Development task formally closed</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="completed">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">LP</span><div><strong>Cuddle Paws Promotional Landing Page</strong><small>Current version completed</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>100%</span><div class="v172-progress"><i style="width:100%"></i></div><span>Xion / Candice</span></div>
+<div class="v172-project-detail"><p>The current promotional landing page has been prepared and is being used as the basis for Cuddle Paws promotion.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Xion, Candice, Kamal, Mario</span></section>
+<section><b>Next action / gate</b><span>Maintain the page and revise only when promotional pricing, evidence or CTA changes are approved.</span></section>
+<section><b>Dependency / control</b><span>Future price changes must be reflected consistently across the page and promotional content.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Current landing-page version prepared</li><li>Page adopted as promotion baseline</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="completed">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">OPS</span><div><strong>CEO Operations Schedule &amp; Checkpoints</strong><small>Prepared</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>100%</span><div class="v172-progress"><i style="width:100%"></i></div><span>Mia / Candice</span></div>
+<div class="v172-project-detail"><p>The CEO operating schedule and daily progress checkpoints have been prepared for operational monitoring.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Mia, Candice</span></section>
+<section><b>Next action / gate</b><span>Continue using the schedule and update records when verified progress is received.</span></section>
+<section><b>Dependency / control</b><span>The schedule does not replace evidence-based technical or project verification.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>CEO operating schedule prepared</li><li>Daily progress checkpoints prepared</li></ul></details></div></article><article class="v172-project-card" data-project-card data-project-stage="completed">
+<button aria-expanded="false" class="v172-project-summary" type="button">
+<div><span class="v172-project-code">CE</span><div><strong>Ceritera</strong><small>Project closed</small></div></div><span class="v172-chevron">⌄</span></button>
 <div class="v172-project-meta"><span>100%</span><div class="v172-progress"><i style="width:100%"></i></div><span>Oliver</span></div>
-<div class="v172-project-detail"><p>Ceritera has been formally closed and is no longer an active project or blocker.</p><div class="v172-detail-grid">
+<div class="v172-project-detail"><p>Ceritera remains formally closed as a completed project.</p><div class="v172-detail-grid">
 <section><b>Team</b><span>Oliver, Kyo</span></section>
-<section><b>Next gate</b><span>Reopen only when a new reproducible request is approved.</span></section>
-<section><b>Control / risk</b><span>No active risk recorded.</span></section>
-<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
-</div><details><summary>Completed work</summary><ul><li>Application task formally closed</li></ul></details></div></article></div></section></div>
-<p class="v172-integrity">Source: Laporan Progress Semua Ahli Pasukan, 29 Julai 2026. Recorded status only; no direct live staff check-in is implied.</p>
+<section><b>Next action / gate</b><span>Reopen only after a new owner-approved requirement.</span></section>
+<section><b>Dependency / control</b><span>No active risk recorded.</span></section>
+<section><b>Evidence</b><span>Ringkasan COO: Progress Projek &amp; Pasukan, 30 Julai 2026</span></section>
+</div><details><summary>Recorded completed work</summary><ul><li>Application project formally closed</li></ul></details></div></article></div></section></div>
+<p class="v172-integrity">Source: Ringkasan COO — Progress Projek & Pasukan, 30 Julai 2026. Percentages are visual operational indicators, not formal completion certification. Status changes require evidence or technical verification.</p>
 </section>
 
 <!-- TASKS -->
@@ -1862,7 +1890,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 </div>
 <div class="footer-status">
 <span id="footerActivityStatus"><i></i> Supabase activity reminders waiting</span>
-<span>English UI v1.7.3.2</span>
+<span>English UI v1.7.3.3</span>
 <span id="footerClock">Malaysia time</span>
 </div>
 <div class="footer-actions">
@@ -2915,21 +2943,21 @@ updateDateLabels();
       const url = URL.createObjectURL(snapshot);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'EKH_OS_Project_Progress_2026-07-29.json';
+      link.download = 'EKH_OS_Project_Progress_2026-07-30.json';
       document.body.appendChild(link);
       link.click();
       link.remove();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     } catch {
       const fallback = {
-        snapshot_date: '2026-07-29',
-        note: 'Open the packaged project_progress_snapshot.json file.'
+        snapshot_date: '2026-07-30',
+        note: 'Open the packaged 30 July project_progress_snapshot.json file.'
       };
       const blob = new Blob([JSON.stringify(fallback, null, 2)], {type:'application/json'});
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'EKH_OS_Project_Progress_2026-07-29.json';
+      link.download = 'EKH_OS_Project_Progress_2026-07-30.json';
       link.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     }
@@ -3669,14 +3697,40 @@ updateDateLabels();
 </script>
 <script>
 (()=>{
- document.addEventListener('click',e=>{
-   const summary=e.target.closest('.v172-project-summary');
-   if(summary){const card=summary.closest('.v172-project-card');const open=card.classList.toggle('open');summary.setAttribute('aria-expanded',String(open));}
- });
- const search=document.getElementById('v172ProjectSearch');
- search?.addEventListener('input',()=>{const q=search.value.toLowerCase();document.querySelectorAll('[data-project-card]').forEach(c=>c.hidden=!c.textContent.toLowerCase().includes(q));});
- document.getElementById('v172AddActivity')?.addEventListener('click',()=>document.getElementById('addSupabaseActivity')?.click());
- document.getElementById('openSupabaseActivityModalFromCalendar')?.addEventListener('click',()=>document.getElementById('addSupabaseActivity')?.click());
+  document.addEventListener('click',event=>{
+    const summary=event.target.closest('.v172-project-summary');
+    if(summary){
+      const card=summary.closest('.v172-project-card');
+      const open=card.classList.toggle('open');
+      summary.setAttribute('aria-expanded',String(open));
+    }
+  });
+
+  const search=document.getElementById('v172ProjectSearch');
+  const filters=document.getElementById('v172ProjectFilters');
+  let activeStage='all';
+
+  function applyProjectFilters(){
+    const query=(search?.value||'').trim().toLowerCase();
+    document.querySelectorAll('[data-project-card]').forEach(card=>{
+      const stage=card.dataset.projectStage||'';
+      const stageMatch=activeStage==='all'||stage===activeStage;
+      const searchMatch=!query||card.textContent.toLowerCase().includes(query);
+      card.hidden=!(stageMatch&&searchMatch);
+    });
+  }
+
+  filters?.addEventListener('click',event=>{
+    const button=event.target.closest('[data-project-filter]');
+    if(!button)return;
+    activeStage=button.dataset.projectFilter||'all';
+    filters.querySelectorAll('button').forEach(item=>item.classList.toggle('active',item===button));
+    applyProjectFilters();
+  });
+  search?.addEventListener('input',applyProjectFilters);
+
+  document.getElementById('v172AddActivity')?.addEventListener('click',()=>document.getElementById('addSupabaseActivity')?.click());
+  document.getElementById('openSupabaseActivityModalFromCalendar')?.addEventListener('click',()=>document.getElementById('addSupabaseActivity')?.click());
 })();
 </script>
 <script>

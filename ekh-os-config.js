@@ -1,4 +1,4 @@
-// EKH OS v1.7.3.2 public runtime configuration.
+// EKH OS v1.7.3.3 public runtime configuration.
 // Browser-visible values only. Never place service-role or secret keys here.
 window.EKH_OS_PUBLIC_CONFIG = Object.freeze({
   url: 'https://zhpqqxdnhhpvrgwnjwrh.supabase.co',
