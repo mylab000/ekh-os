@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="EKH OS v1.7.3.1 theme selector, typography controls, hybrid card system, secure Staff Drive and activities hotfix" name="description"/>
+<meta content="EKH OS v1.7.3.2 theme selector, typography controls, hybrid card system, secure Staff Drive and activities hotfix" name="description"/>
 <meta content="#17153b" name="theme-color"/>
-<title>EKH OS v1.7.3.1 — Aurora Control System</title>
+<title>EKH OS v1.7.3.2 — Aurora Control System</title>
 <style>
 :root{
   --bg:#f4f6fb;
@@ -1219,7 +1219,7 @@ body.auth-ready #ekhAuthGate{display:none!important}
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet"/>
 
 <style id="ekh-v1731-ui-system">
-/* EKH OS v1.7.3.1 — Theme, typography, card system and activities hotfix */
+/* EKH OS v1.7.3.2 — Theme, typography, card system and activities hotfix */
 :root{
   --ekh-font-heading:'Plus Jakarta Sans',Inter,system-ui,sans-serif;
   --ekh-font-body:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -1314,6 +1314,18 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 @media(max-width:760px){.profile-text{display:none}.profile-button{padding:3px!important}.topbar-actions{gap:5px}.topbar-actions #createButton,.topbar-actions .palette-button{display:none}.v172-live-activities .supabase-activity-card,.v172-live-activities .activity-card{grid-template-columns:38px minmax(0,1fr)!important}.v172-live-activities .activity-due-block,.v172-live-activities .activity-card-actions{grid-column:2!important}.ekh-control-menu{right:8px!important}.page-content{padding-left:12px!important;padding-right:12px!important}}
 </style>
 
+
+<style>
+/* EKH OS v1.7.3.2 — Staff Drive heading glyph repair */
+.v173-drive-heading h2{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif!important;
+  font-feature-settings:"liga" 0,"clig" 0,"calt" 0!important;
+  font-variant-ligatures:none!important;
+  letter-spacing:-0.02em;
+  text-rendering:geometricPrecision;
+}
+</style>
+
 </head>
 <body class="auth-pending" data-page="command-centre">
 
@@ -1357,7 +1369,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 <strong>EKH OS</strong>
 <span>Operating System</span>
 </div>
-<span class="build-chip">v1.7.3.1</span>
+<span class="build-chip">v1.7.3.2</span>
 </div>
 <div class="workspace-switcher">
 <div class="workspace-icon">EK</div>
@@ -1549,57 +1561,76 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 <div class="room-mode" id="memoMode"><div class="memo-document"><span>DECISION MEMO • DRAFT</span><h2>Manpower Planning Decision</h2><p><strong>Decision:</strong> Proceed with controlled parallel-track manpower planning, subject to budget and role-count pre-gates.</p><h3>Conditions</h3><ul><li>Finance validation before contractor commitment.</li><li>Final role-count reconciliation.</li><li>Mandatory owner assignment for each workstream.</li></ul></div></div>
 </section>
 <!-- PROJECTS -->
-<section class="view colour-page" id="projects"><header class="v172-page-head"><div><span class="section-kicker">PORTFOLIO FLOW</span><h2>Projects</h2><p>Move through the portfolio by stage. Open a card only when you need detail.</p></div><div class="v172-view-actions"><button class="secondary-button">Filter</button><button class="primary-button">＋ New project</button></div></header><div class="v172-kanban-toolbar"><div><button class="active">Kanban</button><button>List</button></div><label>Search <input id="v172ProjectSearch" placeholder="Project or owner" type="search"/></label></div><div class="v172-kanban-board"><section class="v172-kanban-column" data-kanban-column="planning"><header><span>Planning</span><b>3</b></header><div><article class="v172-project-card" data-project-card="">
+<section class="view colour-page" id="projects">
+<header class="v172-page-head"><div><span class="section-kicker">PORTFOLIO FLOW</span><h2>Projects</h2><p>Current recorded progress as at 29 July 2026. Open a card for detail, next gate and risk.</p></div><div class="v172-view-actions"><button class="secondary-button">29 Jul 2026</button><button class="primary-button" id="exportProjectSnapshot">Export snapshot</button></div></header>
+<div class="v172-kanban-toolbar"><div id="v172ProjectFilters"><button class="active" data-project-filter="all">All</button><button data-project-filter="in-progress">Active</button><button data-project-filter="review">Review</button><button data-project-filter="blocked">Hold</button><button data-project-filter="completed">Closed</button></div><label>Search <input id="v172ProjectSearch" placeholder="Project or owner" type="search"/></label></div>
+<div class="v172-kanban-board"><section class="v172-kanban-column" data-kanban-column="planning"><header><span>Planning</span><b>0</b></header><div><p class="v172-empty-column">No projects</p></div></section><section class="v172-kanban-column" data-kanban-column="in-progress"><header><span>In Progress</span><b>3</b></header><div><article class="v172-project-card" data-project-card="">
 <button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">EB</span><div><strong>Bukan Hero Dalam Poster</strong><small>Final sign-off pending</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>35%</span><div class="v172-progress"><i style="width:35%"></i></div><span>Love</span></div>
-<div class="v172-project-detail"><p>The final cleanup build is stable at 52 pages, but a newer formal final LULUS decision has not been recorded after the last language QA cycle.</p><div class="v172-detail-grid"><section><b>Team</b><span>Love, Torrie</span></section><section><b>Next gate</b><span>Run Torrie's final language sign-off and freeze the sales-ready manuscript only after a formal LULUS decision.</span></section><section><b>Control / risk</b><span>Last formal QA position required final language polishing; do not mark fully released without final sign-off.</span></section><section><b>Evidence</b><span>Latest manuscript cleanup and QA records</span></section></div><details><summary>Completed work</summary><ul><li>Full rewrite, dialogue QA, natural-language polish and cleanup completed</li><li>Premarital intimacy and continuity issues corrected</li><li>No cut text, overlap or footer drift reported in the final cleanup render</li></ul></details></div>
-</article><article class="v172-project-card" data-project-card="">
+<div><span class="v172-project-code">CP</span><div><strong>Cuddle Paws / Coloring Book</strong><small>Sales and marketing active</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>78%</span><div class="v172-progress"><i style="width:78%"></i></div><span>Farah / Kamal / Mario / Zack</span></div>
+<div class="v172-project-detail"><p>Vol. 1, Vol. 2 and Vol. 3 are complete. Product development is closed and the current phase is sales and marketing.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Farah, Kamal, Mario, Zack, Syakila, Paula, Tabby</span></section>
+<section><b>Next gate</b><span>Obtain Facebook Pages visuals from Kamal and continue content, promotion and CTA support through Zack and Mario as required.</span></section>
+<section><b>Control / risk</b><span>Sales response remains unverified. The permanent price after the first 50 buyers has not been finalised.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>All three digital colouring books completed</li><li>Vol. 3 development task formally closed</li><li>Promotion set at RM10.90 for the first 50 buyers</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
+<button aria-expanded="false" class="v172-project-summary">
+<div><span class="v172-project-code">OS</span><div><strong>EKH OS / Command Center</strong><small>Production operating system</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>84%</span><div class="v172-progress"><i style="width:84%"></i></div><span>Candice / Mia / Kyo</span></div>
+<div class="v172-project-detail"><p>EKH OS is the current Single Source of Truth. Secure login, Staff Drive and sign-out have passed owner production smoke testing.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Candice, Mia, Kyo, Baran, Xion</span></section>
+<section><b>Next gate</b><span>Continue data flow, manual/batch import, dashboard, RBAC/RLS, audit trail and controlled release verification.</span></section>
+<section><b>Control / risk</b><span>Historical ChatGPT records cannot be transferred automatically; operational records must be entered or imported through controlled processes.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan and EKH OS v1.7.3 production verification</span></section>
+</div><details><summary>Completed work</summary><ul><li>Supabase login operational</li><li>Secure Staff Drive operational</li><li>Owner sign-out verified</li><li>Cloudflare deployment completed</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
+<button aria-expanded="false" class="v172-project-summary">
+<div><span class="v172-project-code">WEB</span><div><strong>Website &amp; Product Pages</strong><small>Infrastructure verification pending</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>55%</span><div class="v172-progress"><i style="width:55%"></i></div><span>Xion / Candice</span></div>
+<div class="v172-project-detail"><p>Landing and access pages for Smart Adventure and Smart English remain in progress. The domain has been purchased.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Xion, Candice, Kamal, Haikal</span></section>
+<section><b>Next gate</b><span>Complete landing/access pages and verify hosting, DNS and SSL.</span></section>
+<section><b>Control / risk</b><span>Final production hosting, DNS and SSL evidence has not been recorded.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>Domain purchased</li><li>Website and product-page scope defined</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="review"><header><span>Review / QA</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
+<button aria-expanded="false" class="v172-project-summary">
+<div><span class="v172-project-code">SA</span><div><strong>Smart Adventure</strong><small>Audit and level freeze pending</small></div></div><span class="v172-chevron">⌄</span></button>
+<div class="v172-project-meta"><span>62%</span><div class="v172-progress"><i style="width:62%"></i></div><span>Reo / Jeff / Alya / Ilica</span></div>
+<div class="v172-project-detail"><p>The 7,000-question bank is not yet import-ready. Education audit, repair and final Level 1–6 freeze remain incomplete.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Reo, Ilica, Guy, Alya, Jeff, Candice, Kyo, Haikal, Mario</span></section>
+<section><b>Next gate</b><span>Complete the full question audit, repair records and approve the final level freeze before any production import.</span></section>
+<section><b>Control / risk</b><span>Production import before audit closure could introduce incorrect levels, language defects or unresolved Question_ID issues.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>Development continues under Jeff</li><li>Question integrity and repair queue remain controlled by Alya</li><li>Curriculum and age-level review remain assigned</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="blocked"><header><span>Blocked / Hold</span><b>2</b></header><div><article class="v172-project-card" data-project-card="">
 <button aria-expanded="false" class="v172-project-summary">
 <div><span class="v172-project-code">SE</span><div><strong>Smart English</strong><small>Dependency hold</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>35%</span><div class="v172-progress"><i style="width:35%"></i></div><span>Reo</span></div>
-<div class="v172-project-detail"><p>Smart English remains on hold until Smart Adventure is stable and technical access/import processes are verified.</p><div class="v172-detail-grid"><section><b>Team</b><span>Reo, Jeff, Candice, Arian</span></section><section><b>Next gate</b><span>Resume only after Smart Adventure technical import, stability and access verification are complete.</span></section><section><b>Control / risk</b><span>Starting development before dependency closure would split technical and education focus.</span></section><section><b>Evidence</b><span>Mia team progress report and operating decisions</span></section></div><details><summary>Completed work</summary><ul><li>Project dependency and hold condition formally recorded</li></ul></details></div>
-</article><article class="v172-project-card" data-project-card="">
+<div class="v172-project-meta"><span>30%</span><div class="v172-progress"><i style="width:30%"></i></div><span>Reo / Jeff / Candice</span></div>
+<div class="v172-project-detail"><p>Smart English remains on hold until Smart Adventure is complete, stable and its access/import route is verified.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Reo, Jeff, Candice, Arian</span></section>
+<section><b>Next gate</b><span>Resume only after Smart Adventure stability and import/access verification.</span></section>
+<section><b>Control / risk</b><span>Starting now would divide education and technical focus before the primary dependency is closed.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>Hold condition formally recorded</li></ul></details></div></article><article class="v172-project-card" data-project-card="">
 <button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">PM</span><div><strong>Political &amp; Multimedia Pipeline</strong><small>No new recorded update</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>20%</span><div class="v172-progress"><i style="width:20%"></i></div><span>Wahid</span></div>
-<div class="v172-project-detail"><p>The specialist roles remain defined, but no new consolidated production or release status is recorded for the latest operating period.</p><div class="v172-detail-grid"><section><b>Team</b><span>Wahid, Clara, Azizan, Lei, Arian +1</span></section><section><b>Next gate</b><span>Open a project record only when a concrete brief, deliverable, owner and deadline are issued.</span></section><section><b>Control / risk</b><span>Do not infer active delivery from role assignment alone.</span></section><section><b>Evidence</b><span>Latest recorded persona work and Mia team report</span></section></div><details><summary>Completed work</summary><ul><li>Political and EKH work boundaries remain separated</li><li>Power Sifir short product-video prompt was prepared</li><li>Asset transparency and identity-lock standards remain active</li></ul></details></div>
-</article></div></section><section class="v172-kanban-column" data-kanban-column="in-progress"><header><span>In Progress</span><b>4</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">OS</span><div><strong>EKH OS &amp; Staff Drive</strong><small>Operational foundation</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>72%</span><div class="v172-progress"><i style="width:72%"></i></div><span>Candice</span></div>
-<div class="v172-project-detail"><p>Neumorphic Command Centre, CEO schedule reminders and a private Supabase Staff Drive are operational in the current build.</p><div class="v172-detail-grid"><section><b>Team</b><span>Candice, Mia, Kyo, Baran, Xion</span></section><section><b>Next gate</b><span>Move the standalone build into controlled source/deployment, complete environment separation, production audit logging and final RBAC hardening.</span></section><section><b>Control / risk</b><span>Browser reminders still require EKH OS to remain open; production deployment evidence is not yet recorded.</span></section><section><b>Evidence</b><span>EKH OS v1.3.3 operational build and current conversation</span></section></div><details><summary>Completed work</summary><ul><li>Supabase Project connection and owner Auth verified</li><li>Private bucket, RLS and wildcard owner access configured</li><li>Upload, download, archive and file-access diagnostics implemented</li><li>CEO Operating Schedule reminders and sticky Staff Drive completed</li></ul></details></div>
-</article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">CP</span><div><strong>Cuddle Paws</strong><small>Product closed; promotion active</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>72%</span><div class="v172-progress"><i style="width:72%"></i></div><span>Farah</span></div>
-<div class="v172-project-detail"><p>All three colouring-book volumes are complete. The project is now focused on promotion, buyer tracking and price-stage control.</p><div class="v172-detail-grid"><section><b>Team</b><span>Farah, Kamal, Mario, Zack, Syakila +2</span></section><section><b>Next gate</b><span>Continue campaign execution, record buyer count and define one official post-promotion price before changing listings or CTA.</span></section><section><b>Control / risk</b><span>Permanent post-promotion pricing is not yet finalized; campaign records indicate no initial sales at the earlier checkpoint.</span></section><section><b>Evidence</b><span>Cuddle Paws and Ceritera Operational Status Reference</span></section></div><details><summary>Completed work</summary><ul><li>Happy Cozy Friends, Yummy Snack Time and Little Garden Fun completed</li><li>Milo, Bobi, Pipi, Mimi and Ollie identity system locked</li><li>Product build and Vol. 3 task formally closed</li><li>Current promotional price recorded as RM10.90 for the first 50 buyers</li></ul></details></div>
-</article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">CO</span><div><strong>Zack Content OS &amp; FB Promotion</strong><small>Publishing cycle active</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>72%</span><div class="v172-progress"><i style="width:72%"></i></div><span>Zack</span></div>
-<div class="v172-project-detail"><p>The weekly Threads system has been shortened for a small account and aligned with Cuddle Paws promotion without repeating hooks or CTA.</p><div class="v172-detail-grid"><section><b>Team</b><span>Zack, Syakila, Mario, Guy, Tabby</span></section><section><b>Next gate</b><span>Run the 3–9 August experiment against the 20–27 July baseline and compare hook, style, angle and CTA performance.</span></section><section><b>Control / risk</b><span>Some copy remains subject to final Tabby/Syakila approval and should not be treated as automatically published.</span></section><section><b>Evidence</b><span>Zack Content OS weekly plans and latest Syakila revision</span></section></div><details><summary>Completed work</summary><ul><li>27 July–2 August master plan and anti-repetition audit prepared</li><li>29 July–2 August short-copy revision prepared for approximately 190 followers</li><li>Cuddle Paws slots retained while main posts were shortened</li><li>Education-related posts now use Guy review before Zack adaptation</li></ul></details></div>
-</article><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">WEB</span><div><strong>English Kids Hub Website &amp; Access Pages</strong><small>Deployment evidence pending</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>72%</span><div class="v172-progress"><i style="width:72%"></i></div><span>Xion</span></div>
-<div class="v172-project-detail"><p>The domain and design direction exist, but the landing page, product access pages and production infrastructure still need controlled completion.</p><div class="v172-detail-grid"><section><b>Team</b><span>Xion, Candice, Kamal, Haikal</span></section><section><b>Next gate</b><span>Finish landing/access pages, verify hosting, DNS and SSL, then record deployment and regression evidence.</span></section><section><b>Control / risk</b><span>No final hosting, DNS, SSL or production deployment confirmation is recorded.</span></section><section><b>Evidence</b><span>Mia team progress report and website review</span></section></div><details><summary>Completed work</summary><ul><li>Englishkidshub.com acquired through Cloudflare</li><li>Landing-page and Aiden/Lily asset briefs prepared</li><li>Website review identified hero, proof, CTA and visual-density weaknesses</li></ul></details></div>
-</article></div></section><section class="v172-kanban-column" data-kanban-column="review"><header><span>Review / QA</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">SA</span><div><strong>Smart Adventure / SA-QB7000</strong><small>Education release complete</small></div></div><span class="v172-chevron">⌄</span></button>
-<div class="v172-project-meta"><span>88%</span><div class="v172-progress"><i style="width:88%"></i></div><span>Reo</span></div>
-<div class="v172-project-detail"><p>The education-approved 7,000-question master and controlled release package have completed all ten education gates.</p><div class="v172-detail-grid"><section><b>Team</b><span>Reo, Alya, Ilica, Haikal, Guy +6</span></section><section><b>Next gate</b><span>Run user-managed technical import, then compare imported IDs, counts, levels, answers and SHA-256 hashes against the released master.</span></section><section><b>Control / risk</b><span>Technical import and post-import verification remain outside the completed education gate.</span></section><section><b>Evidence</b><span>SA-QB7000 Final Release Package Handoff</span></section></div><details><summary>Completed work</summary><ul><li>7,000 active records, unique Question_ID values and row hashes</li><li>Year 1–6, CEFR, language, answer, duplicate, cognitive and media gates passed</li><li>World Map 6,000 and Daily Adventure 1,000 reconciled</li><li>Final release package handed off for user-managed technical import</li></ul></details></div>
-</article></div></section><section class="v172-kanban-column" data-kanban-column="blocked"><header><span>Blocked / Hold</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
-<button aria-expanded="false" class="v172-project-summary">
-<div><span class="v172-project-code">WS</span><div><strong>EKH Worksheet Studio</strong><small>B2-5 hold mode</small></div></div><span class="v172-chevron">⌄</span></button>
+<div><span class="v172-project-code">WS</span><div><strong>Worksheet Studio / Generator</strong><small>Generator checkpoint required</small></div></div><span class="v172-chevron">⌄</span></button>
 <div class="v172-project-meta"><span>48%</span><div class="v172-progress"><i style="width:48%"></i></div><span>Blanc</span></div>
-<div class="v172-project-detail"><p>The control framework has advanced to B2-5, but no authorized pilot items or accepted runnable runtime evidence exist.</p><div class="v172-detail-grid"><section><b>Team</b><span>Blanc, Candice, Kyo, Reo, Alya +7</span></section><section><b>Next gate</b><span>Supply reproducible runtime package, normalized row-level references, exact mapping and an authorized isolated pilot batch before B2-5 item QA can run.</span></section><section><b>Control / risk</b><span>No runnable Worksheet Studio build or validated runtime package was found in the current File Library; B2-6 is not authorized.</span></section><section><b>Evidence</b><span>B2-3R Readiness Control, B2-5 Control Workbook and Team Artifact Inquiry</span></section></div><details><summary>Completed work</summary><ul><li>B2-2 adapter baseline recorded 1,456 accepted references with zero rejected</li><li>Generator registry and ten-pass QA framework established</li><li>Rejection, replacement, claim-control and subject-review rules encoded</li><li>Production import and uncontrolled generation remain blocked</li></ul></details></div>
-</article></div></section><section class="v172-kanban-column" data-kanban-column="ready"><header><span>Ready to Publish</span><b>0</b></header><div><p class="v172-empty-column">No projects</p></div></section><section class="v172-kanban-column" data-kanban-column="completed"><header><span>Completed</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
+<div class="v172-project-detail"><p>Coding, stable templates, BM/BI roadmap and reduced dependency on heavy assets still require a formal checkpoint.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Blanc, Candice, Kyo, Nene, Reo, Guy, Haikal</span></section>
+<section><b>Next gate</b><span>Bos and Blanc to close generator blockers and confirm regression testing, stable modules and production-candidate freeze.</span></section>
+<section><b>Control / risk</b><span>No confirmed stable module or production candidate is recorded in the report.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>Generator work remains active</li><li>BM and BI roadmap requirement recorded</li></ul></details></div></article></div></section><section class="v172-kanban-column" data-kanban-column="ready"><header><span>Ready to Publish</span><b>0</b></header><div><p class="v172-empty-column">No projects</p></div></section><section class="v172-kanban-column" data-kanban-column="completed"><header><span>Completed</span><b>1</b></header><div><article class="v172-project-card" data-project-card="">
 <button aria-expanded="false" class="v172-project-summary">
 <div><span class="v172-project-code">CE</span><div><strong>Ceritera</strong><small>Closed</small></div></div><span class="v172-chevron">⌄</span></button>
 <div class="v172-project-meta"><span>100%</span><div class="v172-progress"><i style="width:100%"></i></div><span>Oliver</span></div>
-<div class="v172-project-detail"><p>The Ceritera task is formally closed and is no longer an active operational blocker.</p><div class="v172-detail-grid"><section><b>Team</b><span>Oliver, Kyo</span></section><section><b>Next gate</b><span>Reopen only when a reproducible new bug or feature request is recorded.</span></section><section><b>Control / risk</b><span>No active operational risk is recorded after closure.</span></section><section><b>Evidence</b><span>Cuddle Paws and Ceritera Operational Status Reference</span></section></div><details><summary>Completed work</summary><ul><li>Structured import cleanup separates footer/page markers from e-book content</li><li>Mobile, delete, theme and text-visibility fixes were produced</li><li>Project removed from the active blocker list</li></ul></details></div>
-</article></div></section></div><p class="v172-integrity">Recorded portfolio data only. No live staff check-ins are implied.</p></section>
+<div class="v172-project-detail"><p>Ceritera has been formally closed and is no longer an active project or blocker.</p><div class="v172-detail-grid">
+<section><b>Team</b><span>Oliver, Kyo</span></section>
+<section><b>Next gate</b><span>Reopen only when a new reproducible request is approved.</span></section>
+<section><b>Control / risk</b><span>No active risk recorded.</span></section>
+<section><b>Evidence</b><span>Laporan Progress Semua Ahli Pasukan, 29 Julai 2026</span></section>
+</div><details><summary>Completed work</summary><ul><li>Application task formally closed</li></ul></details></div></article></div></section></div>
+<p class="v172-integrity">Source: Laporan Progress Semua Ahli Pasukan, 29 Julai 2026. Recorded status only; no direct live staff check-in is implied.</p>
+</section>
+
 <!-- TASKS -->
 <section class="view colour-page" id="tasks"><header class="v172-page-head"><div><span class="section-kicker">TIME-BASED WORK</span><h2>Task Calendar</h2><p>See workload by day, category and urgency without reading a long board.</p></div><div class="v172-view-actions"><button class="secondary-button">Today</button><button class="primary-button" id="openSupabaseActivityModalFromCalendar">＋ Add task</button></div></header><div class="v172-calendar-toolbar"><div class="v172-period-nav"><button>‹</button><strong>27 July – 2 August 2026</strong><button>›</button></div><div class="v172-legend"><span class="planned">Planned</span><span class="review">Review / QA</span><span class="approval">Approval</span><span class="completed">Completed</span><span class="blocked">Blocked</span></div></div><div class="v172-week-calendar"><section class="v172-cal-day"><header><span>Mon</span><b>27</b></header><div><button class="v172-cal-event planned"><time>09:00</time><strong>Review launch messaging</strong><small>Cuddle Paws</small></button></div></section><section class="v172-cal-day"><header><span>Tue</span><b>28</b></header><div><button class="v172-cal-event review"><time>14:00</time><strong>Validate handoff evidence</strong><small>Smart Adventure</small></button></div></section><section class="v172-cal-day"><header><span>Wed</span><b>29</b></header><div><button class="v172-cal-event approval"><time>10:00</time><strong>EKH OS design council</strong><small>EKH OS</small></button><button class="v172-cal-event planned"><time>15:00</time><strong>Calendar and Kanban build</strong><small>EKH OS</small></button></div></section><section class="v172-cal-day"><header><span>Thu</span><b>30</b></header><div><button class="v172-cal-event review"><time>09:30</time><strong>Year 1 isolated intake</strong><small>Worksheet Studio</small></button><button class="v172-cal-event approval"><time>14:00</time><strong>Owner approval checkpoint</strong><small>Mia Queue</small></button></div></section><section class="v172-cal-day"><header><span>Fri</span><b>31</b></header><div><button class="v172-cal-event review"><time>11:00</time><strong>Kyo regression review</strong><small>EKH OS</small></button><button class="v172-cal-event completed"><time>16:00</time><strong>Publish approved update</strong><small>EKH OS</small></button></div></section><section class="v172-cal-day"><header><span>Sat</span><b>1</b></header><div><p>No tasks</p></div></section><section class="v172-cal-day"><header><span>Sun</span><b>2</b></header><div><p>No tasks</p></div></section></div><div class="v172-calendar-foot"><span>Drag-and-drop scheduling is planned for a later controlled release.</span><button class="text-button" data-view-target="notifications">Open My Activities →</button></div></section>
 <!-- COMMAND CENTER MIA -->
@@ -1831,7 +1862,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 </div>
 <div class="footer-status">
 <span id="footerActivityStatus"><i></i> Supabase activity reminders waiting</span>
-<span>English UI v1.7.3.1</span>
+<span>English UI v1.7.3.2</span>
 <span id="footerClock">Malaysia time</span>
 </div>
 <div class="footer-actions">

@@ -1,549 +1,158 @@
 {
   "snapshot_date": "2026-07-29",
-  "integrity_note": "Consolidated from recorded chats, project files and handoff artefacts. This is not a live direct check-in with independent staff.",
+  "source": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+  "integrity_note": "Recorded progress only. No claim of direct live staff contact.",
+  "executive_summary": {
+    "closed": [
+      "Coloring Book Vol. 3 development",
+      "Ceritera"
+    ],
+    "active": [
+      "Cuddle Paws promotion",
+      "Smart Adventure",
+      "Question-bank audit",
+      "EKH OS / Command Center",
+      "Website",
+      "Worksheet Studio",
+      "Marketing and content"
+    ],
+    "hold": [
+      "Smart English until Smart Adventure is complete and stable"
+    ],
+    "blockers": [
+      "7,000-question bank not import-ready",
+      "Hosting, DNS and SSL still require final verification"
+    ]
+  },
   "projects": [
     {
-      "id": "ekh-os",
-      "code": "OS",
-      "name": "EKH OS & Staff Drive",
-      "division": "Technology & Operations",
-      "status": "ACTIVE",
-      "status_label": "Operational foundation",
-      "owners": [
-        "Candice",
-        "Mia",
-        "Kyo",
-        "Baran",
-        "Xion"
-      ],
-      "summary": "Neumorphic Command Centre, CEO schedule reminders and a private Supabase Staff Drive are operational in the current build.",
-      "metrics": [
-        "v1.3.3 baseline",
-        "30 staff folders",
-        "Private RLS storage"
-      ],
-      "completed": [
-        "Supabase Project connection and owner Auth verified",
-        "Private bucket, RLS and wildcard owner access configured",
-        "Upload, download, archive and file-access diagnostics implemented",
-        "CEO Operating Schedule reminders and sticky Staff Drive completed"
-      ],
-      "next": "Move the standalone build into controlled source/deployment, complete environment separation, production audit logging and final RBAC hardening.",
-      "risk": "Browser reminders still require EKH OS to remain open; production deployment evidence is not yet recorded.",
-      "evidence": "EKH OS v1.3.3 operational build and current conversation"
-    },
-    {
-      "id": "sa-qb7000",
-      "code": "SA",
-      "name": "Smart Adventure / SA-QB7000",
-      "division": "Education & Product",
-      "status": "TECHNICAL_PENDING",
-      "status_label": "Education release complete",
-      "owners": [
-        "Reo",
-        "Alya",
-        "Ilica",
-        "Haikal",
-        "Guy",
-        "Mario",
-        "Kamal",
-        "Kyo",
-        "Jeff",
-        "Baran",
-        "Candice"
-      ],
-      "summary": "The education-approved 7,000-question master and controlled release package have completed all ten education gates.",
-      "metrics": [
-        "7,000 approved",
-        "10/10 QA passes",
-        "6,000 + 1,000 bank split"
-      ],
-      "completed": [
-        "7,000 active records, unique Question_ID values and row hashes",
-        "Year 1–6, CEFR, language, answer, duplicate, cognitive and media gates passed",
-        "World Map 6,000 and Daily Adventure 1,000 reconciled",
-        "Final release package handed off for user-managed technical import"
-      ],
-      "next": "Run user-managed technical import, then compare imported IDs, counts, levels, answers and SHA-256 hashes against the released master.",
-      "risk": "Technical import and post-import verification remain outside the completed education gate.",
-      "evidence": "SA-QB7000 Final Release Package Handoff"
-    },
-    {
-      "id": "worksheet-studio",
-      "code": "WS",
-      "name": "EKH Worksheet Studio",
-      "division": "Education Technology",
-      "status": "CONTROLLED_HOLD",
-      "status_label": "B2-5 hold mode",
-      "owners": [
-        "Blanc",
-        "Candice",
-        "Kyo",
-        "Reo",
-        "Alya",
-        "Ilica",
-        "Nene",
-        "Guy",
-        "Haikal",
-        "Mario",
-        "Kamal",
-        "Baran"
-      ],
-      "summary": "The control framework has advanced to B2-5, but no authorized pilot items or accepted runnable runtime evidence exist.",
-      "metrics": [
-        "1,456 B2-2 references",
-        "0 pilot items",
-        "0 items audited"
-      ],
-      "completed": [
-        "B2-2 adapter baseline recorded 1,456 accepted references with zero rejected",
-        "Generator registry and ten-pass QA framework established",
-        "Rejection, replacement, claim-control and subject-review rules encoded",
-        "Production import and uncontrolled generation remain blocked"
-      ],
-      "next": "Supply reproducible runtime package, normalized row-level references, exact mapping and an authorized isolated pilot batch before B2-5 item QA can run.",
-      "risk": "No runnable Worksheet Studio build or validated runtime package was found in the current File Library; B2-6 is not authorized.",
-      "evidence": "B2-3R Readiness Control, B2-5 Control Workbook and Team Artifact Inquiry"
-    },
-    {
-      "id": "cuddle-paws",
       "code": "CP",
-      "name": "Cuddle Paws",
-      "division": "Digital Product & Marketing",
-      "status": "ACTIVE",
-      "status_label": "Product closed; promotion active",
-      "owners": [
-        "Farah",
-        "Kamal",
-        "Mario",
-        "Zack",
-        "Syakila",
-        "Paula",
-        "Tabby"
-      ],
-      "summary": "All three colouring-book volumes are complete. The project is now focused on promotion, buyer tracking and price-stage control.",
-      "metrics": [
-        "3 completed books",
-        "33 illustrations",
-        "5 fixed characters"
-      ],
+      "name": "Cuddle Paws / Coloring Book",
+      "label": "Sales and marketing active",
+      "progress": 78,
+      "owner": "Farah / Kamal / Mario / Zack",
+      "summary": "Vol. 1, Vol. 2 and Vol. 3 are complete. Product development is closed and the current phase is sales and marketing.",
+      "team": "Farah, Kamal, Mario, Zack, Syakila, Paula, Tabby",
+      "next": "Obtain Facebook Pages visuals from Kamal and continue content, promotion and CTA support through Zack and Mario as required.",
+      "risk": "Sales response remains unverified. The permanent price after the first 50 buyers has not been finalised.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
       "completed": [
-        "Happy Cozy Friends, Yummy Snack Time and Little Garden Fun completed",
-        "Milo, Bobi, Pipi, Mimi and Ollie identity system locked",
-        "Product build and Vol. 3 task formally closed",
-        "Current promotional price recorded as RM10.90 for the first 50 buyers"
+        "All three digital colouring books completed",
+        "Vol. 3 development task formally closed",
+        "Promotion set at RM10.90 for the first 50 buyers"
       ],
-      "next": "Continue campaign execution, record buyer count and define one official post-promotion price before changing listings or CTA.",
-      "risk": "Permanent post-promotion pricing is not yet finalized; campaign records indicate no initial sales at the earlier checkpoint.",
-      "evidence": "Cuddle Paws and Ceritera Operational Status Reference"
+      "stage": "in-progress"
     },
     {
-      "id": "content-os",
-      "code": "CO",
-      "name": "Zack Content OS & FB Promotion",
-      "division": "Content & Growth",
-      "status": "ACTIVE",
-      "status_label": "Publishing cycle active",
-      "owners": [
-        "Zack",
-        "Syakila",
-        "Mario",
-        "Guy",
-        "Tabby"
-      ],
-      "summary": "The weekly Threads system has been shortened for a small account and aligned with Cuddle Paws promotion without repeating hooks or CTA.",
-      "metrics": [
-        "35-post master plan",
-        "29 Jul–2 Aug short revision",
-        "3–9 Aug experiment next"
-      ],
+      "code": "SA",
+      "name": "Smart Adventure",
+      "label": "Audit and level freeze pending",
+      "progress": 62,
+      "owner": "Reo / Jeff / Alya / Ilica",
+      "summary": "The 7,000-question bank is not yet import-ready. Education audit, repair and final Level 1–6 freeze remain incomplete.",
+      "team": "Reo, Ilica, Guy, Alya, Jeff, Candice, Kyo, Haikal, Mario",
+      "next": "Complete the full question audit, repair records and approve the final level freeze before any production import.",
+      "risk": "Production import before audit closure could introduce incorrect levels, language defects or unresolved Question_ID issues.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
       "completed": [
-        "27 July–2 August master plan and anti-repetition audit prepared",
-        "29 July–2 August short-copy revision prepared for approximately 190 followers",
-        "Cuddle Paws slots retained while main posts were shortened",
-        "Education-related posts now use Guy review before Zack adaptation"
+        "Development continues under Jeff",
+        "Question integrity and repair queue remain controlled by Alya",
+        "Curriculum and age-level review remain assigned"
       ],
-      "next": "Run the 3–9 August experiment against the 20–27 July baseline and compare hook, style, angle and CTA performance.",
-      "risk": "Some copy remains subject to final Tabby/Syakila approval and should not be treated as automatically published.",
-      "evidence": "Zack Content OS weekly plans and latest Syakila revision"
+      "stage": "review"
     },
     {
-      "id": "ceritera",
-      "code": "CE",
-      "name": "Ceritera",
-      "division": "Web Application",
-      "status": "CLOSED",
-      "status_label": "Closed",
-      "owners": [
-        "Oliver",
-        "Kyo"
-      ],
-      "summary": "The Ceritera task is formally closed and is no longer an active operational blocker.",
-      "metrics": [
-        "Structured Import V2",
-        "Mobile/delete fixes",
-        "Operationally closed"
-      ],
-      "completed": [
-        "Structured import cleanup separates footer/page markers from e-book content",
-        "Mobile, delete, theme and text-visibility fixes were produced",
-        "Project removed from the active blocker list"
-      ],
-      "next": "Reopen only when a reproducible new bug or feature request is recorded.",
-      "risk": "No active operational risk is recorded after closure.",
-      "evidence": "Cuddle Paws and Ceritera Operational Status Reference"
-    },
-    {
-      "id": "ebook",
-      "code": "EB",
-      "name": "Bukan Hero Dalam Poster",
-      "division": "Editorial & Publishing",
-      "status": "FINAL_QA",
-      "status_label": "Final sign-off pending",
-      "owners": [
-        "Love",
-        "Torrie"
-      ],
-      "summary": "The final cleanup build is stable at 52 pages, but a newer formal final LULUS decision has not been recorded after the last language QA cycle.",
-      "metrics": [
-        "52-page stable layout",
-        "Story QA passed",
-        "Production QA passed"
-      ],
-      "completed": [
-        "Full rewrite, dialogue QA, natural-language polish and cleanup completed",
-        "Premarital intimacy and continuity issues corrected",
-        "No cut text, overlap or footer drift reported in the final cleanup render"
-      ],
-      "next": "Run Torrie's final language sign-off and freeze the sales-ready manuscript only after a formal LULUS decision.",
-      "risk": "Last formal QA position required final language polishing; do not mark fully released without final sign-off.",
-      "evidence": "Latest manuscript cleanup and QA records"
-    },
-    {
-      "id": "website",
-      "code": "WEB",
-      "name": "English Kids Hub Website & Access Pages",
-      "division": "Web & Brand",
-      "status": "ACTIVE",
-      "status_label": "Deployment evidence pending",
-      "owners": [
-        "Xion",
-        "Candice",
-        "Kamal",
-        "Haikal"
-      ],
-      "summary": "The domain and design direction exist, but the landing page, product access pages and production infrastructure still need controlled completion.",
-      "metrics": [
-        "Domain purchased",
-        "Landing revamp planned",
-        "Access pages pending"
-      ],
-      "completed": [
-        "Englishkidshub.com acquired through Cloudflare",
-        "Landing-page and Aiden/Lily asset briefs prepared",
-        "Website review identified hero, proof, CTA and visual-density weaknesses"
-      ],
-      "next": "Finish landing/access pages, verify hosting, DNS and SSL, then record deployment and regression evidence.",
-      "risk": "No final hosting, DNS, SSL or production deployment confirmation is recorded.",
-      "evidence": "Mia team progress report and website review"
-    },
-    {
-      "id": "smart-english",
       "code": "SE",
       "name": "Smart English",
-      "division": "Education Product",
-      "status": "HOLD",
-      "status_label": "Dependency hold",
-      "owners": [
-        "Reo",
-        "Jeff",
-        "Candice",
-        "Arian"
-      ],
-      "summary": "Smart English remains on hold until Smart Adventure is stable and technical access/import processes are verified.",
-      "metrics": [
-        "No production release",
-        "Dependent on Smart Adventure",
-        "Audio role retained"
-      ],
+      "label": "Dependency hold",
+      "progress": 30,
+      "owner": "Reo / Jeff / Candice",
+      "summary": "Smart English remains on hold until Smart Adventure is complete, stable and its access/import route is verified.",
+      "team": "Reo, Jeff, Candice, Arian",
+      "next": "Resume only after Smart Adventure stability and import/access verification.",
+      "risk": "Starting now would divide education and technical focus before the primary dependency is closed.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
       "completed": [
-        "Project dependency and hold condition formally recorded"
+        "Hold condition formally recorded"
       ],
-      "next": "Resume only after Smart Adventure technical import, stability and access verification are complete.",
-      "risk": "Starting development before dependency closure would split technical and education focus.",
-      "evidence": "Mia team progress report and operating decisions"
+      "stage": "blocked"
     },
     {
-      "id": "political-media",
-      "code": "PM",
-      "name": "Political & Multimedia Pipeline",
-      "division": "Political Content & Media",
-      "status": "NO_UPDATE",
-      "status_label": "No new recorded update",
-      "owners": [
-        "Wahid",
-        "Clara",
-        "Azizan",
-        "Lei",
-        "Arian",
-        "Zenon"
-      ],
-      "summary": "The specialist roles remain defined, but no new consolidated production or release status is recorded for the latest operating period.",
-      "metrics": [
-        "Separate political context",
-        "Power Sifir prompt prepared",
-        "No new audio release"
-      ],
+      "code": "OS",
+      "name": "EKH OS / Command Center",
+      "label": "Production operating system",
+      "progress": 84,
+      "owner": "Candice / Mia / Kyo",
+      "summary": "EKH OS is the current Single Source of Truth. Secure login, Staff Drive and sign-out have passed owner production smoke testing.",
+      "team": "Candice, Mia, Kyo, Baran, Xion",
+      "next": "Continue data flow, manual/batch import, dashboard, RBAC/RLS, audit trail and controlled release verification.",
+      "risk": "Historical ChatGPT records cannot be transferred automatically; operational records must be entered or imported through controlled processes.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan and EKH OS v1.7.3 production verification",
       "completed": [
-        "Political and EKH work boundaries remain separated",
-        "Power Sifir short product-video prompt was prepared",
-        "Asset transparency and identity-lock standards remain active"
+        "Supabase login operational",
+        "Secure Staff Drive operational",
+        "Owner sign-out verified",
+        "Cloudflare deployment completed"
       ],
-      "next": "Open a project record only when a concrete brief, deliverable, owner and deadline are issued.",
-      "risk": "Do not infer active delivery from role assignment alone.",
-      "evidence": "Latest recorded persona work and Mia team report"
+      "stage": "in-progress"
+    },
+    {
+      "code": "WEB",
+      "name": "Website & Product Pages",
+      "label": "Infrastructure verification pending",
+      "progress": 55,
+      "owner": "Xion / Candice",
+      "summary": "Landing and access pages for Smart Adventure and Smart English remain in progress. The domain has been purchased.",
+      "team": "Xion, Candice, Kamal, Haikal",
+      "next": "Complete landing/access pages and verify hosting, DNS and SSL.",
+      "risk": "Final production hosting, DNS and SSL evidence has not been recorded.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "completed": [
+        "Domain purchased",
+        "Website and product-page scope defined"
+      ],
+      "stage": "in-progress"
+    },
+    {
+      "code": "WS",
+      "name": "Worksheet Studio / Generator",
+      "label": "Generator checkpoint required",
+      "progress": 48,
+      "owner": "Blanc",
+      "summary": "Coding, stable templates, BM/BI roadmap and reduced dependency on heavy assets still require a formal checkpoint.",
+      "team": "Blanc, Candice, Kyo, Nene, Reo, Guy, Haikal",
+      "next": "Bos and Blanc to close generator blockers and confirm regression testing, stable modules and production-candidate freeze.",
+      "risk": "No confirmed stable module or production candidate is recorded in the report.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "completed": [
+        "Generator work remains active",
+        "BM and BI roadmap requirement recorded"
+      ],
+      "stage": "blocked"
+    },
+    {
+      "code": "CE",
+      "name": "Ceritera",
+      "label": "Closed",
+      "progress": 100,
+      "owner": "Oliver",
+      "summary": "Ceritera has been formally closed and is no longer an active project or blocker.",
+      "team": "Oliver, Kyo",
+      "next": "Reopen only when a new reproducible request is approved.",
+      "risk": "No active risk recorded.",
+      "evidence": "Laporan Progress Semua Ahli Pasukan, 29 Julai 2026",
+      "completed": [
+        "Application task formally closed"
+      ],
+      "stage": "completed"
     }
   ],
-  "team_progress": [
-    {
-      "name": "Azuar Fahmi",
-      "division": "Executive & Operations",
-      "status": "OWNER",
-      "project": "EKH OS / Portfolio",
-      "latest_progress": "Supabase owner access and private Staff Drive setup verified.",
-      "next_action": "Lead technical import decisions and portfolio priorities."
-    },
-    {
-      "name": "Mia",
-      "division": "Executive & Operations",
-      "status": "ACTIVE",
-      "project": "Operations",
-      "latest_progress": "CEO schedule, team reporting and reminder workflow prepared.",
-      "next_action": "Maintain recorded status cadence and decision follow-up."
-    },
-    {
-      "name": "Candice",
-      "division": "Engineering & Architecture",
-      "status": "ACTIVE",
-      "project": "EKH OS / Smart Adventure / Worksheet Studio",
-      "latest_progress": "EKH OS v1.3.3 and Staff Drive implemented; Smart Adventure architecture boundary passed.",
-      "next_action": "Move EKH OS to controlled deployment and supply Worksheet runtime evidence."
-    },
-    {
-      "name": "Reo",
-      "division": "Education & Research",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio",
-      "latest_progress": "Final education release authority approved all 7,000 Smart Adventure questions.",
-      "next_action": "Approve Worksheet exact references and protect release gates."
-    },
-    {
-      "name": "Jeff",
-      "division": "Engineering & Product",
-      "status": "TECHNICAL_PENDING",
-      "project": "Smart Adventure",
-      "latest_progress": "Import-ready schema/package support completed within the education handoff.",
-      "next_action": "Support user-managed import and post-import verification."
-    },
-    {
-      "name": "Blanc",
-      "division": "Engineering & Product",
-      "status": "CONTROLLED_HOLD",
-      "project": "Worksheet Studio",
-      "latest_progress": "B2-5 framework exists, but zero pilot items were available for QA.",
-      "next_action": "Provide runnable build, runtime evidence and authorized pilot batch."
-    },
-    {
-      "name": "Kyo",
-      "division": "Engineering & QA",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio / EKH OS",
-      "latest_progress": "Smart Adventure integrity and row-hash verification passed; file-access diagnostics completed.",
-      "next_action": "Validate Worksheet runtime and later post-import Smart Adventure integrity."
-    },
-    {
-      "name": "Baran",
-      "division": "Engineering & Infrastructure",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio / EKH OS",
-      "latest_progress": "Smart Adventure export/package reconciliation passed; Supabase storage setup active.",
-      "next_action": "Provide isolated logs, backup and rollback evidence for Worksheet Studio."
-    },
-    {
-      "name": "Ilica",
-      "division": "Education & Research",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio",
-      "latest_progress": "Smart Adventure Year/CEFR distribution passed with zero mismatch.",
-      "next_action": "Review Worksheet English CS/LS, CEFR and printable eligibility."
-    },
-    {
-      "name": "Nene",
-      "division": "Education & Research",
-      "status": "ACTIVE",
-      "project": "Worksheet Studio",
-      "latest_progress": "BM curriculum reviewer assigned; exact BM mapping remains pending.",
-      "next_action": "Validate BM SK/SP and Malaysian classroom terminology."
-    },
-    {
-      "name": "Guy",
-      "division": "Education & Research",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio / Content OS",
-      "latest_progress": "Smart Adventure cognitive gate passed; education-content review workflow remains active.",
-      "next_action": "Approve Worksheet age/cognitive suitability and review education posts."
-    },
-    {
-      "name": "Alya",
-      "division": "Education & QA",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio",
-      "latest_progress": "7,000 IDs, sequence, hashes and provenance controls passed.",
-      "next_action": "Supply normalized Worksheet reference export and batch/ID controls."
-    },
-    {
-      "name": "Haikal",
-      "division": "Language & Editorial",
-      "status": "ACTIVE",
-      "project": "Smart Adventure / Worksheet Studio",
-      "latest_progress": "Smart Adventure stems, options and answers passed final language gate.",
-      "next_action": "Complete Worksheet BM/EN semantic and terminology review."
-    },
-    {
-      "name": "Syakila",
-      "division": "Marketing & Language",
-      "status": "ACTIVE",
-      "project": "Zack Content OS",
-      "latest_progress": "29 July–2 August posts shortened for a small account and natural BM style.",
-      "next_action": "Continue short-copy polish and anti-fatigue review."
-    },
-    {
-      "name": "Mario",
-      "division": "Marketing & Growth",
-      "status": "ACTIVE",
-      "project": "Cuddle Paws / Smart Adventure",
-      "latest_progress": "Smart Adventure uniqueness gate passed; Cuddle Paws promotion remains active.",
-      "next_action": "Track first 50 buyers and enforce one approved price stage."
-    },
-    {
-      "name": "Zack",
-      "division": "Marketing & Content",
-      "status": "ACTIVE",
-      "project": "Zack Content OS / Cuddle Paws",
-      "latest_progress": "Weekly posting plan and anti-repetition structure prepared.",
-      "next_action": "Run and review the 3–9 August experiment."
-    },
-    {
-      "name": "Paula",
-      "division": "Marketing & Research",
-      "status": "ACTIVE",
-      "project": "Cuddle Paws",
-      "latest_progress": "Positioning and staged-promotion research completed.",
-      "next_action": "Produce post-launch buyer/market findings when data exists."
-    },
-    {
-      "name": "Tabby",
-      "division": "Marketing & QA",
-      "status": "ACTIVE",
-      "project": "Content & Copy QA",
-      "latest_progress": "Claim, urgency and CTA guardrails remain active.",
-      "next_action": "Issue final copy approval without false urgency or overclaim."
-    },
-    {
-      "name": "Kamal",
-      "division": "Design & Creative",
-      "status": "ACTIVE",
-      "project": "Cuddle Paws / Smart Adventure / Website",
-      "latest_progress": "Smart Adventure media closure passed; Cuddle Paws visual production completed.",
-      "next_action": "Prepare current FB visuals and landing-page brand assets."
-    },
-    {
-      "name": "Farah",
-      "division": "Design & Creative",
-      "status": "COMPLETE",
-      "project": "Cuddle Paws",
-      "latest_progress": "All three volumes and the five-character visual identity are complete.",
-      "next_action": "Maintain identity consistency for future campaign assets."
-    },
-    {
-      "name": "Clara",
-      "division": "Design & Creative",
-      "status": "NO_UPDATE",
-      "project": "Political Design",
-      "latest_progress": "No new political visual deliverable is recorded.",
-      "next_action": "Wait for a defined political design brief."
-    },
-    {
-      "name": "Zenon",
-      "division": "Design & Assets",
-      "status": "NO_UPDATE",
-      "project": "Digital Assets",
-      "latest_progress": "True-alpha transparency and identity-lock standards remain in force.",
-      "next_action": "Create assets only against an approved project brief."
-    },
-    {
-      "name": "Lei",
-      "division": "Media & Video",
-      "status": "READY",
-      "project": "Power Sifir / Product Video",
-      "latest_progress": "A short tablet-hand product-video prompt was prepared.",
-      "next_action": "Production/export evidence is still required for closure."
-    },
-    {
-      "name": "Arian",
-      "division": "Media & Audio",
-      "status": "NO_UPDATE",
-      "project": "English Kids Hub Audio",
-      "latest_progress": "Audio responsibility remains assigned; no new sound QA report is recorded.",
-      "next_action": "Begin audio QA when an application build is supplied."
-    },
-    {
-      "name": "Xion",
-      "division": "Engineering & Web",
-      "status": "ACTIVE",
-      "project": "Website / EKH OS",
-      "latest_progress": "UI/UX and landing-page role remains active; no production deployment evidence recorded.",
-      "next_action": "Complete and verify landing/access deployment."
-    },
-    {
-      "name": "Oliver",
-      "division": "Engineering & Web",
-      "status": "CLOSED",
-      "project": "Ceritera",
-      "latest_progress": "Ceritera is formally closed after the structured import and UI fixes.",
-      "next_action": "Reopen only for a reproducible new issue."
-    },
-    {
-      "name": "Love",
-      "division": "Language & Editorial",
-      "status": "ACTIVE",
-      "project": "Bukan Hero Dalam Poster",
-      "latest_progress": "Final manuscript cleanup completed; cookbook project remains paused.",
-      "next_action": "Hold sales freeze until Torrie provides final sign-off."
-    },
-    {
-      "name": "Torrie",
-      "division": "Language & Editorial",
-      "status": "FINAL_QA",
-      "project": "Bukan Hero Dalam Poster",
-      "latest_progress": "Last formal decision required final language polishing; no newer formal LULUS recorded.",
-      "next_action": "Run final QA and issue LULUS or a precise repair list."
-    },
-    {
-      "name": "Azizan",
-      "division": "Political Content",
-      "status": "NO_UPDATE",
-      "project": "Political Video",
-      "latest_progress": "No new political video output is recorded in the latest operating period.",
-      "next_action": "Await a separate political-content brief."
-    },
-    {
-      "name": "Wahid",
-      "division": "Political Content",
-      "status": "NO_UPDATE",
-      "project": "Political Analysis",
-      "latest_progress": "No new political report or article is recorded in the latest operating period.",
-      "next_action": "Resume only when the next political analysis brief is issued."
-    }
+  "priority_actions": [
+    "Kamal: prepare Facebook Pages visuals",
+    "Reo: complete question audit and final level freeze",
+    "Jeff: report Smart Adventure runtime, bugs and dependencies",
+    "Blanc: close generator blockers and confirm stable modules",
+    "Candice: continue EKH OS data, access and technical controls",
+    "Zack and Mario: activate when content, campaign or pricing work is required"
   ]
 }
