@@ -348,15 +348,18 @@
     "production_verification": "pending GitHub Actions and live smoke test"
   },
   "ui_release": {
-    "version": "v1.9.1",
-    "name": "Organisation Centred Text",
-    "base_design": "Interactive Overview",
+    "version": "v1.10.1",
+    "name": "Readable Typography & Contrast",
+    "base_architecture": "Dropdown Page Architecture",
     "changes": [
-      "Centred Organisation Chart page heading and governance note",
-      "Centred leadership and director cards",
-      "Centred department headers, lead labels and staff cards",
-      "Centred organisation search controls and department tabs",
-      "Centred operating principles, staff register and member drawer"
+      "Larger system-wide typography",
+      "Clearer system font stack",
+      "Stronger text and muted-text contrast",
+      "Off-white application background",
+      "White cards separated by borders and controlled shadows",
+      "Wider sidebar and larger dropdown navigation",
+      "Larger tables, forms, project cards, organisation cards and drawers",
+      "Responsive typography retained"
     ],
     "backend_change": false
   },
