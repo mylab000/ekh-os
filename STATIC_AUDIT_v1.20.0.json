@@ -1,0 +1,168 @@
+{
+  "release": "v1.20.0",
+  "build_id": "EKH-OS-AFP-20260731-001",
+  "date": "2026-07-31",
+  "source_release": "v1.19.0",
+  "scope": "Activity Focus Planner",
+  "views": [
+    "week",
+    "month",
+    "agenda",
+    "live"
+  ],
+  "data_sources": {
+    "reference_schedule": "Existing embedded July–August 2026 schedule",
+    "live_queue": "Mirror of existing authenticated Supabase activity DOM",
+    "second_database_created": false
+  },
+  "local_storage": {
+    "selected_tab": "ekh_activity_tab_v120",
+    "hero_collapsed": "ekh_activity_hero_v120"
+  },
+  "structure_checks": {
+    "activity_focus_planner": true,
+    "four_views": true,
+    "four_panels": true,
+    "existing_activity_ids_preserved": true,
+    "live_metrics": true,
+    "reference_data_disclosed": true,
+    "live_queue_mirror": true,
+    "existing_action_proxy": true,
+    "hidden_status_filters_added": true,
+    "project_priority_proxy": true,
+    "connection_mirror": true,
+    "keyboard_tab_navigation": true,
+    "keyboard_search": true,
+    "hero_collapse": true,
+    "focus_mode_integration": true,
+    "contained_scroll": true,
+    "responsive": true,
+    "reduced_motion": true,
+    "new_ui_no_text_arrows": true,
+    "duplicate_ids_absent": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 18,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 19,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 20,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 21,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 22,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 23,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no authorised live session or deployment evidence."
+}

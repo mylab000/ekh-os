@@ -1,0 +1,140 @@
+{
+  "release": "v1.18.0",
+  "build_id": "EKH-OS-SDCP-20260731-001",
+  "date": "2026-07-31",
+  "source_release": "v1.17.0",
+  "scope": "Staff Drive Compact Preview",
+  "implementation": "Progressive-disclosure inspector layered over the existing authenticated Storage runtime",
+  "structure_checks": {
+    "compact_workspace": true,
+    "runtime_ids_preserved": true,
+    "file_search": true,
+    "file_sort": true,
+    "visible_count": true,
+    "preview_inspector": true,
+    "metadata_fields": true,
+    "original_details_intercepted": true,
+    "existing_download_proxy": true,
+    "existing_archive_restore_proxy": true,
+    "mobile_drawer": true,
+    "focus_mode": true,
+    "keyboard_search": true,
+    "escape_close": true,
+    "inline_svg": true,
+    "duplicate_ids_absent": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 18,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 19,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 20,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 21,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no authorised live session or deployment evidence."
+}

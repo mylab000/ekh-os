@@ -1,0 +1,153 @@
+{
+  "release": "v1.17.0",
+  "build_id": "EKH-OS-CWS-20260731-001",
+  "date": "2026-07-31",
+  "source_release": "v1.16.0",
+  "scope": "Progressive disclosure and reduced vertical scrolling",
+  "focus_view": {
+    "local_storage_key": "ekh_compact_workspace_v117",
+    "keyboard_shortcut": "Ctrl/Command + Shift + F",
+    "affected_workspaces": [
+      "Command Center",
+      "Projects",
+      "Mia Queue",
+      "Organisation"
+    ]
+  },
+  "organisation_tabs": [
+    "leadership",
+    "departments",
+    "people"
+  ],
+  "structure_checks": {
+    "focus_view_control": true,
+    "focus_view_persistence": true,
+    "organisation_sticky_tabs": true,
+    "leadership_tab": true,
+    "departments_tab": true,
+    "people_tab": true,
+    "organisation_progressive_disclosure": true,
+    "hero_collapse": true,
+    "metric_navigation": true,
+    "project_focus_rules": true,
+    "mia_focus_rules": true,
+    "command_focus_rules": true,
+    "scroll_containment": true,
+    "keyboard_shortcut": true,
+    "inline_svg": true,
+    "mobile_breakpoint": true,
+    "small_mobile_breakpoint": true,
+    "reduced_motion": true,
+    "duplicate_ids_absent": true,
+    "department_pages_preserved": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 18,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 19,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 20,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence."
+}
