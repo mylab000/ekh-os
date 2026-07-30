@@ -216,7 +216,7 @@
     }
   ],
   "organisation_chart": {
-    "version": "V2 Audit Lengkap",
+    "version": "V2 Complete Audit",
     "date": "2026-07-30",
     "founder_ceo": "Azuar Fahmi",
     "coo": "Mia",
@@ -261,6 +261,10 @@
       "Arden",
       "Vera"
     ],
-    "governance_note": "Cross-functional placement does not change reporting line or final authority."
+    "governance_note": "Cross-functional placement does not change the established reporting line or final authority.",
+    "language": "English",
+    "translation_review": "Haikal language-QA standard",
+    "title": "Team Organisation Chart",
+    "date_label": "30 July 2026"
   }
 }
