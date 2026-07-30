@@ -50,8 +50,8 @@
       "owner": "Kamal / Zack / Mario",
       "summary": "All three colouring-book volumes are complete. The current operational phase is promotion and sales, including the RM10.90 offer for the first 50 buyers.",
       "team": "Kamal, Zack, Mario, Farah, Syakila, Tabby",
-      "next": "Continue promotion, monitor buyer count and prepare the staged price adjustment after the first 50 buyers.",
-      "risk": "Marketing output still depends on Kamal's Facebook Pages visual assets. The next pricing tier remains an owner decision.",
+      "next": "Monitor the first-50-buyer quota, complete promotional assets and prepare the next approved pricing phase.",
+      "risk": "Commercial execution depends on complete assets, verified sales monitoring and an owner decision on the price step.",
       "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
         "Coloring Book Vol. 1, Vol. 2 and Vol. 3 completed",
@@ -68,8 +68,8 @@
       "owner": "Reo / Jeff",
       "summary": "Reo continues the question-bank audit while Jeff continues application development. The formal audit handoff to Jeff remains the immediate release dependency.",
       "team": "Reo, Jeff, Ilica, Guy, Alya, Candice, Kyo, Haikal",
-      "next": "Set an official audit handoff date, then confirm the latest runtime, integration and technical progress with Jeff.",
-      "risk": "Jeff's integration and build progress depends on the completeness and quality of Reo's audited content.",
+      "next": "Complete the remaining audit, set the official final-content handoff date and provide a traceable package to Jeff.",
+      "risk": "Application integration depends on complete audited content; production closure requires defined technical criteria and evidence.",
       "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
         "Application development remains active",
@@ -133,17 +133,17 @@
     {
       "code": "WS",
       "name": "Worksheet Studio / Generator",
-      "label": "Development continues under Blanc",
+      "label": "Source-data repack and verification active",
       "progress": 50,
       "owner": "Blanc",
-      "summary": "Blanc continues Worksheet Studio and generator development. The priority order after the current task remains an owner decision.",
+      "summary": "Blanc continues EKH Worksheet Studio development and source-data repack before normalisation and verification. The B2 series is administratively closed at pre-runtime stage and is not technically approved for production.",
       "team": "Blanc, Candice, Kyo, Nene, Reo, Guy, Haikal",
-      "next": "Collect Blanc's latest checkpoint in the same status format used for Smart Adventure and Command Centre.",
-      "risk": "The generator remains dependent on Blanc's development progress and evidence of stable modules.",
+      "next": "Complete source repack, normalisation and row-level verification before any genuine runtime pilot or production consideration.",
+      "risk": "Full production activity remains on hold until genuine runtime testing and validation evidence exists.",
       "evidence": "Ringkasan COO: Progress Projek & Pasukan, 30 Julai 2026",
       "completed": [
-        "Generator development remains active",
-        "No new blocker has been verified in the latest review"
+        "B2 series recorded as controlled administrative pre-runtime closure",
+        "Closure is explicitly not technical production approval"
       ],
       "stage": "in-progress"
     },
@@ -213,6 +213,71 @@
         "Application project formally closed"
       ],
       "stage": "completed"
+    },
+    {
+      "code": "NOVEL-DADL",
+      "name": "Novel — Di Antara Dua Langit",
+      "label": "Final audit passed for PDF production",
+      "progress": 100,
+      "owner": "Love / Torrie",
+      "summary": "The manuscript has passed the final audit for PDF production.",
+      "team": "Love, Torrie",
+      "next": "Proceed to controlled PDF production and reopen only if a production defect is found.",
+      "risk": "PDF production must preserve the approved manuscript and production standards.",
+      "evidence": "COO progress checkpoint, 30 July 2026",
+      "completed": [
+        "Final audit passed for PDF production"
+      ],
+      "stage": "completed"
+    },
+    {
+      "code": "ORG-V2",
+      "name": "Team Organisation Chart V2",
+      "label": "Name audit completed",
+      "progress": 100,
+      "owner": "Mia / Candice",
+      "summary": "The organisation chart was updated with a complete name audit and missing members added.",
+      "team": "Mia, Candice",
+      "next": "Record future role, scope or reporting-line changes in the next controlled version.",
+      "risk": "Cross-functional placement must not be interpreted as a reporting-line change.",
+      "evidence": "COO progress checkpoint, 30 July 2026",
+      "completed": [
+        "Full name audit completed",
+        "Missing members added"
+      ],
+      "stage": "completed"
+    },
+    {
+      "code": "EBOOK-COOK",
+      "name": "Cookbook E-book Project",
+      "label": "Deferred",
+      "progress": 0,
+      "owner": "Love / Torrie",
+      "summary": "The cookbook e-book project remains deferred.",
+      "team": "Love, Torrie",
+      "next": "Reopen only after an owner-approved schedule and priority decision.",
+      "risk": "No active execution is authorised while the project remains on hold.",
+      "evidence": "COO progress checkpoint, 30 July 2026",
+      "completed": [
+        "Hold condition recorded"
+      ],
+      "stage": "blocked"
+    },
+    {
+      "code": "NEW-ROLES",
+      "name": "Five New Team Roles",
+      "label": "Official assignments not activated",
+      "progress": 0,
+      "owner": "Mia / Reo / Candice",
+      "summary": "The official operating scope for the five new team members has not yet been recorded as active assignments.",
+      "team": "Nara, Elio, Luna, Arden, Vera",
+      "next": "Approve role assignments, reporting owners, evidence locations and activation dates.",
+      "risk": "Role definitions must not be treated as active assignments without a formal operating record.",
+      "evidence": "COO progress checkpoint, 30 July 2026",
+      "completed": [
+        "Names recorded in Team Organisation Chart V2"
+      ],
+      "stage": "blocked"
     }
   ],
   "organisation_chart": {
@@ -283,16 +348,118 @@
     "production_verification": "pending GitHub Actions and live smoke test"
   },
   "ui_release": {
-    "version": "v1.8.1",
-    "name": "Soft Professional UI",
-    "design_intent": "Premium dashboard polish using original EKH layout, palette and content.",
-    "reference_principles": [
-      "consistent spacing",
-      "soft controlled shadows",
-      "clear card hierarchy",
-      "polished sidebar",
-      "responsive dashboard proportions"
+    "version": "v1.8.3",
+    "name": "COO Progress Checkpoint",
+    "base_design": "Soft Professional UI",
+    "scope": "Projects page progress board and export snapshot",
+    "backend_change": false
+  },
+  "snapshot_time_local": "17:48",
+  "timezone": "Asia/Kuala_Lumpur",
+  "checkpoint_status": "NO_NEW_VERIFIED_DEVELOPMENT",
+  "coo_checkpoint": {
+    "completed": [
+      {
+        "item": "Cuddle Paws — Coloring Book Vol. 3",
+        "status": "Fully completed and closed"
+      },
+      {
+        "item": "Ceritera",
+        "status": "Closed as a completed project"
+      },
+      {
+        "item": "Novel — Di Antara Dua Langit",
+        "status": "Passed final audit for PDF production"
+      },
+      {
+        "item": "EKH Worksheet Studio — B2 Series",
+        "status": "Controlled administrative pre-runtime closure; not technical production approval"
+      },
+      {
+        "item": "Team Organisation Chart V2",
+        "status": "Updated with full name audit and missing members added"
+      }
     ],
-    "copied_template_code": false
+    "in_progress": [
+      {
+        "owner": "Reo",
+        "work": "English Adventure question-bank audit, improvement and final handoff preparation"
+      },
+      {
+        "owner": "Alya",
+        "work": "7,000-question audit management, Question_ID integrity and audit-state control"
+      },
+      {
+        "owner": "Jeff",
+        "work": "Smart Adventure development, staging, runtime adapter and content integration"
+      },
+      {
+        "owner": "Blanc",
+        "work": "Worksheet Studio development and source-data repack before normalisation and verification"
+      },
+      {
+        "owner": "Candice",
+        "work": "Command Centre coordination and operational documentation"
+      },
+      {
+        "owner": "Baran",
+        "work": "SA-QB7000 DBA/DevOps preparation: backup, restore, staging and production-import gate"
+      },
+      {
+        "owner": "Kamal",
+        "work": "Project visual assets and Facebook Pages assets"
+      },
+      {
+        "owner": "Mario, Zack and Syakila",
+        "work": "Marketing content, copywriting and social-media strategy"
+      },
+      {
+        "owner": "Paula",
+        "work": "Digital-product market research, competitor analysis, positioning and pricing strategy"
+      },
+      {
+        "owner": "Love and Torrie",
+        "work": "Development and QA of active e-book manuscripts"
+      },
+      {
+        "owner": "Zenon and Farah",
+        "work": "Visual-asset identity management and illustration standards"
+      },
+      {
+        "owner": "Xion",
+        "work": "Web and landing-page development according to project requirements"
+      },
+      {
+        "owner": "Cuddle Paws promotion",
+        "work": "RM10.90 for the first 50 buyers remains the active plan in the latest record"
+      }
+    ],
+    "hold": [
+      "Smart English remains deferred until Smart Adventure priorities are completed",
+      "Cookbook e-book project remains deferred",
+      "Full EKH Worksheet Studio production activity waits for genuine runtime testing and validation",
+      "Official operating scope for five new members has not been recorded as active assignments"
+    ],
+    "new_blockers": [],
+    "dependencies": [
+      "Smart Adventure integration depends on content that has completed the required audit",
+      "Worksheet Studio requires completion of source-data repack and verification",
+      "SA-QB7000 production import requires all technical conditions and approvals",
+      "Cuddle Paws marketing depends on complete promotional assets and sales-performance monitoring"
+    ],
+    "decisions_required": [
+      "Official date for final content handoff to Jeff",
+      "Development priority between Smart Adventure and Worksheet Studio",
+      "Cuddle Paws price increase after the promotional quota is filled",
+      "Official task assignment for the five new team members",
+      "Reopening schedule for projects currently on hold",
+      "Technical closure criteria for Smart Adventure and Worksheet Studio before Completed status"
+    ],
+    "next_three_actions": [
+      "Complete the remaining content audit and prepare a full handoff package for Jeff",
+      "Review Smart Adventure, Worksheet Studio, Command Centre and SA-QB7000 against available technical evidence before changing status",
+      "Coordinate the Cuddle Paws commercial plan, including quota monitoring and preparation for the next pricing phase"
+    ],
+    "summary": "No new development is recorded for this checkpoint. All projects and team members retain their last verified status until new evidence or a formal decision is recorded."
   }
 }
