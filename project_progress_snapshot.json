@@ -265,6 +265,12 @@
     "language": "English",
     "translation_review": "Haikal language-QA standard",
     "title": "Team Organisation Chart",
-    "date_label": "30 July 2026"
+    "date_label": "30 July 2026",
+    "translation_status": "FULL ENGLISH UI AUDIT PASSED",
+    "translation_hotfix_version": "v1.7.3.7",
+    "department_titles_english": true,
+    "role_titles_english": true,
+    "focus_descriptions_english": true,
+    "review_standard": "Haikal language-QA terminology and naturalness review"
   }
 }
