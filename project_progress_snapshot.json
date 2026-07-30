@@ -214,5 +214,53 @@
       ],
       "stage": "completed"
     }
-  ]
+  ],
+  "organisation_chart": {
+    "version": "V2 Audit Lengkap",
+    "date": "2026-07-30",
+    "founder_ceo": "Azuar Fahmi",
+    "coo": "Mia",
+    "directors": [
+      {
+        "name": "Candice",
+        "role": "Technology Director",
+        "focus": "Technology & Command Center"
+      },
+      {
+        "name": "Kamal",
+        "role": "Creative Director",
+        "focus": "Creative & visual"
+      },
+      {
+        "name": "Reo",
+        "role": "Education Director",
+        "focus": "Education & release authority"
+      },
+      {
+        "name": "Mario",
+        "role": "Marketing Director",
+        "focus": "Marketing & sales"
+      },
+      {
+        "name": "Wahid",
+        "role": "Political Director",
+        "focus": "Political analysis"
+      },
+      {
+        "name": "Arian",
+        "role": "Multimedia Director",
+        "focus": "Audio & multimedia"
+      }
+    ],
+    "department_count": 10,
+    "staff_register_count": 35,
+    "new_appointments": [
+      "Nara",
+      "Elio",
+      "Luna",
+      "Arden",
+      "Vera"
+    ],
+    "governance_note": "Cross-functional placement does not change reporting line or final authority."
+  }
 }
