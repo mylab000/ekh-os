@@ -348,10 +348,19 @@
     "production_verification": "pending GitHub Actions and live smoke test"
   },
   "ui_release": {
-    "version": "v1.8.3",
-    "name": "COO Progress Checkpoint",
-    "base_design": "Soft Professional UI",
-    "scope": "Projects page progress board and export snapshot",
+    "version": "v1.9.0",
+    "name": "Interactive Overview",
+    "features": [
+      "Interactive project donut chart",
+      "Horizontal project carousel with searchable filters",
+      "Project detail drawer",
+      "Condensed COO checkpoint with on-demand expansion",
+      "Collapsible full Kanban board",
+      "Functional Month, Week and Agenda activity views",
+      "Department-focused organisation chart tabs",
+      "Team member detail drawer"
+    ],
+    "external_chart_library": false,
     "backend_change": false
   },
   "snapshot_time_local": "17:48",
