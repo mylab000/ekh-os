@@ -1,0 +1,192 @@
+{
+  "release": "v1.11.0",
+  "build_id": "EKH-OS-MCF-20260730-001",
+  "date": "2026-07-30",
+  "source_release": "v1.10.1",
+  "source_findings": {
+    "html_bytes": 546841,
+    "style_blocks": 19,
+    "script_blocks_total": 17,
+    "inline_script_blocks": 14,
+    "view_sections": 36,
+    "font_size_declarations_under_12px": 538,
+    "under_12px_distribution": {
+      "6.0": 7,
+      "6.5": 3,
+      "7.0": 72,
+      "7.5": 7,
+      "7.7": 1,
+      "7.8": 2,
+      "8.0": 138,
+      "8.5": 3,
+      "9.0": 118,
+      "10.0": 90,
+      "10.5": 13,
+      "11.0": 79,
+      "11.5": 5
+    },
+    "font_families_loaded_before": [
+      "Inter",
+      "Manrope",
+      "Plus Jakarta Sans",
+      "Sora"
+    ],
+    "missing_404_in_source_package": true,
+    "duplicate_dom_ids": {}
+  },
+  "changes": [
+    "Locked Space Grotesk for display headings.",
+    "Locked Source Sans 3 for body copy and controls.",
+    "Locked IBM Plex Mono for metadata.",
+    "Removed font selector while preserving colour and mode.",
+    "Added living canvas, stronger sidebar, active states and controlled motion.",
+    "Raised critical text sizes, especially Staff Drive.",
+    "Added 404.html expected by deployment workflow."
+  ],
+  "structure_checks": {
+    "mission_css_present": true,
+    "space_grotesk_present": true,
+    "source_sans_present": true,
+    "ibm_plex_present": true,
+    "font_selector_removed": true,
+    "font_locked": true,
+    "theme_selector_preserved": true,
+    "mode_selector_preserved": true,
+    "404_added": true,
+    "operational_snapshot_unchanged": true,
+    "duplicate_ids_absent": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "browser_simulation": [
+    {
+      "case": "desktop",
+      "viewport": "1440x1000",
+      "status": "PASS",
+      "metrics": {
+        "bodyFont": "\"Source Sans 3\", \"Segoe UI\", Arial, sans-serif",
+        "bodyFontSize": "16px",
+        "headingFont": "\"Space Grotesk\", \"Segoe UI\", Arial, sans-serif",
+        "headingSize": "28px",
+        "metadataFont": "\"IBM Plex Mono\", \"Cascadia Mono\", SFMono-Regular, Consolas, monospace",
+        "metadataSize": "12px",
+        "viewportWidth": 1440,
+        "scrollWidth": 1440,
+        "horizontalOverflow": false
+      },
+      "console_error_count": 0,
+      "console_errors": [],
+      "screenshot": "visual_qa/mission_control_desktop_1440x1000.png"
+    },
+    {
+      "case": "tablet",
+      "viewport": "820x1180",
+      "status": "PASS",
+      "metrics": {
+        "bodyFont": "\"Source Sans 3\", \"Segoe UI\", Arial, sans-serif",
+        "bodyFontSize": "16px",
+        "headingFont": "\"Space Grotesk\", \"Segoe UI\", Arial, sans-serif",
+        "headingSize": "23px",
+        "metadataFont": "\"IBM Plex Mono\", \"Cascadia Mono\", SFMono-Regular, Consolas, monospace",
+        "metadataSize": "12px",
+        "viewportWidth": 820,
+        "scrollWidth": 820,
+        "horizontalOverflow": false
+      },
+      "console_error_count": 0,
+      "console_errors": [],
+      "screenshot": "visual_qa/mission_control_tablet_820x1180.png"
+    },
+    {
+      "case": "mobile",
+      "viewport": "390x844",
+      "status": "PASS",
+      "metrics": {
+        "bodyFont": "\"Source Sans 3\", \"Segoe UI\", Arial, sans-serif",
+        "bodyFontSize": "15px",
+        "headingFont": "\"Space Grotesk\", \"Segoe UI\", Arial, sans-serif",
+        "headingSize": "23px",
+        "metadataFont": "\"IBM Plex Mono\", \"Cascadia Mono\", SFMono-Regular, Consolas, monospace",
+        "metadataSize": "12px",
+        "viewportWidth": 390,
+        "scrollWidth": 390,
+        "horizontalOverflow": false
+      },
+      "console_error_count": 0,
+      "console_errors": [],
+      "screenshot": "visual_qa/mission_control_mobile_390x844.png"
+    }
+  ],
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence.",
+  "operational_data_changed": false
+}
