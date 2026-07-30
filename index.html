@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="EKH OS v1.7.3.7 theme selector, typography controls, hybrid card system, secure Staff Drive and activities hotfix" name="description"/>
+<meta content="EKH OS v1.8.1 editorial operations interface, secure Staff Drive, organisation chart and activity system" name="description"/>
 <meta content="#17153b" name="theme-color"/>
-<title>EKH OS v1.7.3.7 — Aurora Control System</title>
+<title>EKH OS v1.8.1 — Soft Professional UI</title>
 <style>
 :root{
   --bg:#f4f6fb;
@@ -1176,7 +1176,7 @@ body{background:var(--bg);font-size:14px}
 }
 </style>
 <style>
-/* EKH OS v1.7.3.7 — SA-QB7000 Role Charter (retains v1.7.2 Calendar & Kanban) */
+/* EKH OS v1.8.1 — SA-QB7000 Role Charter (retains v1.7.2 Calendar & Kanban) */
 :root{--v172-border:#e4e7ec;--v172-bg:#f6f7f9;--v172-text:#172033;--v172-muted:#667085;--v172-blue:#5268ff;--v172-green:#168a5b;--v172-amber:#c97a18;--v172-red:#c94156;--v172-purple:#7b61d1;--v172-teal:#208b8f}
 body{background:var(--v172-bg)}.sidebar{width:296px;padding:18px 16px}.main-shell{margin-left:296px;width:calc(100% - 296px)}.workspace-switcher{margin-bottom:14px}.main-nav{gap:2px}.nav-label{padding:12px 12px 6px}.nav-item{height:40px;border-radius:9px}.nav-item.active{background:#26344b;box-shadow:inset 3px 0 0 #c8ff3d}.page-content{max-width:none;padding:22px 24px 48px}.colour-page{background:transparent!important}.v172-page-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:16px}.v172-page-head h2{font-size:26px;margin:4px 0}.v172-page-head p{margin:0;color:var(--v172-muted)}.v172-view-actions{display:flex;gap:8px}
 .v172-kanban-toolbar,.v172-calendar-toolbar,.v172-activity-tabs{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#fff;border:1px solid var(--v172-border);border-radius:12px;padding:10px 12px;margin-bottom:12px}.v172-kanban-toolbar>div,.v172-activity-tabs{justify-content:flex-start}.v172-kanban-toolbar button,.v172-activity-tabs button{border:0;background:transparent;padding:8px 11px;border-radius:8px;color:var(--v172-muted)}.v172-kanban-toolbar button.active,.v172-activity-tabs button.active{background:#eef1ff;color:#4255d1;font-weight:800}.v172-kanban-toolbar label{font-size:10px;color:var(--v172-muted)}.v172-kanban-toolbar input{margin-left:8px;border:1px solid var(--v172-border);border-radius:8px;padding:8px 10px}
@@ -1217,7 +1217,7 @@ body.auth-ready #ekhAuthGate{display:none!important}
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Sora:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style id="ekh-v1731-ui-system">
-/* EKH OS v1.7.3.7 — Theme, typography, card system and activities hotfix */
+/* EKH OS v1.8.1 — Theme, typography, card system and activities hotfix */
 :root{
   --ekh-font-heading:'Plus Jakarta Sans',Inter,system-ui,sans-serif;
   --ekh-font-body:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -1312,7 +1312,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 @media(max-width:760px){.profile-text{display:none}.profile-button{padding:3px!important}.topbar-actions{gap:5px}.topbar-actions #createButton,.topbar-actions .palette-button{display:none}.v172-live-activities .supabase-activity-card,.v172-live-activities .activity-card{grid-template-columns:38px minmax(0,1fr)!important}.v172-live-activities .activity-due-block,.v172-live-activities .activity-card-actions{grid-column:2!important}.ekh-control-menu{right:8px!important}.page-content{padding-left:12px!important;padding-right:12px!important}}
 </style>
 <style>
-/* EKH OS v1.7.3.7 — Staff Drive heading glyph repair */
+/* EKH OS v1.8.1 — Staff Drive heading glyph repair */
 .v173-drive-heading h2{
   font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif!important;
   font-feature-settings:"liga" 0,"clig" 0,"calt" 0!important;
@@ -1322,7 +1322,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 }
 </style>
 <style>
-/* EKH OS v1.7.3.7 — Organisation Chart */
+/* EKH OS v1.8.1 — Organisation Chart */
 .organisation-page{--org-violet:#7257c6;--org-cyan:#2b9ba8}
 .org-governance-note{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;padding:14px 16px;margin-bottom:16px;border:1px solid rgba(114,87,198,.22);border-radius:16px;background:linear-gradient(120deg,rgba(114,87,198,.10),rgba(43,155,168,.08))}
 .org-governance-note>span{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:var(--panel);box-shadow:var(--neo-raised-small);font-weight:900;color:var(--org-violet)}
@@ -1350,6 +1350,338 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 @media(max-width:1100px){.org-director-grid{grid-template-columns:repeat(2,1fr)}.org-summary-grid{grid-template-columns:repeat(2,1fr)}.org-department-grid{grid-template-columns:1fr}}
 @media(max-width:760px){.org-toolbar{align-items:stretch;flex-direction:column}.org-toolbar input{width:100%;margin:6px 0 0}.org-director-grid,.org-summary-grid,.org-principles-grid{grid-template-columns:1fr}.org-person{min-width:0;width:100%}.org-department-card>header{flex-direction:column}.org-lead-chip{white-space:normal}}
 </style>
+<style id="ekh-v180-editorial-system">
+/* EKH OS v1.8.1 — Soft Professional UI
+   Soft UI spacing discipline + purpose-built EKH editorial composition. */
+:root{
+  --eos-ink:#1c2434;
+  --eos-paper:#f4f1eb;
+  --eos-rule:color-mix(in srgb,var(--ekh-border) 82%,#b8b2a8);
+  --eos-sidebar:#171d2b;
+  --eos-sidebar-2:#20283a;
+  --eos-accent:var(--ekh-accent);
+  --eos-accent-2:var(--ekh-accent-2);
+  --eos-shadow:0 14px 40px rgba(34,37,53,.07);
+}
+html[data-mode='dark']{--eos-ink:#f4f1fb;--eos-paper:#121019;--eos-rule:var(--ekh-border);--eos-shadow:0 16px 44px rgba(0,0,0,.24)}
+body{background:var(--ekh-page)!important;letter-spacing:-.005em}
+.sidebar{width:276px!important;padding:22px 18px!important;background:linear-gradient(180deg,var(--eos-sidebar),var(--eos-sidebar-2))!important;border-right:1px solid rgba(255,255,255,.06)!important}
+.main-shell{margin-left:276px!important;width:calc(100% - 276px)!important}
+.brand{padding:4px 5px 20px!important;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:16px}
+.brand-mark{width:38px!important;height:38px!important;border-radius:11px!important;background:transparent!important;border:1px solid rgba(255,255,255,.22)!important;box-shadow:none!important;font-size:15px!important}
+.brand-copy strong{font-size:14px!important;letter-spacing:-.02em}.brand-copy span{font-size:8px!important;color:#9ea8ba!important;letter-spacing:.08em;text-transform:uppercase}
+.build-chip{background:rgba(255,255,255,.07)!important;border:1px solid rgba(255,255,255,.08)!important;color:#c8d0de!important;border-radius:6px!important;font-size:7px!important}
+.workspace-switcher{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:9px 5px 15px!important;margin-bottom:5px!important}
+.workspace-icon{border-radius:9px!important;background:rgba(255,255,255,.08)!important;color:#dce2ed!important;box-shadow:none!important}
+.workspace-switcher strong{color:#f7f8fb!important}.workspace-switcher span{color:#8f9aaf!important}
+.nav-label{font-size:7px!important;letter-spacing:.16em!important;color:#6f7c92!important;padding:17px 10px 7px!important}
+.main-nav{gap:1px!important}.nav-item{height:39px!important;border-radius:7px!important;padding:0 10px!important;color:#aeb8c9!important;background:transparent!important;box-shadow:none!important;position:relative}
+.nav-item:hover{background:rgba(255,255,255,.045)!important;color:#fff!important}.nav-item.active{background:rgba(255,255,255,.065)!important;color:#fff!important;box-shadow:none!important}
+.nav-item.active:before{content:'';position:absolute;left:-18px;top:8px;bottom:8px;width:3px;border-radius:0 3px 3px 0;background:var(--eos-accent-2)}
+.nav-icon{width:22px!important;font-size:13px!important;color:inherit!important}.nav-count{border-radius:5px!important;background:rgba(255,255,255,.07)!important;color:#bdc6d5!important}
+.system-health-card{border-radius:9px!important;background:rgba(255,255,255,.045)!important;border:1px solid rgba(255,255,255,.07)!important;box-shadow:none!important}
+.topbar{height:78px!important;padding:0 28px!important;background:color-mix(in srgb,var(--ekh-surface) 94%,transparent)!important;backdrop-filter:blur(16px)!important;border-bottom:1px solid var(--eos-rule)!important;box-shadow:none!important}
+.topbar h1{font-size:18px!important;letter-spacing:-.025em}.breadcrumb{font-size:8px!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+.global-search{height:39px!important;border-radius:9px!important;box-shadow:none!important;background:var(--ekh-surface-2)!important;border:1px solid var(--ekh-border)!important}.global-search kbd{border-radius:4px!important}
+.icon-button,.profile-button,.primary-button,.secondary-button,.small-button{box-shadow:none!important;border-radius:8px!important}.primary-button{background:var(--eos-ink)!important;color:#fff!important}.primary-button:hover{transform:none!important;opacity:.9}.secondary-button{background:var(--ekh-surface)!important}
+.page-content{padding:28px 30px 64px!important;max-width:1680px!important}.section-kicker{font-size:8px!important;letter-spacing:.14em!important;font-weight:850!important}
+.panel,.kpi-card,.cc-zone,.v172-live-activities,.v173-drive-shell,.org-department-card,.org-hierarchy-panel,.org-summary-grid article{border-radius:11px!important;box-shadow:none!important;border-color:var(--eos-rule)!important}
+.attention-strip{border-radius:8px!important;box-shadow:none!important}.status-pill{border-radius:5px!important}
+.v172-page-head h2,.standard-page-heading h2,.organisation-page h2{letter-spacing:-.035em!important}.v172-page-head{border-bottom:1px solid var(--eos-rule);padding-bottom:16px!important}
+
+/* Editorial Command Center */
+.editorial-command{max-width:1480px;margin:0 auto}
+.eos-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;padding:6px 0 20px;border-bottom:1px solid var(--eos-rule)}
+.eos-hero h2{font-size:clamp(30px,3.2vw,49px);line-height:1.01;letter-spacing:-.055em;margin:7px 0 10px;max-width:760px}
+.eos-hero p{margin:0;max-width:650px;color:var(--ekh-muted);font-size:12px;line-height:1.65}
+.eos-date{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center;min-width:205px;padding:12px 0 12px 18px;border-left:1px solid var(--eos-rule)}
+.eos-date .live-dot{width:8px;height:8px}.eos-date strong,.eos-date small{display:block}.eos-date strong{font-size:12px}.eos-date small{font-size:8px;color:var(--ekh-muted);margin-top:3px;text-transform:uppercase;letter-spacing:.08em}
+.eos-signal{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;margin:17px 0;padding:11px 0;border-top:1px solid var(--eos-rule);border-bottom:1px solid var(--eos-rule);background:transparent!important}
+.eos-signal .attention-symbol{width:29px;height:29px;border-radius:7px;background:var(--ekh-accent-soft)!important;color:var(--eos-accent)!important;display:grid;place-items:center;font-weight:900}
+.eos-signal .attention-copy strong{font-size:11px}.eos-signal .attention-copy span{font-size:9px;color:var(--ekh-muted);margin-top:2px}.eos-signal.no-activities .attention-symbol{background:color-mix(in srgb,var(--ekh-success) 13%,transparent)!important;color:var(--ekh-success)!important}
+.eos-stage{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,.65fr);gap:18px;align-items:stretch}
+.eos-brief{position:relative;overflow:hidden;border:1px solid var(--eos-rule);background:var(--ekh-surface);min-height:450px;padding:26px 28px 22px}
+.eos-brief:before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--eos-accent),var(--eos-accent-2))}
+.eos-brief-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}.eos-brief-top h3{font-size:24px;line-height:1.15;letter-spacing:-.04em;margin:7px 0 7px;max-width:560px}.eos-brief-top p{margin:0;color:var(--ekh-muted);font-size:10px}
+.eos-progress-disc{width:82px;height:82px;flex:0 0 82px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--eos-accent-2) calc(var(--progress)*1%),var(--ekh-surface-2) 0);position:relative}
+.eos-progress-disc:after{content:'';position:absolute;inset:7px;border-radius:50%;background:var(--ekh-surface)}.eos-progress-disc span{position:relative;z-index:1;font-size:14px;font-weight:900}
+.eos-brief-meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 17px}.eos-brief-meta span{font-size:8px;padding:6px 8px;border:1px solid var(--eos-rule);border-radius:5px;color:var(--ekh-muted);background:transparent}.eos-brief-meta b{color:var(--ekh-text)}
+.eos-brief-actions{display:flex;justify-content:space-between;gap:12px;align-items:center;border-top:1px solid var(--eos-rule);padding-top:14px;margin-top:6px}.eos-brief-actions>span{font-size:8px;color:var(--ekh-muted);text-transform:uppercase;letter-spacing:.08em}
+.eos-queue{margin-top:14px;display:grid;gap:0;border-top:1px solid var(--eos-rule)}.eos-queue .activity-priority-item{grid-template-columns:30px minmax(0,1fr) auto!important;gap:10px!important;padding:12px 0!important;border:0!important;border-bottom:1px solid var(--eos-rule)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}.eos-queue .activity-priority-item:hover{padding-left:8px!important;background:var(--ekh-surface-2)!important}.eos-queue .activity-mini-icon{width:27px!important;height:27px!important;border-radius:6px!important;background:var(--ekh-accent-soft)!important}.eos-queue .activity-priority-item strong{font-size:10px!important}.eos-queue .activity-priority-item span,.eos-queue .activity-priority-item time{font-size:8px!important}
+.eos-decision-rail{border:1px solid var(--eos-rule);background:var(--ekh-surface-2);display:flex;flex-direction:column;padding:24px 22px}.eos-decision-rail h3{font-size:20px;letter-spacing:-.035em;margin:7px 0 6px}.eos-decision-rail>header p{font-size:9px;color:var(--ekh-muted);line-height:1.5;margin:0}.eos-decision-list{margin:18px 0 14px;border-top:1px solid var(--eos-rule)}
+.eos-decision-row{display:grid;grid-template-columns:9px minmax(0,1fr) auto;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid var(--eos-rule)}.eos-decision-row i{width:7px;height:7px;border-radius:50%;background:#9ba4b4}.eos-decision-row i.warning{background:var(--orange)}.eos-decision-row i.danger{background:var(--red)}.eos-decision-row i.success{background:var(--green)}.eos-decision-row strong,.eos-decision-row small{display:block}.eos-decision-row strong{font-size:10px}.eos-decision-row small{font-size:8px;color:var(--ekh-muted);margin-top:3px}.eos-decision-row b{font-size:18px;letter-spacing:-.04em}.eos-decision-rail .primary-button{margin-top:auto;width:100%}.eos-control-note{font-size:8px;color:var(--ekh-muted);line-height:1.55;margin:13px 0 0;padding-top:12px;border-top:1px solid var(--eos-rule)}
+.eos-ledger{margin-top:18px;border-top:2px solid var(--eos-ink);border-bottom:1px solid var(--eos-rule);background:transparent}.eos-ledger-head{display:flex;justify-content:space-between;gap:20px;align-items:end;padding:18px 2px 12px}.eos-ledger-head h3{font-size:19px;letter-spacing:-.035em;margin:5px 0 4px}.eos-ledger-head p{font-size:9px;color:var(--ekh-muted);margin:0}.eos-ledger-columns,.eos-ledger-row{display:grid;grid-template-columns:minmax(165px,.75fr) 140px minmax(270px,1.35fr) 120px 22px;gap:14px;align-items:center}.eos-ledger-columns{padding:8px 10px;border-top:1px solid var(--eos-rule);border-bottom:1px solid var(--eos-rule);font-size:7px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--ekh-muted)}.eos-ledger-row{width:100%;border:0;border-bottom:1px solid var(--eos-rule);background:transparent;text-align:left;color:var(--ekh-text);padding:16px 10px}.eos-ledger-row:hover{background:var(--ekh-surface-2)}.eos-ledger-row h4{font-size:12px;margin:0}.eos-ledger-row small,.eos-ledger-owner{font-size:9px;color:var(--ekh-muted);line-height:1.45}.eos-ledger-row>span:last-child{font-size:18px;color:var(--ekh-muted)}.eos-ledger-note{font-size:8px;color:var(--ekh-muted);margin:10px 2px 14px}
+.eos-audit{margin-top:16px;border:1px solid var(--eos-rule);background:transparent}.eos-audit summary{padding:15px 16px}.eos-audit h3{font-size:13px;margin:4px 0}.eos-audit p{font-size:8px;color:var(--ekh-muted);margin:0}.eos-audit .cc-audit-empty{border-top:1px solid var(--eos-rule);padding:14px 16px;font-size:9px;color:var(--ekh-muted)}
+
+/* Other pages: remove template-card sameness without changing behaviour */
+.org-summary-grid article,.sa-role-kpis article{background:transparent!important;border-top:2px solid var(--eos-ink)!important;border-left:0!important;border-right:0!important;border-bottom:1px solid var(--eos-rule)!important;border-radius:0!important;padding:14px 4px!important}
+.org-department-card{border-left:2px solid var(--eos-accent)!important;background:var(--ekh-surface)!important}.v172-kanban-column{border-radius:8px!important}.v172-project-card{border-radius:7px!important;box-shadow:none!important}.project-table-wrap,.org-register-panel{box-shadow:none!important}
+
+@media(max-width:1100px){.eos-stage{grid-template-columns:1fr}.eos-decision-rail{min-height:360px}.eos-ledger-columns,.eos-ledger-row{grid-template-columns:minmax(145px,.7fr) 120px minmax(220px,1.2fr) 95px 18px}.sidebar{width:254px!important}.main-shell{margin-left:254px!important;width:calc(100% - 254px)!important}}
+@media(max-width:860px){.sidebar{width:280px!important}.main-shell{margin-left:0!important;width:100%!important}.topbar{height:auto!important;min-height:70px!important;padding:12px 16px!important}.page-content{padding:22px 16px 50px!important}.eos-hero{grid-template-columns:1fr}.eos-date{border-left:0;border-top:1px solid var(--eos-rule);padding:12px 0 0}.eos-ledger-columns{display:none}.eos-ledger-row{grid-template-columns:1fr auto}.eos-ledger-row small,.eos-ledger-owner{grid-column:1/-1}.eos-ledger-row>span:last-child{grid-column:2;grid-row:2}.eos-signal{grid-template-columns:32px 1fr}.eos-signal .text-button{grid-column:2;justify-self:start}}
+@media(max-width:560px){.eos-hero h2{font-size:34px}.eos-brief{padding:22px 18px}.eos-brief-top{display:grid;grid-template-columns:1fr auto}.eos-brief-top h3{font-size:20px}.eos-progress-disc{width:68px;height:68px;flex-basis:68px}.eos-brief-actions{align-items:stretch;flex-direction:column}.eos-brief-actions .secondary-button{width:100%}.eos-decision-rail{padding:21px 18px}.eos-ledger-row{padding:14px 4px}}
+</style>
+
+<style id="ekh-v181-soft-professional">
+/* EKH OS v1.8.1 — Soft Professional UI
+   Original EKH implementation inspired by premium soft-dashboard craft:
+   spacing, restraint, hierarchy and consistent depth; no copied template markup. */
+:root{
+  --sui-bg:#f8f9fa;
+  --sui-card:#ffffff;
+  --sui-text:#344767;
+  --sui-muted:#8392ab;
+  --sui-line:#edf0f5;
+  --sui-shadow:0 20px 27px rgba(0,0,0,.05);
+  --sui-shadow-small:0 8px 18px rgba(0,0,0,.055);
+  --sui-radius:18px;
+  --sui-purple:#7b61d1;
+  --sui-purple-2:#a06cd5;
+  --sui-cyan:#43c6c8;
+  --sui-coral:#f7768e;
+  --sui-lime:#82d616;
+}
+html{background:var(--sui-bg)}
+body{
+  background:
+    radial-gradient(circle at 78% -10%,rgba(123,97,209,.075),transparent 25%),
+    var(--sui-bg)!important;
+  color:var(--sui-text);
+}
+.app-shell{background:transparent}
+.sidebar{
+  top:16px!important;
+  left:16px!important;
+  bottom:16px!important;
+  width:252px!important;
+  height:auto!important;
+  padding:20px 14px!important;
+  border:0!important;
+  border-radius:22px!important;
+  background:rgba(255,255,255,.96)!important;
+  color:var(--sui-text)!important;
+  box-shadow:var(--sui-shadow)!important;
+  backdrop-filter:blur(18px);
+}
+.brand-row{padding:0 8px 18px!important;border-bottom:1px solid var(--sui-line)!important}
+.brand-mark{
+  border:0!important;
+  background:linear-gradient(135deg,var(--sui-purple),var(--sui-purple-2))!important;
+  color:#fff!important;
+  box-shadow:0 8px 16px rgba(123,97,209,.28)!important;
+}
+.brand-copy strong,.workspace-switcher strong,.nav-item{color:var(--sui-text)!important}
+.brand-copy span,.workspace-switcher span,.nav-label{color:#98a2b3!important}
+.build-chip{background:#f1effb!important;color:var(--sui-purple)!important;border:0!important}
+.workspace-switcher{
+  margin:16px 0!important;
+  padding:12px!important;
+  border:0!important;
+  border-radius:15px!important;
+  background:#f8f9fc!important;
+  box-shadow:none!important;
+}
+.workspace-icon{
+  background:linear-gradient(135deg,#eef0ff,#f5ecff)!important;
+  color:var(--sui-purple)!important;
+  border:0!important;
+}
+.main-nav{gap:5px!important}
+.nav-label{padding:12px 13px 4px!important;font-size:9px!important;letter-spacing:.13em!important}
+.nav-item{
+  min-height:42px!important;
+  padding:0 13px!important;
+  border-radius:12px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  font-weight:650!important;
+}
+.nav-item:hover{background:#f6f7fb!important;transform:translateX(2px)}
+.nav-item.active{
+  background:linear-gradient(135deg,var(--sui-purple),#8e6ed9)!important;
+  color:#fff!important;
+  box-shadow:0 9px 18px rgba(123,97,209,.24)!important;
+}
+.nav-item.active span{color:#fff!important}
+.nav-icon{
+  width:29px!important;height:29px!important;
+  border-radius:9px!important;
+  background:#f2f4f8!important;
+  color:#667085!important;
+}
+.nav-item.active .nav-icon{background:rgba(255,255,255,.2)!important;color:#fff!important}
+.nav-count{border:0!important;background:#f0f2f6!important;color:#667085!important}
+.nav-item.active .nav-count{background:rgba(255,255,255,.2)!important;color:#fff!important}
+.sidebar-bottom{padding-top:14px!important}
+.system-health-card{
+  background:#f7f9fc!important;
+  border:0!important;
+  border-radius:15px!important;
+  color:var(--sui-text)!important;
+  box-shadow:none!important;
+}
+.system-health-card span{color:var(--sui-muted)!important}
+.main-shell{
+  margin-left:284px!important;
+  width:calc(100% - 284px)!important;
+  background:transparent!important;
+}
+.topbar{
+  min-height:82px!important;
+  padding:16px 28px 10px!important;
+  border-bottom:0!important;
+  background:rgba(248,249,250,.8)!important;
+  backdrop-filter:blur(18px)!important;
+}
+.topbar h1{color:var(--sui-text)!important;font-size:17px!important}
+.breadcrumb{color:var(--sui-muted)!important}
+.global-search{
+  background:#fff!important;
+  border:1px solid #e9ecf2!important;
+  border-radius:13px!important;
+  box-shadow:var(--sui-shadow-small)!important;
+}
+.icon-button,.profile-button{
+  background:#fff!important;
+  border:0!important;
+  box-shadow:var(--sui-shadow-small)!important;
+}
+.primary-button{
+  border:0!important;
+  background:linear-gradient(135deg,var(--sui-purple),#8f6ed8)!important;
+  box-shadow:0 9px 18px rgba(123,97,209,.22)!important;
+  color:#fff!important;
+}
+.secondary-button{
+  background:#fff!important;
+  border:1px solid #e7eaf0!important;
+  box-shadow:0 5px 12px rgba(0,0,0,.035)!important;
+}
+.page-content{padding:10px 28px 50px!important;max-width:1530px!important}
+.view{animation:softPageIn .24s ease}
+@keyframes softPageIn{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:none}}
+.section-kicker{color:var(--sui-purple)!important;letter-spacing:.12em!important}
+
+.sui-page-heading{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;margin:6px 0 18px}
+.sui-page-heading h2{margin:4px 0 5px;font-size:30px;letter-spacing:-.035em;color:var(--sui-text)}
+.sui-page-heading p{margin:0;color:var(--sui-muted);font-size:12px}
+.sui-date-card{display:flex;gap:10px;align-items:center;padding:11px 14px;border-radius:14px;background:#fff;box-shadow:var(--sui-shadow-small)}
+.sui-date-card strong,.sui-date-card small{display:block}.sui-date-card strong{font-size:10px}.sui-date-card small{font-size:8px;color:var(--sui-muted);margin-top:2px}
+.sui-attention{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 15px;margin-bottom:16px;border-radius:15px;background:linear-gradient(135deg,#fbf8ff,#f4fbfc);border:1px solid rgba(123,97,209,.12)}
+.sui-attention-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#eee9ff;color:var(--sui-purple);font-weight:900}
+.sui-attention strong,.sui-attention span{display:block}.sui-attention strong{font-size:10px}.sui-attention div>span{font-size:8px;color:var(--sui-muted);margin-top:2px}
+.sui-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:16px}
+.sui-kpi-card{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:13px;align-items:center;min-height:104px;padding:18px;border-radius:var(--sui-radius);background:var(--sui-card);box-shadow:var(--sui-shadow);overflow:hidden}
+.sui-kpi-card:after{content:"";position:absolute;width:80px;height:80px;border-radius:50%;right:-35px;top:-40px;background:rgba(123,97,209,.045)}
+.sui-kpi-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;color:#fff;font-weight:900;font-size:16px;box-shadow:0 8px 15px rgba(0,0,0,.12)}
+.sui-kpi-icon.violet{background:linear-gradient(135deg,#6f55cf,#a16be1)}
+.sui-kpi-icon.cyan{background:linear-gradient(135deg,#2ba9b7,#55d6cf)}
+.sui-kpi-icon.coral{background:linear-gradient(135deg,#ec5b74,#ff8b9e)}
+.sui-kpi-icon.lime{background:linear-gradient(135deg,#66b80c,#9ddd37)}
+.sui-kpi-card small,.sui-kpi-card strong,.sui-kpi-card div>span{display:block}
+.sui-kpi-card small{font-size:9px;color:var(--sui-muted);font-weight:650}
+.sui-kpi-card strong{font-size:25px;letter-spacing:-.03em;color:var(--sui-text);margin:2px 0}
+.sui-kpi-card div>span{font-size:8px;color:#98a2b3}
+.sui-mini-ring{width:35px;height:35px;border-radius:50%;background:conic-gradient(var(--sui-purple) calc(var(--progress)*1%),#ece9f8 0);position:relative}
+.sui-mini-ring:after{content:"";position:absolute;inset:6px;border-radius:50%;background:#fff}
+.sui-main-grid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(280px,.75fr);gap:16px;margin-bottom:16px}
+.sui-lower-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,.7fr);gap:16px;margin-bottom:16px}
+.sui-card{background:#fff;border:0;border-radius:var(--sui-radius);box-shadow:var(--sui-shadow);padding:20px}
+.sui-card-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:17px}
+.sui-card-head.compact{display:block}
+.sui-card-head h3{margin:4px 0 3px;font-size:17px;color:var(--sui-text)}
+.sui-card-head p{margin:0;color:var(--sui-muted);font-size:9px;line-height:1.5}
+.sui-queue-label{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--sui-line);border-bottom:1px solid var(--sui-line);font-size:8px;color:var(--sui-muted)}
+.sui-activity-list{display:grid;gap:8px;padding-top:12px;min-height:160px}
+.sui-activity-list .activity-priority-item{border:0!important;border-radius:13px!important;background:#f9fafc!important;box-shadow:none!important;padding:11px 12px!important}
+.sui-activity-list .activity-priority-item:hover{background:#f5f2fc!important}
+.sui-decision-list{display:grid;gap:4px;margin:10px 0 18px}
+.sui-decision-list>div{display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:10px;align-items:center;padding:12px 0;border-bottom:1px solid var(--sui-line)}
+.sui-decision-list strong,.sui-decision-list small{display:block}.sui-decision-list strong{font-size:9px}.sui-decision-list small{font-size:7.5px;color:var(--sui-muted);margin-top:2px}.sui-decision-list b{font-size:17px}
+.sui-state-dot{width:7px;height:7px;border-radius:50%}.sui-state-dot.amber{background:#f59e0b}.sui-state-dot.red{background:#ef476f}.sui-state-dot.green{background:#22c55e}
+.full{width:100%;justify-content:center}
+.sui-control-note{margin-top:14px;padding:12px;border-radius:12px;background:#f8f9fc}
+.sui-control-note span{display:block;font-size:7px;font-weight:850;color:var(--sui-purple);text-transform:uppercase;letter-spacing:.1em}
+.sui-control-note p{margin:4px 0 0;font-size:7.5px;color:var(--sui-muted);line-height:1.5}
+.sui-project-table{overflow:hidden;border-radius:13px;border:1px solid var(--sui-line)}
+.sui-project-header,.sui-project-table button{display:grid;grid-template-columns:1.05fr .85fr 1.7fr .65fr;gap:12px;align-items:center;padding:11px 13px}
+.sui-project-header{background:#f8f9fc;color:var(--sui-muted);font-size:7px;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+.sui-project-table button{width:100%;border:0;border-top:1px solid var(--sui-line);background:#fff;text-align:left;color:var(--sui-text)}
+.sui-project-table button:hover{background:#fbfaff}
+.sui-project-table button strong{font-size:9px}.sui-project-table button small{font-size:7.5px;color:var(--sui-muted)}.sui-project-table button>span:last-child{font-size:8px;color:var(--sui-muted)}
+.sui-bars{display:grid;gap:16px;margin:16px 0}
+.sui-bars div>span{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}.sui-bars b{font-size:9px}.sui-bars small{font-size:8px;color:var(--sui-muted)}
+.sui-bars i{display:block;height:7px;border-radius:999px;background:#f0f2f6;overflow:hidden}.sui-bars em{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--sui-purple),#9f78dd)}
+.sui-soft-banner{padding:13px;border-radius:13px;background:linear-gradient(135deg,#f4effc,#eff9fa)}
+.sui-soft-banner span{font-size:8px;font-weight:850;color:var(--sui-purple);text-transform:uppercase}.sui-soft-banner p{margin:4px 0 0;font-size:8px;color:var(--sui-muted);line-height:1.5}
+.sui-audit-card summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer}.sui-audit-card h3{margin:3px 0}.sui-audit-card p{margin:0;font-size:8px;color:var(--sui-muted)}
+.cc-hidden-runtime{display:none}
+
+/* Global soft-surface refinement */
+.v172-page-head,.page-hero{margin-top:6px}
+.v172-page-head h2,.page-hero h2{color:var(--sui-text)!important}
+.v172-kanban-column,.org-department-card,.org-hierarchy-panel,.org-summary-grid article,
+.panel,.secure-drive-card,.v172-live-activities,.v172-calendar-foot,.settings-section,
+.report-card,.activity-card,.decision-card{
+  border-color:transparent!important;
+  border-radius:17px!important;
+  box-shadow:var(--sui-shadow)!important;
+  background:#fff!important;
+}
+.v172-kanban-toolbar,.v172-calendar-toolbar,.v172-activity-tabs,.org-toolbar{
+  border:0!important;border-radius:15px!important;background:#fff!important;box-shadow:var(--sui-shadow-small)!important
+}
+.v172-project-card,.org-member-row{border-color:var(--sui-line)!important;box-shadow:none!important}
+.v172-kanban-column>header,.org-department-card>header{border-bottom-color:var(--sui-line)!important}
+input,select,textarea{border-radius:11px!important;border-color:#e7eaf0!important}
+table{border-color:var(--sui-line)!important}
+th{background:#f8f9fc!important;color:var(--sui-muted)!important}
+.status-pill{border:0!important}
+
+html[data-mode="dark"]{
+  --sui-bg:#11131a;--sui-card:#181b24;--sui-text:#f1f3f8;--sui-muted:#9ba5b5;--sui-line:#282d39;
+  --sui-shadow:0 20px 32px rgba(0,0,0,.26);--sui-shadow-small:0 8px 18px rgba(0,0,0,.2)
+}
+html[data-mode="dark"] body{background:#11131a!important}
+html[data-mode="dark"] .sidebar,
+html[data-mode="dark"] .sui-card,
+html[data-mode="dark"] .sui-kpi-card,
+html[data-mode="dark"] .sui-date-card,
+html[data-mode="dark"] .v172-kanban-column,
+html[data-mode="dark"] .org-department-card,
+html[data-mode="dark"] .org-hierarchy-panel,
+html[data-mode="dark"] .org-summary-grid article,
+html[data-mode="dark"] .panel{background:#181b24!important;color:var(--sui-text)!important}
+html[data-mode="dark"] .workspace-switcher,
+html[data-mode="dark"] .system-health-card,
+html[data-mode="dark"] .sui-control-note,
+html[data-mode="dark"] .sui-activity-list .activity-priority-item,
+html[data-mode="dark"] .sui-project-header{background:#20242e!important}
+html[data-mode="dark"] .sui-project-table button{background:#181b24!important;color:var(--sui-text)!important}
+html[data-mode="dark"] .topbar{background:rgba(17,19,26,.82)!important}
+
+@media(max-width:1180px){
+  .sui-kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .sui-main-grid,.sui-lower-grid{grid-template-columns:1fr}
+}
+@media(max-width:900px){
+  .sidebar{top:0!important;left:0!important;bottom:0!important;border-radius:0!important;width:278px!important}
+  .main-shell{margin-left:0!important;width:100%!important}
+  .page-content{padding:10px 16px 36px!important}
+  .topbar{padding:12px 16px!important}
+}
+@media(max-width:640px){
+  .sui-page-heading{align-items:flex-start;flex-direction:column}
+  .sui-kpi-grid{grid-template-columns:1fr}
+  .sui-attention{grid-template-columns:38px minmax(0,1fr)}
+  .sui-attention button{grid-column:2;justify-self:start}
+  .sui-card-head{flex-direction:column}
+  .sui-project-header{display:none}
+  .sui-project-table button{grid-template-columns:1fr;gap:7px}
+  .sui-page-heading h2{font-size:25px}
+}
+</style>
+
 </head>
 <body class="auth-pending" data-page="command-centre">
 <section aria-label="EKH OS secure login" id="ekhAuthGate">
@@ -1357,7 +1689,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 <div class="v173-login-brand">
 <div><div class="v173-login-mark">E</div><h1>Secure operations for English Kids Hub.</h1><p>EKH OS confirms the Supabase session and authorised role before the operations workspace is displayed.</p>
 <div class="v173-security-points"><span><i>✓</i>Private Supabase Storage with RLS</span><span><i>✓</i>Owner, admin, manager, member, reviewer and viewer roles</span><span><i>✓</i>Session expiry, sign-out and access-denied controls</span></div></div>
-<small>EKH OS v1.7.3 · Secure Staff Drive</small>
+<small>EKH OS v1.8.1 · Soft Professional UI</small>
 </div>
 <div class="v173-login-form-wrap">
 <span class="section-kicker">AUTHORISED PERSONNEL ONLY</span><h2>Sign in to EKH OS</h2><p>Operational pages stay hidden until the session and role are validated.</p>
@@ -1392,7 +1724,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 <strong>EKH OS</strong>
 <span>Operating System</span>
 </div>
-<span class="build-chip">v1.7.3.7</span>
+<span class="build-chip">v1.8.1</span>
 </div>
 <div class="workspace-switcher">
 <div class="workspace-icon">EK</div>
@@ -1438,80 +1770,109 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 </header>
 <main class="page-content">
 <!-- COMMAND CENTRE -->
-<section class="view active" id="command-centre">
-<header class="cc-heading">
-<div>
-<span class="section-kicker">ENGLISH KIDS HUB OPERATIONS</span>
-<h2>Operations overview</h2>
-<p>See today’s actions, project gates and approvals without scanning the full portfolio.</p>
-</div>
-<div class="cc-heading-actions">
-<div class="date-status-card"><span class="live-dot"></span><div><strong id="todayLabel">—</strong><small>Production workspace</small></div></div>
-</div>
-</header>
-<div class="attention-strip" id="supabaseAttentionStrip">
-<div class="attention-symbol">!</div>
-<div class="attention-copy">
-<strong id="activityAttentionTitle">Loading activities…</strong>
-<span id="activityAttentionSummary">Sign in through Staff Drive to load your private queue.</span>
-</div>
-<button class="text-button" data-view-target="notifications">Open activities →</button>
-</div>
-<div class="cc-primary-grid">
-<section aria-labelledby="today-zone-title" class="cc-zone">
-<div class="cc-zone-head">
-<div><span class="section-kicker">TODAY</span><h3 id="today-zone-title">Next actions</h3><p>Authenticated Supabase records only.</p></div>
-<span class="trend warning" id="dashboardActivityTrend">Supabase</span>
-</div>
-<div class="cc-today-main">
-<div class="schedule-ring" id="dashboardActivityRing" style="--progress:0"><span id="dashboardActivityRingText">0/0</span></div>
-<div class="cc-today-copy"><strong id="dashboardActivitySummaryTitle">No activity data loaded</strong><span id="dashboardActivitySummaryText">Your schedule is stored in Supabase.</span></div>
-<div class="cc-today-counts">
-<span class="cc-count-token"><b id="dashboardReminderCount">0</b> open</span>
-<span class="cc-count-token" id="dashboardActivityFootA">Loading</span>
-<span class="cc-count-token" id="dashboardActivityFootB">Private</span>
-</div>
-<button class="secondary-button" id="dashboardAddActivity">＋ Add activity</button>
-</div>
-<div class="cc-action-list" id="dashboardActivityQueue"><div class="activity-loading-state">Connecting to Supabase…</div></div>
-<div class="cc-hidden-runtime" id="dashboardReminderTimeline"></div>
+
+<section class="view active soft-command" id="command-centre">
+  <header class="sui-page-heading">
+    <div>
+      <span class="section-kicker">ENGLISH KIDS HUB · OWNER WORKSPACE</span>
+      <h2>Good afternoon, Azuar.</h2>
+      <p>A clear view of today’s workload, owner decisions and the project gates that need evidence.</p>
+    </div>
+    <div class="sui-date-card">
+      <span class="live-dot"></span>
+      <div><strong id="todayLabel">—</strong><small>Production workspace</small></div>
+    </div>
+  </header>
+
+  <div class="sui-attention" id="supabaseAttentionStrip">
+    <span class="sui-attention-icon">!</span>
+    <div><strong id="activityAttentionTitle">Loading activities…</strong><span id="activityAttentionSummary">Sign in through Staff Drive to load your private queue.</span></div>
+    <button class="text-button" data-view-target="notifications">View activities</button>
+  </div>
+
+  <section class="sui-kpi-grid" aria-label="Operational summary">
+    <article class="sui-kpi-card">
+      <span class="sui-kpi-icon violet">◔</span>
+      <div><small>Open activities</small><strong id="dashboardReminderCount">0</strong><span id="dashboardActivityFootA">Loading</span></div>
+    </article>
+    <article class="sui-kpi-card">
+      <span class="sui-kpi-icon cyan">✓</span>
+      <div><small>Today’s progress</small><strong id="dashboardActivityRingText">0/0</strong><span id="dashboardActivityFootB">Private records</span></div>
+      <span class="sui-mini-ring" id="dashboardActivityRing" style="--progress:0"></span>
+    </article>
+    <article class="sui-kpi-card">
+      <span class="sui-kpi-icon coral">⌁</span>
+      <div><small>Owner decisions</small><strong>0</strong><span>Evidence-gated</span></div>
+    </article>
+    <article class="sui-kpi-card">
+      <span class="sui-kpi-icon lime">▦</span>
+      <div><small>Critical workstreams</small><strong>3</strong><span id="dashboardActivityTrend">Awaiting sync</span></div>
+    </article>
+  </section>
+
+  <div class="sui-main-grid">
+    <section class="sui-card sui-activity-card" aria-labelledby="today-zone-title">
+      <header class="sui-card-head">
+        <div>
+          <span class="section-kicker">TODAY’S FOCUS</span>
+          <h3 id="today-zone-title"><span id="dashboardActivitySummaryTitle">No activity data loaded</span></h3>
+          <p id="dashboardActivitySummaryText">Your schedule is stored in Supabase.</p>
+        </div>
+        <button class="primary-button" id="dashboardAddActivity">＋ Add activity</button>
+      </header>
+      <div class="sui-queue-label"><span>Authenticated owner records</span><button class="text-button" data-view-target="notifications">Open full queue</button></div>
+      <div class="sui-activity-list" id="dashboardActivityQueue"><div class="activity-loading-state">Connecting to Supabase…</div></div>
+      <div class="cc-hidden-runtime" id="dashboardReminderTimeline"></div>
+    </section>
+
+    <aside class="sui-card sui-decision-card" aria-labelledby="mia-queue-title">
+      <header class="sui-card-head compact">
+        <div><span class="section-kicker">MIA APPROVAL QUEUE</span><h3 id="mia-queue-title">Owner decisions</h3><p>Nothing moves to release without evidence and named approval.</p></div>
+      </header>
+      <div class="sui-decision-list">
+        <div><span class="sui-state-dot amber"></span><div><strong>Awaiting approval</strong><small>Reports pending owner review</small></div><b>0</b></div>
+        <div><span class="sui-state-dot red"></span><div><strong>Needs evidence</strong><small>Returned for missing proof</small></div><b>0</b></div>
+        <div><span class="sui-state-dot green"></span><div><strong>Ready for Kyo</strong><small>Approved payloads awaiting validation</small></div><b>0</b></div>
+      </div>
+      <button class="primary-button full" data-view-target="handoffs">Open approval queue</button>
+      <div class="sui-control-note"><span>Control rule</span><p>No publication, import or closure is allowed from an inferred status.</p></div>
+    </aside>
+  </div>
+
+  <div class="sui-lower-grid">
+    <section class="sui-card sui-project-card" aria-labelledby="priority-projects-title">
+      <header class="sui-card-head">
+        <div><span class="section-kicker">PROJECT OVERVIEW</span><h3 id="priority-projects-title">Current critical path</h3><p>Recorded state, next evidence gate and accountable owner.</p></div>
+        <button class="text-button" data-view-target="projects">Open portfolio</button>
+      </header>
+      <div class="sui-project-table">
+        <div class="sui-project-header"><span>Workstream</span><span>Status</span><span>Next evidence</span><span>Owner</span></div>
+        <button data-view-target="projects"><strong>Smart Adventure</strong><span class="status-pill track">Education complete</span><small>Technical import and post-import verification</small><span>Reo / Jeff</span></button>
+        <button data-view-target="projects"><strong>Worksheet Studio</strong><span class="status-pill risk">Controlled hold</span><small>Authorised runtime pilot with exact mapping evidence</small><span>Blanc</span></button>
+        <button data-view-target="projects"><strong>Cuddle Paws</strong><span class="status-pill launch">Promotion active</span><small>Continue promotion and record verified sales signals</small><span>Mario / Zack</span></button>
+      </div>
+    </section>
+
+    <section class="sui-card sui-momentum-card">
+      <header class="sui-card-head compact">
+        <div><span class="section-kicker">OPERATING MOMENTUM</span><h3>Workstream readiness</h3><p>Visual indicators support scanning only; they are not release approval.</p></div>
+      </header>
+      <div class="sui-bars">
+        <div><span><b>Smart Adventure</b><small>64%</small></span><i><em style="width:64%"></em></i></div>
+        <div><span><b>EKH OS</b><small>88%</small></span><i><em style="width:88%"></em></i></div>
+        <div><span><b>Worksheet Studio</b><small>50%</small></span><i><em style="width:50%"></em></i></div>
+        <div><span><b>Cuddle Paws</b><small>82%</small></span><i><em style="width:82%"></em></i></div>
+      </div>
+      <div class="sui-soft-banner"><span>Evidence first</span><p>Completion percentages remain operational indicators, not technical certification.</p></div>
+    </section>
+  </div>
+
+  <details class="sui-card sui-audit-card">
+    <summary><div><span class="section-kicker">RELEASE AUDIT</span><h3>Recently published updates</h3><p>Commit, approver, deployment and rollback evidence.</p></div><span>⌄</span></summary>
+    <div class="cc-audit-empty">v1.8.1 Soft Professional UI prepared; production verification depends on the GitHub Actions run and live-domain check.</div>
+  </details>
 </section>
-<section aria-labelledby="mia-queue-title" class="cc-zone">
-<div class="cc-zone-head">
-<div><span class="section-kicker">MIA APPROVAL QUEUE</span><h3 id="mia-queue-title">Pending decisions</h3><p>Nothing publishes without owner approval.</p></div>
-</div>
-<div class="cc-mia-summary">
-<div class="cc-queue-row"><span class="cc-queue-dot warning"></span><div><strong>Awaiting approval</strong><small>Mia reports pending owner review.</small></div><b>0</b></div>
-<div class="cc-queue-row"><span class="cc-queue-dot danger"></span><div><strong>Needs evidence</strong><small>Returned for missing proof.</small></div><b>0</b></div>
-<div class="cc-queue-row"><span class="cc-queue-dot success"></span><div><strong>Ready for Kyo</strong><small>Approved payloads awaiting validation.</small></div><b>0</b></div>
-<button class="primary-button full-width cc-mia-action" data-view-target="handoffs">Open approval queue</button>
-</div>
-</section>
-</div>
-<section aria-labelledby="priority-projects-title" class="cc-zone cc-projects-zone">
-<div class="cc-zone-head">
-<div><span class="section-kicker">PRIORITY PROJECTS</span><h3 id="priority-projects-title">Current gates</h3><p>Approved status, owner and next gate.</p></div>
-<button class="text-button" data-view-target="projects">Open portfolio →</button>
-</div>
-<div class="cc-project-list">
-<div class="cc-project-head"><span>Project</span><span>Status</span><span>Next gate</span><span>Owner</span><span></span></div>
-<button class="cc-project-row" data-view-target="projects">
-<h4>Smart Adventure</h4><span class="status-pill track">Education complete</span><small>Technical import and post-import verification.</small><span class="cc-project-owner">Reo / Jeff</span><span>›</span>
-</button>
-<button class="cc-project-row" data-view-target="projects">
-<h4>Worksheet Studio</h4><span class="status-pill risk">Controlled hold</span><small>Authorized runtime pilot with exact mapping evidence.</small><span class="cc-project-owner">Blanc</span><span>›</span>
-</button>
-<button class="cc-project-row" data-view-target="projects">
-<h4>Cuddle Paws</h4><span class="status-pill launch">Promotion active</span><small>Continue promotion and record verified sales signals.</small><span class="cc-project-owner">Mario / Zack</span><span>›</span>
-</button>
-</div>
-<p class="cc-integrity-note">Only owner-approved recorded status is shown. No inferred staff check-ins.</p>
-</section>
-<details class="cc-release-audit">
-<summary><div><span class="section-kicker">RELEASE AUDIT</span><h3>Recently published updates</h3><p>Commit, approver, deployment and rollback proof.</p></div><span>⌄</span></summary>
-<div class="cc-audit-empty">v1.7.3 package prepared; production verification depends on the GitHub Actions run and live-domain check.</div>
-</details>
-</section>
+
 <section class="view" id="notifications"><header class="v172-page-head"><div><span class="section-kicker">PERSONAL WORKSTREAM</span><h2>My Activities</h2><p>A horizontal week timeline for scheduled, overdue and completed work.</p></div><div class="v172-view-actions"><button class="secondary-button">This week</button><button class="primary-button" id="v172AddActivity">＋ Add activity</button></div></header><div class="v172-activity-tabs"><button>Month</button><button class="active">Week</button><button>Agenda</button></div><div class="v172-activity-timeline"><section class="v172-timeline-day"><header><span>Mon</span><b>27</b></header><div><article class="v172-activity-block planned"><time>09:00</time><strong>Review launch messaging</strong><small>Cuddle Paws</small></article></div></section><section class="v172-timeline-day"><header><span>Tue</span><b>28</b></header><div><article class="v172-activity-block review"><time>14:00</time><strong>Validate handoff evidence</strong><small>Smart Adventure</small></article></div></section><section class="v172-timeline-day"><header><span>Wed</span><b>29</b></header><div><article class="v172-activity-block approval"><time>10:00</time><strong>EKH OS design council</strong><small>EKH OS</small></article><article class="v172-activity-block planned"><time>15:00</time><strong>Calendar and Kanban build</strong><small>EKH OS</small></article></div></section><section class="v172-timeline-day"><header><span>Thu</span><b>30</b></header><div><article class="v172-activity-block review"><time>09:30</time><strong>Year 1 isolated intake</strong><small>Worksheet Studio</small></article><article class="v172-activity-block approval"><time>14:00</time><strong>Owner approval checkpoint</strong><small>Mia Queue</small></article></div></section><section class="v172-timeline-day"><header><span>Fri</span><b>31</b></header><div><article class="v172-activity-block review"><time>11:00</time><strong>Kyo regression review</strong><small>EKH OS</small></article><article class="v172-activity-block completed"><time>16:00</time><strong>Publish approved update</strong><small>EKH OS</small></article></div></section><section class="v172-timeline-day"><header><span>Sat</span><b>1</b></header><div><p>Clear</p></div></section><section class="v172-timeline-day"><header><span>Sun</span><b>2</b></header><div><p>Clear</p></div></section></div><div class="v172-live-activities"><div><h3>Live Supabase activities</h3><p>Authenticated records appear here and remain connected to reminders.</p></div><div class="supabase-activity-list" id="supabaseActivityList"><div class="activity-loading-state">Connecting to Supabase activities…</div></div><div class="activity-empty-state" hidden="" id="supabaseActivityEmpty"><strong>No activities in this range</strong><span>Add one or move to another week.</span></div></div></section>
 <section aria-hidden="true" class="v173-runtime-compat" id="v173RuntimeCompatibility">
 <span id="activityBrowserPermission">Unknown</span><span id="activityCompletedStat">0</span><div id="activityConnectionState"><strong>Checking</strong><small>Waiting for Supabase</small></div>
@@ -2219,7 +2580,7 @@ html[data-mode='dark'] .ekh-menu-group{box-shadow:inset 2px 2px 7px rgba(0,0,0,.
 </div>
 <div class="footer-status">
 <span id="footerActivityStatus"><i></i> Supabase activity reminders waiting</span>
-<span>English UI v1.7.3.7</span>
+<span>English UI v1.8.1</span>
 <span id="footerClock">Malaysia time</span>
 </div>
 <div class="footer-actions">

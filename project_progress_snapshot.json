@@ -272,5 +272,27 @@
     "role_titles_english": true,
     "focus_descriptions_english": true,
     "review_standard": "Haikal language-QA terminology and naturalness review"
+  },
+  "interface_release": {
+    "version": "v1.8.0",
+    "name": "Editorial Operations System",
+    "scope": "UI composition and styling only",
+    "backend_change": false,
+    "preserved_runtime_ids": true,
+    "design_direction": "Editorial Command Center with restrained Soft UI spacing",
+    "production_verification": "pending GitHub Actions and live smoke test"
+  },
+  "ui_release": {
+    "version": "v1.8.1",
+    "name": "Soft Professional UI",
+    "design_intent": "Premium dashboard polish using original EKH layout, palette and content.",
+    "reference_principles": [
+      "consistent spacing",
+      "soft controlled shadows",
+      "clear card hierarchy",
+      "polished sidebar",
+      "responsive dashboard proportions"
+    ],
+    "copied_template_code": false
   }
 }
