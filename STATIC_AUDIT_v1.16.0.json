@@ -1,0 +1,136 @@
+{
+  "release": "v1.16.0",
+  "build_id": "EKH-OS-ITN-20260731-001",
+  "date": "2026-07-31",
+  "source_release": "v1.15.0",
+  "scope": "Interactive Team Network",
+  "source_structure": {
+    "department_pages": 10,
+    "department_cards": 10,
+    "department_membership_rows": 48,
+    "directory_strategy": "Runtime derivation from existing embedded department pages"
+  },
+  "structure_checks": {
+    "interactive_team_network": true,
+    "leadership_map": true,
+    "department_mode": true,
+    "people_mode": true,
+    "search": true,
+    "department_filters": true,
+    "department_grid": true,
+    "people_grid": true,
+    "existing_department_pages_preserved": true,
+    "department_data_preserved": true,
+    "member_records_available": true,
+    "existing_drawer_preserved": true,
+    "inline_svg_icons": true,
+    "mobile_breakpoint": true,
+    "small_mobile_breakpoint": true,
+    "reduced_motion": true,
+    "duplicate_ids_absent": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 18,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 19,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence."
+}

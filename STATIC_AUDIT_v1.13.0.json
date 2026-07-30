@@ -1,0 +1,125 @@
+{
+  "release": "v1.13.0",
+  "build_id": "EKH-OS-PW-20260730-001",
+  "source_release": "v1.12.0",
+  "date": "2026-07-30",
+  "project_source_count": 14,
+  "status_distribution": {
+    "in-progress": 4,
+    "review": 1,
+    "blocked": 3,
+    "completed": 6
+  },
+  "structure_checks": {
+    "release_v1130": true,
+    "portfolio_workbench": true,
+    "project_index": true,
+    "project_inspector": true,
+    "dependency_map": true,
+    "project_records_14": true,
+    "hold_records_3": true,
+    "active_records_4": true,
+    "review_records_1": true,
+    "completed_records_6": true,
+    "smart_adventure_64": true,
+    "command_center_preserved": true,
+    "typography_preserved": true,
+    "responsive_desktop": true,
+    "responsive_tablet": true,
+    "responsive_mobile": true,
+    "inline_svg_icons": true,
+    "snapshot_unchanged": true,
+    "config_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true,
+    "no_duplicate_ids": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "browser_simulation": {
+    "status": "BLOCKED",
+    "reason": "Chromium returned ERR_BLOCKED_BY_ADMINISTRATOR for localhost and file navigation."
+  },
+  "operational_snapshot_changed": false,
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence produced."
+}

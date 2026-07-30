@@ -1,0 +1,134 @@
+{
+  "release": "v1.14.0",
+  "build_id": "EKH-OS-MWF-20260730-001",
+  "date": "2026-07-30",
+  "source_release": "v1.13.0",
+  "scope": "Mia Queue interactive workflow console",
+  "workflow_stages": [
+    "inbox",
+    "review",
+    "decision",
+    "published",
+    "rejected"
+  ],
+  "storage": {
+    "type": "browser localStorage",
+    "key": "ekh_mia_queue_v114",
+    "production_write": false
+  },
+  "structure_checks": {
+    "workflow_console": true,
+    "inbox_stage": true,
+    "review_stage": true,
+    "decision_stage": true,
+    "published_stage": true,
+    "returned_stage": true,
+    "local_queue_storage": true,
+    "structured_intake_save": true,
+    "owner_approval_gate": true,
+    "kyo_validation_gate": true,
+    "git_commit_evidence": true,
+    "deployment_evidence": true,
+    "rollback_evidence": true,
+    "production_safeguard": true,
+    "responsive_mobile": true,
+    "responsive_small_mobile": true,
+    "reduced_motion": true,
+    "duplicate_ids_absent": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true,
+    "fallback_present": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence."
+}

@@ -1,0 +1,138 @@
+{
+  "release": "v1.15.0",
+  "build_id": "EKH-OS-SAP-20260730-001",
+  "date": "2026-07-30",
+  "source_release": "v1.14.0",
+  "scope": "Secure Access Portal redesign",
+  "structure_checks": {
+    "secure_access_markup": true,
+    "mission_control_visual_language": true,
+    "password_visibility": true,
+    "caps_lock_detection": true,
+    "device_connection_state": true,
+    "local_clock": true,
+    "inline_svg_only": true,
+    "auth_ids_preserved": true,
+    "busy_state_svg_preserved": true,
+    "mobile_breakpoint": true,
+    "small_mobile_breakpoint": true,
+    "safe_area": true,
+    "reduced_motion": true,
+    "duplicate_ids_absent": true,
+    "supabase_config_preserved": true,
+    "snapshot_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 16,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 17,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 18,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "browser_preview": [
+    {
+      "case": "desktop",
+      "viewport": "1440x1000",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "error": "[3111:3157:0730/160126.975838:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[3111:3111:0730/160126.976375:ERROR:content/browser/gpu/gpu_process_host.cc:998] GPU process launch failed: error_code=1002\n[3111:3111:0730/160126.976397:FATAL:content/browser/gpu/gpu_data_manager_impl_private.cc:415] GPU process isn't usable. Goodbye.\n[0730/160126.988791:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n[0730/160126.988876:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n"
+    },
+    {
+      "case": "mobile",
+      "viewport": "390x844",
+      "status": "BLOCKED",
+      "screenshot": null,
+      "error": "[3193:3238:0730/160127.287662:ERROR:dbus/bus.cc:406] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[3193:3193:0730/160127.288487:ERROR:content/browser/gpu/gpu_process_host.cc:998] GPU process launch failed: error_code=1002\n[3193:3193:0730/160127.288500:FATAL:content/browser/gpu/gpu_data_manager_impl_private.cc:415] GPU process isn't usable. Goodbye.\n[0730/160127.294334:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory (2)\n[0730/160127.294377:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory (2)\n"
+    }
+  ],
+  "duplicate_ids": {},
+  "operational_snapshot_unchanged": true,
+  "deployment_status": "BLOCKED — no GitHub, Cloudflare or live-domain evidence."
+}
