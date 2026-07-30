@@ -348,19 +348,16 @@
     "production_verification": "pending GitHub Actions and live smoke test"
   },
   "ui_release": {
-    "version": "v1.9.0",
-    "name": "Interactive Overview",
-    "features": [
-      "Interactive project donut chart",
-      "Horizontal project carousel with searchable filters",
-      "Project detail drawer",
-      "Condensed COO checkpoint with on-demand expansion",
-      "Collapsible full Kanban board",
-      "Functional Month, Week and Agenda activity views",
-      "Department-focused organisation chart tabs",
-      "Team member detail drawer"
+    "version": "v1.9.1",
+    "name": "Organisation Centred Text",
+    "base_design": "Interactive Overview",
+    "changes": [
+      "Centred Organisation Chart page heading and governance note",
+      "Centred leadership and director cards",
+      "Centred department headers, lead labels and staff cards",
+      "Centred organisation search controls and department tabs",
+      "Centred operating principles, staff register and member drawer"
     ],
-    "external_chart_library": false,
     "backend_change": false
   },
   "snapshot_time_local": "17:48",
