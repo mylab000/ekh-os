@@ -1,0 +1,116 @@
+{
+  "release": "v1.12.0",
+  "build_id": "EKH-OS-ICC-20260730-001",
+  "source_release": "v1.11.0",
+  "deployment_status": "BLOCKED \u2014 no GitHub, Cloudflare or live-domain evidence produced.",
+  "structure_checks": {
+    "interactive_command_center": true,
+    "dynamic_activity_ids_preserved": true,
+    "command_palette": true,
+    "project_filters": true,
+    "project_drawer_bridge": true,
+    "inline_svg": true,
+    "responsive_mobile": true,
+    "responsive_tablet": true,
+    "supabase_config_preserved": true,
+    "headers_preserved": true,
+    "redirects_preserved": true,
+    "snapshot_unchanged": true,
+    "duplicate_ids_absent": true
+  },
+  "javascript_checks": [
+    {
+      "script": 1,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 2,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 3,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 4,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 5,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 6,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 7,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 8,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 9,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 10,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 11,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 12,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 13,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 14,
+      "status": "PASS",
+      "error": ""
+    },
+    {
+      "script": 15,
+      "status": "PASS",
+      "error": ""
+    }
+  ],
+  "operational_snapshot_sha256_before": "4441831340456bbd22f6976a5f70a780820b264e29bcdc444745c633af805842",
+  "operational_snapshot_sha256_after": "4441831340456bbd22f6976a5f70a780820b264e29bcdc444745c633af805842",
+  "static_interaction_audit": {
+    "command_count": 12,
+    "project_card_count": 6,
+    "project_stage_distribution": {
+      "review": 1,
+      "in-progress": 4,
+      "blocked": 1
+    },
+    "filters": [
+      "all",
+      "in-progress",
+      "review",
+      "blocked"
+    ],
+    "browser_visual_simulation": "BLOCKED \u2014 Chromium navigation restricted by execution environment."
+  }
+}

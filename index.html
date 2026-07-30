@@ -4,9 +4,9 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="EKH OS v1.11.0 Mission Control interface, readable typography, secure Staff Drive, organisation chart and activity system" name="description"/>
+<meta content="EKH OS v1.12.0 Interactive Command Center, readable typography, secure Staff Drive, organisation chart and activity system" name="description"/>
 <meta content="#161a28" name="theme-color"/>
-<title>EKH OS v1.11.0 — Mission Control Foundation</title>
+<title>EKH OS v1.12.0 — Interactive Command Center</title>
 <style>
 :root{
   --bg:#f4f6fb;
@@ -3050,14 +3050,72 @@ h4,.v190-chart-copy h4,.v190-quick-decisions h4,.coo-decision-panel h4,.coo-next
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}}
 </style>
 
+
+<style id="ekh-v1120-interactive-command-center">
+/* EKH OS v1.12.0 — Interactive Command Center */
+.mc112-command{display:grid;gap:20px}
+.mc112-icon{width:19px;height:19px;display:block;flex:0 0 auto;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.mc112-command-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(330px,.75fr);gap:32px;align-items:end;padding:30px;border:1px solid var(--mc-border);border-radius:22px;background:linear-gradient(130deg,var(--mc-surface) 0 62%,var(--mc-accent-soft) 100%);box-shadow:var(--mc-shadow)}
+.mc112-command-hero::after{content:"";position:absolute;width:300px;height:300px;right:-120px;top:-170px;border-radius:50%;border:1px solid color-mix(in srgb,var(--mc-accent) 18%,transparent);box-shadow:0 0 0 34px color-mix(in srgb,var(--mc-accent) 5%,transparent),0 0 0 68px color-mix(in srgb,var(--mc-accent-2) 4%,transparent);pointer-events:none}
+.mc112-command-copy,.mc112-command-tools{position:relative;z-index:1}
+.mc112-command-copy h2{margin:9px 0 10px;font-family:var(--mc-font-display)!important;font-size:clamp(34px,4vw,54px)!important;line-height:.98!important;letter-spacing:-.055em!important;text-wrap:balance}
+.mc112-command-copy>p{max-width:68ch;margin:0;color:var(--mc-muted);font-size:16px!important;line-height:1.65!important}
+.mc112-hero-signals{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.mc112-hero-signals span{min-height:30px;display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid var(--mc-border);border-radius:999px;background:color-mix(in srgb,var(--mc-surface) 85%,transparent);color:var(--mc-muted);font-family:var(--mc-font-mono);font-size:10.5px;letter-spacing:.025em}
+.mc112-hero-signals .signal-live{width:7px;height:7px;border-radius:50%;background:var(--mc-success);box-shadow:0 0 0 5px color-mix(in srgb,var(--mc-success) 12%,transparent)}
+.mc112-command-tools{display:grid;gap:10px}
+.mc112-date-card,.mc112-palette-button{min-height:62px;display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--mc-border);border-radius:14px;background:var(--mc-surface);box-shadow:var(--mc-shadow-small)}
+.mc112-date-card strong,.mc112-date-card small,.mc112-palette-button strong,.mc112-palette-button small{display:block}
+.mc112-date-card strong,.mc112-palette-button strong{font-size:14px!important}
+.mc112-date-card small,.mc112-palette-button small{margin-top:2px;color:var(--mc-muted);font-size:12px!important}
+.mc112-palette-button{width:100%;color:var(--mc-text);text-align:left;cursor:pointer;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.mc112-palette-button:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--mc-accent) 40%,var(--mc-border));box-shadow:var(--mc-shadow-hover)}
+.mc112-palette-button>span{min-width:0;flex:1}
+.mc112-palette-button kbd{padding:5px 7px;border:1px solid var(--mc-border);border-radius:7px;background:var(--mc-surface-soft);color:var(--mc-subtle);font-size:10px}
+.mc112-attention{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:13px;align-items:center;padding:13px 16px;border:1px solid color-mix(in srgb,var(--mc-warning) 27%,var(--mc-border));border-radius:15px;background:linear-gradient(120deg,color-mix(in srgb,var(--mc-warning) 8%,var(--mc-surface)),var(--mc-surface));box-shadow:var(--mc-shadow-small)}
+.mc112-attention.no-activities{border-color:color-mix(in srgb,var(--mc-success) 25%,var(--mc-border));background:linear-gradient(120deg,color-mix(in srgb,var(--mc-success) 7%,var(--mc-surface)),var(--mc-surface))}
+.mc112-attention-icon{width:39px;height:39px;display:grid;place-items:center;border-radius:12px;background:color-mix(in srgb,var(--mc-warning) 13%,var(--mc-surface));color:var(--mc-warning)}
+.mc112-attention.no-activities .mc112-attention-icon{background:color-mix(in srgb,var(--mc-success) 12%,var(--mc-surface));color:var(--mc-success)}
+.mc112-attention strong,.mc112-attention span{display:block}.mc112-attention strong{font-size:14px}.mc112-attention div>span{margin-top:2px;color:var(--mc-muted);font-size:13px}
+.mc112-attention .text-button{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}.mc112-attention .text-button .mc112-icon{width:16px;height:16px}
+.mc112-kpi-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mc112-kpi-card{position:relative;overflow:hidden;min-height:130px;display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:14px;align-items:center;padding:19px;border:1px solid var(--mc-border);border-radius:17px;background:var(--mc-surface);box-shadow:var(--mc-shadow-small);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.mc112-kpi-card::after{content:"";position:absolute;width:110px;height:110px;right:-55px;top:-55px;border-radius:50%;background:color-mix(in srgb,var(--tone) 7%,transparent)}
+.mc112-kpi-card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--tone) 35%,var(--mc-border));box-shadow:var(--mc-shadow-hover)}
+.mc112-kpi-card.tone-violet{--tone:var(--mc-accent)}.mc112-kpi-card.tone-cyan{--tone:var(--mc-accent-2)}.mc112-kpi-card.tone-coral{--tone:var(--mc-danger)}.mc112-kpi-card.tone-amber{--tone:var(--mc-warning)}
+.mc112-kpi-icon{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:color-mix(in srgb,var(--tone) 14%,var(--mc-surface));color:var(--tone)}
+.mc112-kpi-card small,.mc112-kpi-card strong,.mc112-kpi-card div>span{display:block}.mc112-kpi-card small{color:var(--mc-muted);font-size:12.5px!important}.mc112-kpi-card strong{margin:2px 0;font-family:var(--mc-font-display)!important;font-size:31px!important;line-height:1!important;letter-spacing:-.045em}.mc112-kpi-card div>span{color:var(--mc-subtle);font-size:12px}
+.mc112-kpi-card>button{position:relative;z-index:2;width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--mc-border);border-radius:10px;background:var(--mc-surface-soft);color:var(--mc-muted);cursor:pointer}.mc112-kpi-card>button:hover{background:var(--tone);color:#fff;border-color:var(--tone)}.mc112-kpi-card>button .mc112-icon{width:15px;height:15px}
+.mc112-progress-ring{position:relative;z-index:2;width:42px;height:42px;border-radius:50%;background:conic-gradient(var(--tone) calc(var(--progress)*1%),color-mix(in srgb,var(--mc-border) 72%,transparent) 0)}.mc112-progress-ring i{position:absolute;inset:7px;border-radius:50%;background:var(--mc-surface)}
+.mc112-primary-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(340px,.55fr);gap:18px}
+.mc112-secondary-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);gap:18px}
+.mc112-surface{border:1px solid var(--mc-border);border-radius:18px;background:var(--mc-surface);box-shadow:var(--mc-shadow-small);padding:24px}
+.mc112-panel-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}.mc112-panel-head.compact{margin-bottom:15px}.mc112-panel-head h3{margin:6px 0 4px;font-family:var(--mc-font-display)!important;font-size:22px!important;line-height:1.2!important;letter-spacing:-.03em!important}.mc112-panel-head p{max-width:67ch;margin:0;color:var(--mc-muted);font-size:13.5px!important;line-height:1.55!important}.mc112-panel-head .primary-button,.mc112-panel-head .text-button{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}.mc112-panel-head .mc112-icon{width:16px;height:16px}
+.mc112-queue-toolbar{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:10px 0;border-top:1px solid var(--mc-border);border-bottom:1px solid var(--mc-border);color:var(--mc-muted);font-size:12.5px}.mc112-queue-toolbar .text-button{display:inline-flex;align-items:center;gap:6px}.mc112-queue-toolbar .mc112-icon{width:15px;height:15px}
+.mc112-activity-list{min-height:215px;padding-top:13px!important}.mc112-activity-list .activity-priority-item{min-height:57px!important;display:grid!important;grid-template-columns:36px minmax(0,1fr) auto!important;gap:12px!important;align-items:center!important;border:1px solid var(--mc-border)!important;background:var(--mc-surface-soft)!important}.mc112-activity-list .activity-priority-item:hover{border-color:color-mix(in srgb,var(--mc-accent) 32%,var(--mc-border))!important;background:var(--mc-accent-soft)!important;transform:translateX(3px)}.mc112-activity-list .activity-priority-item strong{font-size:13.5px!important}.mc112-activity-list .activity-priority-item div>span,.mc112-activity-list .activity-priority-item time{font-size:11.5px!important;color:var(--mc-muted)!important}
+.mc112-decision-stack{display:flex;flex-direction:column}.mc112-decision-list{display:grid;border-top:1px solid var(--mc-border)}.mc112-decision-list>button{width:100%;min-height:77px;display:grid;grid-template-columns:31px minmax(0,1fr) 20px;gap:12px;align-items:center;padding:12px 0;border:0;border-bottom:1px solid var(--mc-border);background:transparent;color:var(--mc-text);text-align:left;cursor:pointer}.mc112-decision-list>button:hover{padding-left:8px;padding-right:8px;background:var(--mc-accent-soft)}.mc112-decision-list>button>span{font-family:var(--mc-font-mono);font-size:10.5px;color:var(--mc-subtle)}.mc112-decision-list strong,.mc112-decision-list small{display:block}.mc112-decision-list strong{font-size:14px}.mc112-decision-list small{margin-top:3px;color:var(--mc-muted);font-size:12px}.mc112-decision-list .mc112-icon{width:16px;height:16px;color:var(--mc-subtle)}
+.mc112-control-rule{margin-top:auto;padding:13px;border:1px solid color-mix(in srgb,var(--mc-warning) 22%,var(--mc-border));border-radius:12px;background:color-mix(in srgb,var(--mc-warning) 6%,var(--mc-surface))}.mc112-control-rule b{font-family:var(--mc-font-mono);font-size:10px;letter-spacing:.08em;color:var(--mc-warning)}.mc112-control-rule p{margin:5px 0 0;color:var(--mc-muted);font-size:12.5px!important;line-height:1.5!important}
+.mc112-critical-path{overflow:hidden}.mc112-path-rail{display:grid;grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr) 32px minmax(0,1fr);gap:8px;align-items:center}.mc112-path-rail>button{min-height:110px;display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:12px;align-items:center;padding:16px;border:1px solid var(--mc-border);border-radius:14px;background:var(--mc-surface-soft);color:var(--mc-text);text-align:left;cursor:pointer}.mc112-path-rail>button:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--mc-accent) 37%,var(--mc-border));background:var(--mc-accent-soft)}.mc112-path-index{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:var(--mc-accent);color:#fff;font-family:var(--mc-font-mono);font-size:10px}.mc112-path-rail b,.mc112-path-rail small{display:block}.mc112-path-rail b{font-size:14px}.mc112-path-rail small{margin-top:4px;color:var(--mc-muted);font-size:12px;line-height:1.45}.mc112-path-rail em{font-family:var(--mc-font-mono);font-size:9.5px;font-style:normal;color:var(--mc-subtle)}.mc112-path-connector{display:grid;place-items:center;color:var(--mc-accent)}
+.mc112-project-head{align-items:end}.mc112-filter-tabs{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px}.mc112-filter-tabs button{min-height:34px;display:inline-flex;align-items:center;gap:7px;padding:0 11px;border:1px solid var(--mc-border);border-radius:10px;background:var(--mc-surface-soft);color:var(--mc-muted);cursor:pointer;font-size:12.5px!important}.mc112-filter-tabs button b{font-family:var(--mc-font-mono);font-size:10px}.mc112-filter-tabs button:hover,.mc112-filter-tabs button.active{border-color:var(--mc-accent);background:var(--mc-accent);color:#fff}
+.mc112-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.mc112-project-card{min-height:191px;display:flex;flex-direction:column;padding:17px;border:1px solid var(--mc-border);border-radius:14px;background:var(--mc-surface-soft);color:var(--mc-text);text-align:left;cursor:pointer}.mc112-project-card:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--mc-accent) 38%,var(--mc-border));background:var(--mc-accent-soft);box-shadow:var(--mc-shadow-small)}.mc112-project-card[hidden]{display:none!important}.mc112-project-top,.mc112-project-foot{display:flex;justify-content:space-between;gap:10px;align-items:center}.mc112-project-top>b{font-family:var(--mc-font-mono);font-size:10.5px;letter-spacing:.05em}.mc112-project-top em{padding:4px 7px;border-radius:999px;font-family:var(--mc-font-mono);font-size:9px;font-style:normal}.mc112-project-top .stage-in-progress{background:color-mix(in srgb,var(--mc-accent) 12%,var(--mc-surface));color:var(--mc-accent)}.mc112-project-top .stage-review{background:color-mix(in srgb,var(--mc-warning) 12%,var(--mc-surface));color:var(--mc-warning)}.mc112-project-top .stage-blocked{background:color-mix(in srgb,var(--mc-danger) 12%,var(--mc-surface));color:var(--mc-danger)}.mc112-project-card>strong{display:block;margin:19px 0 6px;font-family:var(--mc-font-display)!important;font-size:17px!important;line-height:1.18!important;letter-spacing:-.025em}.mc112-project-label{min-height:39px;color:var(--mc-muted);font-size:12px;line-height:1.45}.mc112-progress-track{height:7px;margin-top:auto;border-radius:999px;background:var(--mc-border);overflow:hidden}.mc112-progress-track i{height:100%;display:block;border-radius:inherit;background:linear-gradient(90deg,var(--mc-accent),var(--mc-accent-2))}.mc112-project-foot{margin-top:10px}.mc112-project-foot small{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--mc-muted);font-size:10.5px!important}.mc112-project-foot b{font-family:var(--mc-font-mono);font-size:10.5px}.mc112-project-empty{padding:24px;border:1px dashed var(--mc-border-strong);border-radius:13px;color:var(--mc-muted);text-align:center;font-size:13px}
+.mc112-reminder-timeline{display:grid;gap:9px;min-height:180px}.mc112-reminder-timeline .compact-reminder{min-height:58px;display:grid;grid-template-columns:56px 34px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 12px;border:1px solid var(--mc-border);border-radius:12px;background:var(--mc-surface-soft);cursor:pointer}.mc112-reminder-timeline .compact-reminder:hover{border-color:color-mix(in srgb,var(--mc-accent) 35%,var(--mc-border));background:var(--mc-accent-soft)}.mc112-reminder-timeline .reminder-time,.mc112-reminder-timeline .mini-status{font-family:var(--mc-font-mono);font-size:10.5px}.mc112-reminder-timeline strong,.mc112-reminder-timeline small{display:block}.mc112-reminder-timeline strong{font-size:13px}.mc112-reminder-timeline small{color:var(--mc-muted);font-size:11px!important}
+.mc112-action-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.mc112-action-grid>button{min-height:78px;display:grid;grid-template-columns:31px minmax(0,1fr) 18px;gap:10px;align-items:center;padding:12px;border:1px solid var(--mc-border);border-radius:13px;background:var(--mc-surface-soft);color:var(--mc-text);text-align:left;cursor:pointer}.mc112-action-grid>button:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--mc-accent) 36%,var(--mc-border));background:var(--mc-accent-soft)}.mc112-action-grid>button>.mc112-icon:first-child{width:24px;height:24px;color:var(--mc-accent)}.mc112-action-grid>button>.mc112-icon:last-child{width:15px;height:15px;color:var(--mc-subtle)}.mc112-action-grid b,.mc112-action-grid small{display:block}.mc112-action-grid b{font-size:13.5px}.mc112-action-grid small{margin-top:3px;color:var(--mc-muted);font-size:11px!important}
+.mc112-palette-backdrop{position:fixed;inset:0;z-index:1200;display:grid;place-items:start center;padding:11vh 18px 30px;background:rgba(9,12,20,.58);backdrop-filter:blur(9px)}.mc112-palette-backdrop[hidden]{display:none!important}.mc112-palette{width:min(650px,100%);overflow:hidden;border:1px solid var(--mc-border-strong);border-radius:18px;background:var(--mc-surface);color:var(--mc-text);box-shadow:0 32px 85px rgba(6,9,17,.36)}.mc112-palette>header{display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:11px;align-items:center;padding:15px 17px;border-bottom:1px solid var(--mc-border)}.mc112-palette>header>span{color:var(--mc-accent)}.mc112-palette input{min-height:40px!important;border:0!important;background:transparent!important;box-shadow:none!important;color:var(--mc-text);font-size:16px!important}.mc112-palette input:focus{outline:0!important}.mc112-palette kbd{padding:4px 7px;border:1px solid var(--mc-border);border-radius:6px;background:var(--mc-surface-soft);font-size:9.5px;color:var(--mc-subtle)}.mc112-palette-label{padding:11px 17px 7px;color:var(--mc-subtle);font-family:var(--mc-font-mono);font-size:9.5px;letter-spacing:.08em}.mc112-command-results{max-height:420px;overflow:auto;padding:0 8px 10px}.mc112-command-result{width:100%;min-height:58px;display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:11px;align-items:center;padding:8px 10px;border:0;border-radius:11px;background:transparent;color:var(--mc-text);text-align:left;cursor:pointer}.mc112-command-result:hover,.mc112-command-result.active{background:var(--mc-accent-soft)}.mc112-command-result>span:first-child{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--mc-border);border-radius:10px;color:var(--mc-accent)}.mc112-command-result b,.mc112-command-result small{display:block}.mc112-command-result b{font-size:13.5px}.mc112-command-result small{margin-top:2px;color:var(--mc-muted);font-size:11.5px!important}.mc112-command-result>em{font-family:var(--mc-font-mono);font-size:9.5px;font-style:normal;color:var(--mc-subtle)}.mc112-command-results-empty{padding:24px;color:var(--mc-muted);text-align:center;font-size:13px}.mc112-palette>footer{display:flex;gap:17px;padding:10px 17px;border-top:1px solid var(--mc-border);background:var(--mc-surface-soft);color:var(--mc-subtle);font-family:var(--mc-font-mono);font-size:9.5px}
+body.mc112-palette-open{overflow:hidden}
+@media(max-width:1250px){.mc112-kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mc112-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.mc112-primary-grid,.mc112-secondary-grid{grid-template-columns:1fr}.mc112-control-rule{margin-top:16px}}
+@media(max-width:900px){.mc112-command-hero{grid-template-columns:1fr;padding:24px}.mc112-command-tools{grid-template-columns:1fr 1fr}.mc112-path-rail{grid-template-columns:1fr}.mc112-path-connector{transform:rotate(90deg)}.mc112-project-head{align-items:flex-start;flex-direction:column}.mc112-filter-tabs{justify-content:flex-start}}
+@media(max-width:640px){.mc112-command{gap:14px}.mc112-command-hero{padding:20px;border-radius:17px}.mc112-command-copy h2{font-size:34px!important}.mc112-command-tools{grid-template-columns:1fr}.mc112-kpi-grid{grid-template-columns:1fr}.mc112-kpi-card{min-height:112px}.mc112-attention{grid-template-columns:38px minmax(0,1fr)}.mc112-attention>.text-button{grid-column:2;justify-self:start;padding:0}.mc112-surface{padding:18px}.mc112-panel-head{flex-direction:column}.mc112-panel-head>.primary-button,.mc112-panel-head>.secondary-button{width:100%;justify-content:center}.mc112-queue-toolbar{align-items:flex-start;flex-direction:column}.mc112-project-grid{grid-template-columns:1fr}.mc112-action-grid{grid-template-columns:1fr}.mc112-reminder-timeline .compact-reminder{grid-template-columns:48px 30px minmax(0,1fr)}.mc112-reminder-timeline .mini-status{grid-column:3}.mc112-palette-backdrop{padding-top:8vh}.mc112-palette>footer{display:none}}
+@media(prefers-reduced-motion:reduce){.mc112-kpi-card,.mc112-project-card,.mc112-action-grid>button,.mc112-path-rail>button,.mc112-decision-list>button,.mc112-palette-button{transition:none!important}}
+</style>
+
 </head>
-<body class="auth-pending" data-page="command-centre" data-release="v1.11.0">
+<body class="auth-pending" data-page="command-centre" data-release="v1.12.0">
 <section aria-label="EKH OS secure login" id="ekhAuthGate">
 <div class="v173-login-layout">
 <div class="v173-login-brand">
 <div><div class="v173-login-mark">E</div><h1>Secure operations for English Kids Hub.</h1><p>EKH OS confirms the Supabase session and authorised role before the operations workspace is displayed.</p>
 <div class="v173-security-points"><span><i>✓</i>Private Supabase Storage with RLS</span><span><i>✓</i>Owner, admin, manager, member, reviewer and viewer roles</span><span><i>✓</i>Session expiry, sign-out and access-denied controls</span></div></div>
-<small>EKH OS v1.11.0 · Mission Control Foundation</small>
+<small>EKH OS v1.12.0 · Interactive Command Center</small>
 </div>
 <div class="v173-login-form-wrap">
 <span class="section-kicker">AUTHORISED PERSONNEL ONLY</span><h2>Sign in to EKH OS</h2><p>Operational pages stay hidden until the session and role are validated.</p>
@@ -3092,7 +3150,7 @@ h4,.v190-chart-copy h4,.v190-quick-decisions h4,.coo-decision-panel h4,.coo-next
 <strong>EKH OS</strong>
 <span>Operating System</span>
 </div>
-<span class="build-chip">v1.11.0</span>
+<span class="build-chip">v1.12.0</span>
 </div>
 <div class="workspace-switcher">
 <div class="workspace-icon">EK</div>
@@ -3138,75 +3196,185 @@ h4,.v190-chart-copy h4,.v190-quick-decisions h4,.coo-decision-panel h4,.coo-next
 </header>
 <main class="page-content">
 <!-- COMMAND CENTRE -->
-<section class="view active soft-command" id="command-centre">
-<header class="sui-page-heading">
-<div>
-<span class="section-kicker">ENGLISH KIDS HUB · OWNER WORKSPACE</span>
-<h2>Good afternoon, Azuar.</h2>
-<p>A clear view of today’s workload, owner decisions and the project gates that need evidence.</p>
-</div>
-<div class="sui-date-card">
-<span class="live-dot"></span>
-<div><strong id="todayLabel">—</strong><small>Production workspace</small></div>
-</div>
-</header>
-<div class="sui-attention" id="supabaseAttentionStrip">
-<span class="sui-attention-icon">!</span>
-<div><strong id="activityAttentionTitle">Loading activities…</strong><span id="activityAttentionSummary">Sign in through Staff Drive to load your private queue.</span></div>
-<button class="text-button" data-view-target="notifications">View activities</button>
-</div>
-<section aria-label="Operational summary" class="sui-kpi-grid">
-<article class="sui-kpi-card">
-<span class="sui-kpi-icon violet">◔</span>
-<div><small>Open activities</small><strong id="dashboardReminderCount">0</strong><span id="dashboardActivityFootA">Loading</span></div>
-</article>
-<article class="sui-kpi-card">
-<span class="sui-kpi-icon cyan">✓</span>
-<div><small>Today’s progress</small><strong id="dashboardActivityRingText">0/0</strong><span id="dashboardActivityFootB">Private records</span></div>
-<span class="sui-mini-ring" id="dashboardActivityRing" style="--progress:0"></span>
-</article>
-<article class="sui-kpi-card">
-<span class="sui-kpi-icon coral">⌁</span>
-<div><small>Owner decisions</small><strong>0</strong><span>Evidence-gated</span></div>
-</article>
-<article class="sui-kpi-card">
-<span class="sui-kpi-icon lime">▦</span>
-<div><small>Critical workstreams</small><strong>3</strong><span id="dashboardActivityTrend">Awaiting sync</span></div>
-</article>
+<section class="view active mc112-command" id="command-centre">
+  <header class="mc112-command-hero">
+    <div class="mc112-command-copy">
+      <span class="section-kicker">EKH MISSION CONTROL · OWNER WORKSPACE</span>
+      <h2>Good afternoon, Azuar.</h2>
+      <p>One operating view for today’s actions, named decisions, critical dependencies and evidence-gated project movement.</p>
+      <div class="mc112-hero-signals" aria-label="Current operating signals">
+        <span><i class="signal-live"></i> Workspace active</span>
+        <span>Snapshot 30 July 2026</span>
+        <span>No new verified blocker</span>
+      </div>
+    </div>
+    <div class="mc112-command-tools">
+      <div class="mc112-date-card">
+        <span class="live-dot"></span>
+        <div><strong id="todayLabel">—</strong><small>Production workspace</small></div>
+      </div>
+      <button class="mc112-palette-button" id="v112CommandPaletteOpen" type="button">
+        <svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="10.5" cy="10.5" r="6.2"></circle><path d="M15.1 15.1L20 20"></path></svg>
+        <span><strong>Quick command</strong><small>Search pages and actions</small></span>
+        <kbd>Ctrl K</kbd>
+      </button>
+    </div>
+  </header>
+
+  <div class="mc112-attention" id="supabaseAttentionStrip">
+    <span class="mc112-attention-icon"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 3.5L21 20H3L12 3.5Z"></path><path d="M12 9v5M12 17h.01"></path></svg></span>
+    <div><strong id="activityAttentionTitle">Loading activities…</strong><span id="activityAttentionSummary">Sign in through Staff Drive to load your private queue.</span></div>
+    <button class="text-button" data-view-target="notifications" type="button">View activities <svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M7 17L17 7"></path><path d="M9 7h8v8"></path></svg></button>
+  </div>
+
+  <section aria-label="Operational summary" class="mc112-kpi-grid">
+    <article class="mc112-kpi-card tone-violet">
+      <span class="mc112-kpi-icon"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5v5l3.3 2"></path></svg></span>
+      <div><small>Open activities</small><strong id="dashboardReminderCount">0</strong><span id="dashboardActivityFootA">Loading</span></div>
+      <button data-view-target="notifications" type="button" aria-label="Open activities"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </article>
+    <article class="mc112-kpi-card tone-cyan">
+      <span class="mc112-kpi-icon"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 12a8 8 0 1 1 2.3 5.7"></path><path d="M4 17v-5h5"></path></svg></span>
+      <div><small>Today’s progress</small><strong id="dashboardActivityRingText">0/0</strong><span id="dashboardActivityFootB">Private records</span></div>
+      <span class="mc112-progress-ring" id="dashboardActivityRing" style="--progress:0"><i></i></span>
+    </article>
+    <article class="mc112-kpi-card tone-coral">
+      <span class="mc112-kpi-icon"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M5 4.5h14v11H9l-4 4v-15Z"></path><path d="M8 8h8M8 11.5h5"></path></svg></span>
+      <div><small>Owner decisions</small><strong id="dashboardOwnerDecisionCount">3</strong><span>Named approval required</span></div>
+      <button data-view-target="command-owner-decisions" type="button" aria-label="Open owner decisions"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </article>
+    <article class="mc112-kpi-card tone-amber">
+      <span class="mc112-kpi-icon"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="7" cy="7" r="3"></circle><circle cx="17" cy="17" r="3"></circle><path d="M9.2 9.2l5.6 5.6"></path><path d="M17 5v6M5 17h6"></path></svg></span>
+      <div><small>Critical dependencies</small><strong>3</strong><span id="dashboardActivityTrend">Awaiting sync</span></div>
+      <button data-view-target="command-critical-path" type="button" aria-label="Open critical path"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </article>
+  </section>
+
+  <div class="mc112-primary-grid">
+    <section class="mc112-surface mc112-focus-panel" aria-labelledby="today-zone-title">
+      <header class="mc112-panel-head">
+        <div>
+          <span class="section-kicker">TODAY’S FOCUS</span>
+          <h3 id="today-zone-title"><span id="dashboardActivitySummaryTitle">No activity data loaded</span></h3>
+          <p id="dashboardActivitySummaryText">Your schedule is stored in Supabase.</p>
+        </div>
+        <button class="primary-button" id="dashboardAddActivity" type="button"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M12 5v14M5 12h14"></path></svg> Add activity</button>
+      </header>
+      <div class="mc112-queue-toolbar"><span>Authenticated owner records</span><button class="text-button" data-view-target="notifications" type="button">Open full queue <svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M7 17L17 7"></path><path d="M9 7h8v8"></path></svg></button></div>
+      <div class="sui-activity-list mc112-activity-list" id="dashboardActivityQueue"><div class="activity-loading-state">Connecting to Supabase…</div></div>
+    </section>
+
+    <aside class="mc112-surface mc112-decision-stack" aria-labelledby="mc112DecisionTitle">
+      <header class="mc112-panel-head compact">
+        <div><span class="section-kicker">DECISION DESK</span><h3 id="mc112DecisionTitle">Owner input required</h3><p>Three decisions currently affect the operating sequence.</p></div>
+        <button class="text-button" data-view-target="command-owner-decisions" type="button">Open desk <svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M7 17L17 7"></path><path d="M9 7h8v8"></path></svg></button>
+      </header>
+      <div class="mc112-decision-list">
+        <button type="button" data-view-target="command-owner-decisions"><span>01</span><div><strong>Audit closure priority</strong><small>Set the formal Reo → Jeff handoff date.</small></div><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <button type="button" data-view-target="command-owner-decisions"><span>02</span><div><strong>Generator sequencing</strong><small>Confirm priority after current verification work.</small></div><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <button type="button" data-view-target="command-owner-decisions"><span>03</span><div><strong>Next pricing phase</strong><small>Approve the step after the first 50 buyers.</small></div><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+      </div>
+      <div class="mc112-control-rule"><b>CONTROL RULE</b><p>No publication, import or closure is allowed from an inferred status.</p></div>
+    </aside>
+  </div>
+
+  <section class="mc112-surface mc112-critical-path" aria-labelledby="mc112CriticalTitle">
+    <header class="mc112-panel-head">
+      <div><span class="section-kicker">CURRENT CRITICAL PATH</span><h3 id="mc112CriticalTitle">Evidence must move in sequence</h3><p>Each dependency opens the next workstream only after its required evidence is recorded.</p></div>
+      <button class="secondary-button" data-view-target="command-critical-path" type="button">Open full path</button>
+    </header>
+    <div class="mc112-path-rail">
+      <button type="button" data-mc112-project="SA"><span class="mc112-path-index">01</span><div><b>Question-bank audit</b><small>Reo completes traceable final-content review.</small></div><em>REO</em></button>
+      <span class="mc112-path-connector"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></span>
+      <button type="button" data-mc112-project="SA"><span class="mc112-path-index">02</span><div><b>Smart Adventure integration</b><small>Jeff receives the formal audited handoff.</small></div><em>JEFF</em></button>
+      <span class="mc112-path-connector"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></span>
+      <button type="button" data-mc112-project="WS"><span class="mc112-path-index">03</span><div><b>Worksheet verification</b><small>Blanc completes repack and row-level evidence.</small></div><em>BLANC</em></button>
+    </div>
+  </section>
+
+  <section class="mc112-surface mc112-project-pulse" aria-labelledby="mc112ProjectTitle">
+    <header class="mc112-panel-head mc112-project-head">
+      <div><span class="section-kicker">PROJECT PULSE</span><h3 id="mc112ProjectTitle">Portfolio movement</h3><p>Filter current records, then open a project’s evidence drawer.</p></div>
+      <div class="mc112-filter-tabs" role="group" aria-label="Project status filter">
+        <button class="active" type="button" data-mc112-filter="all">All <b>6</b></button>
+        <button type="button" data-mc112-filter="in-progress">Active <b>4</b></button>
+        <button type="button" data-mc112-filter="review">Review <b>1</b></button>
+        <button type="button" data-mc112-filter="blocked">Hold <b>1</b></button>
+      </div>
+    </header>
+    <div class="mc112-project-grid" id="mc112ProjectGrid">
+      <button class="mc112-project-card" type="button" data-mc112-project="SA" data-mc112-stage="review">
+      <span class="mc112-project-top"><b>SA</b><em class="stage-review">Review</em></span>
+      <strong>Smart Adventure</strong>
+      <span class="mc112-project-label">Audit handoff remains the key dependency</span>
+      <span class="mc112-progress-track"><i style="width:64%"></i></span>
+      <span class="mc112-project-foot"><small>Reo / Jeff</small><b>64%</b></span>
+    </button>
+<button class="mc112-project-card" type="button" data-mc112-project="OS" data-mc112-stage="in-progress">
+      <span class="mc112-project-top"><b>OS</b><em class="stage-in-progress">Active</em></span>
+      <strong>EKH OS / Command Centre</strong>
+      <span class="mc112-project-label">Technical coordination and documentation active</span>
+      <span class="mc112-progress-track"><i style="width:88%"></i></span>
+      <span class="mc112-project-foot"><small>Candice / Mia</small><b>88%</b></span>
+    </button>
+<button class="mc112-project-card" type="button" data-mc112-project="WS" data-mc112-stage="in-progress">
+      <span class="mc112-project-top"><b>WS</b><em class="stage-in-progress">Active</em></span>
+      <strong>Worksheet Studio / Generator</strong>
+      <span class="mc112-project-label">Source-data repack and verification active</span>
+      <span class="mc112-progress-track"><i style="width:50%"></i></span>
+      <span class="mc112-project-foot"><small>Blanc</small><b>50%</b></span>
+    </button>
+<button class="mc112-project-card" type="button" data-mc112-project="CP" data-mc112-stage="in-progress">
+      <span class="mc112-project-top"><b>CP</b><em class="stage-in-progress">Active</em></span>
+      <strong>Cuddle Paws — Sales &amp; Marketing</strong>
+      <span class="mc112-project-label">Promotion remains active</span>
+      <span class="mc112-progress-track"><i style="width:82%"></i></span>
+      <span class="mc112-project-foot"><small>Kamal / Zack / Mario</small><b>82%</b></span>
+    </button>
+<button class="mc112-project-card" type="button" data-mc112-project="WEB" data-mc112-stage="in-progress">
+      <span class="mc112-project-top"><b>WEB</b><em class="stage-in-progress">Active</em></span>
+      <strong>Website &amp; Product Pages</strong>
+      <span class="mc112-project-label">Cuddle Paws landing page completed; remaining pages continue</span>
+      <span class="mc112-progress-track"><i style="width:62%"></i></span>
+      <span class="mc112-project-foot"><small>Xion / Candice</small><b>62%</b></span>
+    </button>
+<button class="mc112-project-card" type="button" data-mc112-project="SE" data-mc112-stage="blocked">
+      <span class="mc112-project-top"><b>SE</b><em class="stage-blocked">Hold</em></span>
+      <strong>Smart English</strong>
+      <span class="mc112-project-label">Inherited dependency hold</span>
+      <span class="mc112-progress-track"><i style="width:30%"></i></span>
+      <span class="mc112-project-foot"><small>Reo / Jeff / Candice</small><b>30%</b></span>
+    </button>
+    </div>
+    <div class="mc112-project-empty" id="mc112ProjectEmpty" hidden>No project matches this filter.</div>
+  </section>
+
+  <div class="mc112-secondary-grid">
+    <section class="mc112-surface mc112-upcoming-panel">
+      <header class="mc112-panel-head compact"><div><span class="section-kicker">NEXT IN QUEUE</span><h3>Upcoming activity stream</h3><p>Nearest authenticated records, ordered by due time.</p></div><button class="text-button" data-view-target="supabase-activities" type="button">Live records <svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M7 17L17 7"></path><path d="M9 7h8v8"></path></svg></button></header>
+      <div class="mc112-reminder-timeline" id="dashboardReminderTimeline"><div class="activity-loading-state">Connecting to Supabase…</div></div>
+    </section>
+    <aside class="mc112-surface mc112-quick-actions">
+      <header class="mc112-panel-head compact"><div><span class="section-kicker">QUICK ACTIONS</span><h3>Move without searching</h3><p>Open the workspace required for the next operational action.</p></div></header>
+      <div class="mc112-action-grid">
+        <button type="button" data-mc112-nav="projects"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M3.5 7.5h6l1.8 2H20.5v9H3.5v-11Z"></path><path d="M3.5 7.5V5.5h6l1.8 2"></path></svg><span><b>Projects</b><small>Portfolio and evidence</small></span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <button type="button" data-mc112-nav="handoffs"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M5 6h14M5 12h14M5 18h9"></path><circle cx="3" cy="6" r=".7" fill="currentColor" stroke="none"></circle><circle cx="3" cy="12" r=".7" fill="currentColor" stroke="none"></circle><circle cx="3" cy="18" r=".7" fill="currentColor" stroke="none"></circle></svg><span><b>Mia Queue</b><small>Review and publication gate</small></span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <button type="button" data-mc112-nav="organisation"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.4"></circle><path d="M3.5 19c.4-4 2.5-6 5.5-6s5.1 2 5.5 6M14.2 14c2.9-.5 5.2 1.2 5.8 4.3"></path></svg><span><b>Organisation</b><small>People and functions</small></span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+        <button type="button" data-mc112-nav="files"><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M4 10h16M8 15h.01"></path></svg><span><b>Staff Drive</b><small>Secure files and evidence</small></span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M9 6l6 6-6 6"></path></svg></button>
+      </div>
+    </aside>
+  </div>
 </section>
-<div class="sui-main-grid v192-single-column">
-<section aria-labelledby="today-zone-title" class="sui-card sui-activity-card">
-<header class="sui-card-head">
-<div>
-<span class="section-kicker">TODAY’S FOCUS</span>
-<h3 id="today-zone-title"><span id="dashboardActivitySummaryTitle">No activity data loaded</span></h3>
-<p id="dashboardActivitySummaryText">Your schedule is stored in Supabase.</p>
+
+<div class="mc112-palette-backdrop" id="v112CommandPalette" hidden aria-hidden="true">
+  <section class="mc112-palette" role="dialog" aria-modal="true" aria-labelledby="v112PaletteTitle">
+    <header><span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="10.5" cy="10.5" r="6.2"></circle><path d="M15.1 15.1L20 20"></path></svg></span><input id="v112CommandSearch" type="search" autocomplete="off" placeholder="Search pages, projects and actions…" aria-label="Search commands"><kbd>ESC</kbd></header>
+    <div class="mc112-palette-label" id="v112PaletteTitle">QUICK COMMAND</div>
+    <div class="mc112-command-results" id="v112CommandResults"></div>
+    <footer><span>↑ ↓ Navigate</span><span>Enter Open</span><span>Esc Close</span></footer>
+  </section>
 </div>
-<button class="primary-button" id="dashboardAddActivity">＋ Add activity</button>
-</header>
-<div class="sui-queue-label"><span>Authenticated owner records</span><button class="text-button" data-view-target="notifications">Open full queue</button></div>
-<div class="sui-activity-list" id="dashboardActivityQueue"><div class="activity-loading-state">Connecting to Supabase…</div></div>
-<div class="cc-hidden-runtime" id="dashboardReminderTimeline"></div>
-</section>
-</div>
-<div class="sui-lower-grid v192-single-column">
-<section class="sui-card sui-momentum-card">
-<header class="sui-card-head compact">
-<div><span class="section-kicker">PORTFOLIO PULSE</span><h3>Interactive project status</h3><p>Click a status to open the matching project carousel.</p></div>
-</header>
-<div class="v190-command-chart">
-<div class="v190-donut small" style="--v190-donut:#22c55e 0.000% 42.857%, #7b61d1 42.857% 71.429%, #f59e0b 71.429% 78.571%, #ef476f 78.571% 100.000%"><div><strong>14</strong><span>Projects</span></div></div>
-<div class="v190-command-legend">
-<button data-v190-command-stage="completed"><i style="background:#22c55e"></i><span>Completed</span><b>6</b></button>
-<button data-v190-command-stage="in-progress"><i style="background:#7b61d1"></i><span>Active</span><b>4</b></button>
-<button data-v190-command-stage="review"><i style="background:#f59e0b"></i><span>Review</span><b>1</b></button>
-<button data-v190-command-stage="blocked"><i style="background:#ef476f"></i><span>Hold</span><b>3</b></button>
-</div>
-</div>
-<div class="sui-soft-banner"><span>Explore</span><p>Select a status to open Projects with that filter applied.</p></div>
-</section>
-</div>
-</section>
+
 <section class="view" id="notifications"><header class="v172-page-head"><div><span class="section-kicker">PERSONAL WORKSTREAM</span><h2>My Activities</h2><p>A horizontal week timeline for scheduled, overdue and completed work.</p></div><div class="v172-view-actions"><button class="secondary-button">This week</button><button class="primary-button" id="v172AddActivity">＋ Add activity</button></div></header><div class="v172-activity-tabs"><button data-v190-activity-view="month" type="button">Month</button><button class="active" data-v190-activity-view="week" type="button">Week</button><button data-v190-activity-view="agenda" type="button">Agenda</button></div><div class="v172-activity-timeline" data-v190-activity-panel="week"><section class="v172-timeline-day"><header><span>Mon</span><b>27</b></header><div><article class="v172-activity-block planned"><time>09:00</time><strong>Review launch messaging</strong><small>Cuddle Paws</small></article></div></section><section class="v172-timeline-day"><header><span>Tue</span><b>28</b></header><div><article class="v172-activity-block review"><time>14:00</time><strong>Validate handoff evidence</strong><small>Smart Adventure</small></article></div></section><section class="v172-timeline-day"><header><span>Wed</span><b>29</b></header><div><article class="v172-activity-block approval"><time>10:00</time><strong>EKH OS design council</strong><small>EKH OS</small></article><article class="v172-activity-block planned"><time>15:00</time><strong>Calendar and Kanban build</strong><small>EKH OS</small></article></div></section><section class="v172-timeline-day"><header><span>Thu</span><b>30</b></header><div><article class="v172-activity-block review"><time>09:30</time><strong>Year 1 isolated intake</strong><small>Worksheet Studio</small></article><article class="v172-activity-block approval"><time>14:00</time><strong>Owner approval checkpoint</strong><small>Mia Queue</small></article></div></section><section class="v172-timeline-day"><header><span>Fri</span><b>31</b></header><div><article class="v172-activity-block review"><time>11:00</time><strong>Kyo regression review</strong><small>EKH OS</small></article><article class="v172-activity-block completed"><time>16:00</time><strong>Publish approved update</strong><small>EKH OS</small></article></div></section><section class="v172-timeline-day"><header><span>Sat</span><b>1</b></header><div><p>Clear</p></div></section><section class="v172-timeline-day"><header><span>Sun</span><b>2</b></header><div><p>Clear</p></div></section></div>
 <div class="v190-month-view" data-v190-activity-panel="month" hidden="">
 <section class="v190-month-calendar">
@@ -3733,7 +3901,7 @@ h4,.v190-chart-copy h4,.v190-quick-decisions h4,.coo-decision-panel h4,.coo-next
 </div>
 </section></section><section class="view colour-page v192-focus-page" id="command-published-updates"><header class="v172-page-head v192-page-head"><div><span class="section-kicker">RELEASE HISTORY</span><h2>Recently Published Updates</h2><p>Review publication evidence, deployment status and rollback references on a dedicated page.</p></div></header><details class="sui-card sui-audit-card" open="">
 <summary><div><span class="section-kicker">RELEASE AUDIT</span><h3>Recently published updates</h3><p>Commit, approver, deployment and rollback evidence.</p></div><span>⌄</span></summary>
-<div class="cc-audit-empty">v1.11.0 Mission Control Foundation prepared; production verification still depends on the GitHub Actions run and live-domain check.</div>
+<div class="cc-audit-empty">v1.12.0 Interactive Command Center prepared; production verification still depends on the GitHub Actions run and live-domain check.</div>
 </details></section><section class="view colour-page v192-focus-page" id="supabase-activities"><header class="v172-page-head v192-page-head"><div><span class="section-kicker">AUTHENTICATED RECORDS</span><h2>Supabase Activities</h2><p>View only live authenticated activity records and reminders stored through the Supabase connection.</p></div></header><div class="v172-live-activities">
 <div class="v182-live-activity-head">
 <div>
@@ -4224,7 +4392,7 @@ h4,.v190-chart-copy h4,.v190-quick-decisions h4,.coo-decision-panel h4,.coo-next
 </div>
 <div class="footer-status">
 <span id="footerActivityStatus"><i></i> Supabase activity reminders waiting</span>
-<span>English UI v1.11.0</span>
+<span>English UI v1.12.0</span>
 <span id="footerClock">Malaysia time</span>
 </div>
 <div class="footer-actions">
@@ -4934,8 +5102,8 @@ $('#globalSearch').addEventListener('keydown', event => {
 });
 
 document.addEventListener('keydown', event => {
-  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') { event.preventDefault(); $('#globalSearch').focus(); }
-  if (event.key === 'Escape') { closeDrawer(); closeCreatePopover(); closeReminderModal(); $('#notificationSettingsModal').classList.remove('open'); $('#sidebar').classList.remove('open'); }
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') { event.preventDefault(); if (typeof window.openEKHCommandPalette === 'function') window.openEKHCommandPalette(); else $('#globalSearch').focus(); }
+  if (event.key === 'Escape') { closeDrawer(); closeCreatePopover(); closeReminderModal(); $('#notificationSettingsModal').classList.remove('open'); $('#sidebar').classList.remove('open'); if (typeof window.closeEKHCommandPalette === 'function') window.closeEKHCommandPalette(); }
 });
 
 updateDateLabels();
@@ -6691,5 +6859,144 @@ updateDateLabels();
   updateDropdownState('command-centre');
 })();
 </script>
+
+<script id="ekh-v1120-command-center-runtime">
+(() => {
+  const commands = [
+    {label:'Command Center', detail:'Return to the operational overview', view:'command-centre', code:'CMD'},
+    {label:'Owner Decisions', detail:'Named approvals and decision controls', view:'command-owner-decisions', code:'DEC'},
+    {label:'Current Critical Path', detail:'Dependencies and next evidence gates', view:'command-critical-path', code:'PATH'},
+    {label:'Projects', detail:'Portfolio, filters and evidence drawers', view:'projects', code:'WORK'},
+    {label:'COO Progress Board', detail:'Verified completed, active and hold records', view:'coo-progress-board', code:'COO'},
+    {label:'Mia Queue', detail:'Structured review and publication gate', view:'handoffs', code:'MIA'},
+    {label:'Organisation Chart', detail:'People, roles and functional groups', view:'organisation', code:'ORG'},
+    {label:'Staff Drive', detail:'Secure files and project evidence', view:'files', code:'DRIVE'},
+    {label:'Supabase Activities', detail:'Authenticated live activity records', view:'supabase-activities', code:'LIVE'},
+    {label:'System Overview', detail:'Runtime, deployment and environment', view:'system-overview', code:'SYS'},
+    {label:'Settings', detail:'Appearance, security and integrations', view:'settings', code:'SET'},
+    {label:'Add Activity', detail:'Create a new owner activity record', action:'add-activity', code:'NEW'}
+  ];
+
+  let filteredCommands = [...commands];
+  let activeCommandIndex = 0;
+  const palette = document.getElementById('v112CommandPalette');
+  const input = document.getElementById('v112CommandSearch');
+  const results = document.getElementById('v112CommandResults');
+
+  function navigate(view) {
+    const target = document.querySelector(`[data-view="${view}"]`) || document.querySelector(`[data-view-target="${view}"]`);
+    if (target) target.click();
+  }
+
+  function openProject(code) {
+    navigate('projects');
+    window.setTimeout(() => {
+      const cards = [...document.querySelectorAll('[data-v190-project]')];
+      const card = cards.find((node) => {
+        try { return JSON.parse(node.dataset.v190Project || '{}').code === code; }
+        catch { return false; }
+      });
+      card?.click();
+    }, 130);
+  }
+
+  function runCommand(command) {
+    if (!command) return;
+    closePalette();
+    if (command.action === 'add-activity') {
+      document.getElementById('dashboardAddActivity')?.click();
+      return;
+    }
+    if (command.view) navigate(command.view);
+  }
+
+  function renderCommands(query = '') {
+    if (!results) return;
+    const clean = query.trim().toLowerCase();
+    filteredCommands = commands.filter((item) => `${item.label} ${item.detail} ${item.code}`.toLowerCase().includes(clean));
+    activeCommandIndex = Math.min(activeCommandIndex, Math.max(0, filteredCommands.length - 1));
+    if (!filteredCommands.length) {
+      results.innerHTML = '<div class="mc112-command-results-empty">No command matches this search.</div>';
+      return;
+    }
+    results.innerHTML = filteredCommands.map((item, index) => `
+      <button class="mc112-command-result${index === activeCommandIndex ? ' active' : ''}" type="button" data-mc112-command-index="${index}">
+        <span><svg class="mc112-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7"></path><path d="M9 7h8v8"></path></svg></span>
+        <span><b>${item.label}</b><small>${item.detail}</small></span>
+        <em>${item.code}</em>
+      </button>`).join('');
+    results.querySelectorAll('[data-mc112-command-index]').forEach((button) => {
+      button.addEventListener('mouseenter', () => {
+        activeCommandIndex = Number(button.dataset.mc112CommandIndex || 0);
+        renderCommands(input?.value || '');
+      });
+      button.addEventListener('click', () => runCommand(filteredCommands[Number(button.dataset.mc112CommandIndex || 0)]));
+    });
+  }
+
+  function openPalette() {
+    if (!palette) return;
+    palette.hidden = false;
+    palette.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('mc112-palette-open');
+    if (input) input.value = '';
+    activeCommandIndex = 0;
+    renderCommands();
+    window.setTimeout(() => input?.focus(), 10);
+  }
+
+  function closePalette() {
+    if (!palette) return;
+    palette.hidden = true;
+    palette.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('mc112-palette-open');
+  }
+
+  window.openEKHCommandPalette = openPalette;
+  window.closeEKHCommandPalette = closePalette;
+
+  document.getElementById('v112CommandPaletteOpen')?.addEventListener('click', openPalette);
+  palette?.addEventListener('click', (event) => { if (event.target === palette) closePalette(); });
+  input?.addEventListener('input', () => { activeCommandIndex = 0; renderCommands(input.value); });
+  input?.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      activeCommandIndex = Math.min(activeCommandIndex + 1, filteredCommands.length - 1);
+      renderCommands(input.value);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      activeCommandIndex = Math.max(activeCommandIndex - 1, 0);
+      renderCommands(input.value);
+    } else if (event.key === 'Enter') {
+      event.preventDefault();
+      runCommand(filteredCommands[activeCommandIndex]);
+    } else if (event.key === 'Escape') {
+      event.preventDefault();
+      closePalette();
+    }
+  });
+
+  document.querySelectorAll('[data-mc112-nav]').forEach((button) => button.addEventListener('click', () => navigate(button.dataset.mc112Nav)));
+  document.querySelectorAll('[data-mc112-project]').forEach((button) => button.addEventListener('click', () => openProject(button.dataset.mc112Project)));
+
+  const filterButtons = [...document.querySelectorAll('[data-mc112-filter]')];
+  const projectCards = [...document.querySelectorAll('#mc112ProjectGrid [data-mc112-stage]')];
+  const empty = document.getElementById('mc112ProjectEmpty');
+  filterButtons.forEach((button) => button.addEventListener('click', () => {
+    const filter = button.dataset.mc112Filter || 'all';
+    filterButtons.forEach((item) => item.classList.toggle('active', item === button));
+    let visible = 0;
+    projectCards.forEach((card) => {
+      const show = filter === 'all' || card.dataset.mc112Stage === filter;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (empty) empty.hidden = visible > 0;
+  }));
+
+  renderCommands();
+})();
+</script>
+
 </body>
 </html>

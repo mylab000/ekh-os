@@ -1,3 +1,10 @@
-# EKH OS v1.11.0 Mission Control Foundation
+# EKH OS v1.12.0 Interactive Command Center
 
-Read: RELEASE_NOTES_v1.11.0.md, REGRESSION_CHECKLIST_v1.11.0.md, STATIC_AUDIT_v1.11.0.json, then index.html. Deployment is not verified.
+Read in this order:
+
+1. RELEASE_NOTES_v1.12.0.md
+2. REGRESSION_CHECKLIST_v1.12.0.md
+3. STATIC_AUDIT_v1.12.0.json
+4. index.html
+
+Production deployment has not been verified.
