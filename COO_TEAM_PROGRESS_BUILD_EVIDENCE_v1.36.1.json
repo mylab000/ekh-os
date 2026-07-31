@@ -1,0 +1,14 @@
+{
+  "release": "v1.36.1",
+  "build_id": "EKH-OS-COOTP-20260731-001",
+  "static_validation": "PASS",
+  "javascript_syntax": "PASS",
+  "duplicate_dom_ids": 0,
+  "dossier_pages": 6,
+  "active_person_files": 23,
+  "visible_images_added": 0,
+  "chromium_smoke_render": "BLOCKED",
+  "chromium_limitation": "Headless render timed out while external network dependencies loaded.",
+  "authorised_browser_runtime": "NOT_RUN",
+  "deployment": "BLOCKED"
+}

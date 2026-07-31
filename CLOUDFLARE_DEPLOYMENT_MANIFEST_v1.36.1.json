@@ -1,0 +1,111 @@
+{
+  "release": "v1.36.1",
+  "build_id": "EKH-OS-COOTP-20260731-001",
+  "project": "englishkidshub",
+  "domain": "https://os.englishkidshub.com",
+  "repo": "mylab000/ekh-os",
+  "branch": "main",
+  "deployment_status": "BLOCKED",
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 541237,
+      "sha256": "83923820ffd8ea76b9cb9bb933861ed115323f6e38218341ace6369f454d32da"
+    },
+    {
+      "path": "404.html",
+      "bytes": 541237,
+      "sha256": "83923820ffd8ea76b9cb9bb933861ed115323f6e38218341ace6369f454d32da"
+    },
+    {
+      "path": "_headers",
+      "bytes": 1094,
+      "sha256": "0a0c26f065cb0e97989cf981b0ccc115d3a92b30bfbe9754a97485d2748137a2"
+    },
+    {
+      "path": "ekh-os-config.js",
+      "bytes": 183,
+      "sha256": "6cf1b10d62e7148bc600e0b1dc97e6984636f87b2e0ba573cd1662c947b3bee5"
+    },
+    {
+      "path": "assets/css/ekh-os-authenticated-runtime.v1.36.1.css",
+      "bytes": 17113,
+      "sha256": "9619249e584f53f70a70841a2851951bab73ba46aeb74797da7f31f155b76b84"
+    },
+    {
+      "path": "assets/css/ekh-os-browser-mobile-testing.v1.36.1.css",
+      "bytes": 12523,
+      "sha256": "8ffe5e34f00108e043be525b6bed732fe0491551315d308cda63d909bdcd42bb"
+    },
+    {
+      "path": "assets/css/ekh-os-cloudflare-deployment.v1.36.1.css",
+      "bytes": 11917,
+      "sha256": "1419c040d2de2e3115123fef0fce178db3fe76a4baa3910ee221ce2d1998864d"
+    },
+    {
+      "path": "assets/css/ekh-os-coo-progress.v1.36.1.css",
+      "bytes": 17665,
+      "sha256": "0c3719981f08eed1b44e83f4d0811924c8bf75ba781c63e0c84eb2a9b7cf126d"
+    },
+    {
+      "path": "assets/css/ekh-os-navigation-audit.v1.36.1.css",
+      "bytes": 19231,
+      "sha256": "4d3b8cfa7f3245c1316d5c79cd412651836a2af28df0ca38fb2ead15110ba491"
+    },
+    {
+      "path": "assets/css/ekh-os-security-rls.v1.36.1.css",
+      "bytes": 15193,
+      "sha256": "f617dac03efe73043593ecd237f114a8867dbb72d70273eaaed36df4eafdf6ef"
+    },
+    {
+      "path": "assets/css/ekh-os.v1.36.1.css",
+      "bytes": 771888,
+      "sha256": "63fcae531b2c8bc0de04c0b8fb64c38f26650e89af2059468640093b8091f0fa"
+    },
+    {
+      "path": "assets/js/ekh-os-authenticated-runtime.v1.36.1.js",
+      "bytes": 24339,
+      "sha256": "1173dfe4ddfd4672a1a75c4c6a896af4877aeb1158bc8085be701381d434af6f"
+    },
+    {
+      "path": "assets/js/ekh-os-browser-mobile-testing.v1.36.1.js",
+      "bytes": 10683,
+      "sha256": "3625ec473a1ff1155977d5fbcd2491dd92c908d2acf0e1292f6a2a8dbab4ef43"
+    },
+    {
+      "path": "assets/js/ekh-os-cloudflare-deployment.v1.36.1.js",
+      "bytes": 10931,
+      "sha256": "e09462ac650ebb393b76a5831ff0fe419380dc032816e4d3c185d5d94fd9e582"
+    },
+    {
+      "path": "assets/js/ekh-os-coo-progress.v1.36.1.js",
+      "bytes": 10460,
+      "sha256": "1e189263fe353da7e1485cd4662c5481249beb65bc764d1994ff14161f28507a"
+    },
+    {
+      "path": "assets/js/ekh-os-core.v1.36.1.js",
+      "bytes": 29603,
+      "sha256": "7b336057bad25686e197bfecbd5d4d143ce61218d0d901c9bd630fd13f322b84"
+    },
+    {
+      "path": "assets/js/ekh-os-features.v1.36.1.js",
+      "bytes": 422465,
+      "sha256": "57594a4d652434fdf64a330d0af5f58842c3a49dabaf8c48c8edf24bf54cad6c"
+    },
+    {
+      "path": "assets/js/ekh-os-microcopy.v1.36.1.js",
+      "bytes": 15826,
+      "sha256": "d2ae92a8b04c5c144cc9a199cba4c0d1b6ca8c1e14a97ae33402ac4388d26951"
+    },
+    {
+      "path": "assets/js/ekh-os-navigation-audit.v1.36.1.js",
+      "bytes": 23571,
+      "sha256": "75a5e32b03aa3ae7c881da0352141caee01a79d572b9a7c6d8c75f5ddbe04ee6"
+    },
+    {
+      "path": "assets/js/ekh-os-security-rls.v1.36.1.js",
+      "bytes": 19020,
+      "sha256": "e91f2063138e39cb13cd1e84a3c6a727267d5775e7494fd87132779b26c95ce0"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "release": "v1.36.0",
+  "build_id": "EKH-OS-CFDP-20260731-001",
+  "attempted_at": "2026-07-31T11:01:52.433618+00:00",
+  "repository": "mylab000/ekh-os",
+  "branch": "main",
+  "cloudflare_project": "englishkidshub",
+  "live_domain": "https://os.englishkidshub.com",
+  "deployment_status": "BLOCKED",
+  "deployment_started": false,
+  "github_commit_created": false,
+  "github_actions_triggered": false,
+  "cloudflare_deployment_created": false,
+  "live_domain_verified": false,
+  "write_attempts": [
+    {
+      "operation": "create_branch",
+      "target": "deploy/v1.36.0-cloudflare-dossier",
+      "result": "403 Resource not accessible by integration"
+    },
+    {
+      "operation": "create_file",
+      "target": "deploy/.write-test-v1.36.0.txt",
+      "result": "403 Resource not accessible by integration"
+    }
+  ],
+  "plugin_search": {
+    "query": "Cloudflare Pages deploy deployment hosting",
+    "available_connector": false
+  },
+  "package_ready": true,
+  "package_path": "EKH_OS_v1.36.0_Cloudflare_Deployment_Dossier_Cloudflare.zip",
+  "workflow_ready": true,
+  "workflow_path": "deploy-cloudflare-pages.v1.36.0.yml",
+  "required_unblock": [
+    "Grant GitHub connector repository-content write permission",
+    "Or upload the ZIP and workflow through a write-enabled GitHub session",
+    "Or connect a Cloudflare deployment tool"
+  ],
+  "safety": {
+    "database_writes": 0,
+    "storage_writes": 0,
+    "rpc_writes": 0,
+    "secrets_exported": 0
+  }
+}

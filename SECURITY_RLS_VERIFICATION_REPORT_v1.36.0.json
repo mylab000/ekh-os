@@ -1,0 +1,292 @@
+{
+  "release": "v1.35.0",
+  "build_id": "EKH-OS-SRLS-20260731-001",
+  "date": "2026-07-31",
+  "source_release": "v1.34.0",
+  "scope": "Security and RLS verification dossier",
+  "static_audit": {
+    "project_url_https": true,
+    "browser_key_type": "publishable",
+    "actual_secret_matches": 0,
+    "security_headers": {
+      "Content-Security-Policy": false,
+      "X-Content-Type-Options": false,
+      "Referrer-Policy": false,
+      "Permissions-Policy": false,
+      "Cross-Origin-Opener-Policy": false,
+      "Cross-Origin-Resource-Policy": false
+    },
+    "missing_security_headers": [
+      "Content-Security-Policy",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Permissions-Policy",
+      "Cross-Origin-Opener-Policy",
+      "Cross-Origin-Resource-Policy"
+    ],
+    "write_surface": {
+      "activity_insert": 2,
+      "activity_update": 4,
+      "activity_upsert": 2,
+      "reminder_insert": 2,
+      "storage_upload": 2,
+      "storage_move": 4,
+      "security_rpc": 2
+    },
+    "checks": [
+      {
+        "id": "SEC-01",
+        "group": "Frontend",
+        "title": "HTTPS project endpoint",
+        "status": "PASS",
+        "detail": "Project URL uses HTTPS.",
+        "evidence": "https://zhpqqxdnhhpvrgwnjwrh.supabase.co",
+        "runtime": false
+      },
+      {
+        "id": "SEC-02",
+        "group": "Frontend",
+        "title": "Browser key classification",
+        "status": "PASS",
+        "detail": "Publishable browser key detected.",
+        "evidence": "publishable",
+        "runtime": false
+      },
+      {
+        "id": "SEC-03",
+        "group": "Frontend",
+        "title": "Secret material exposure",
+        "status": "PASS",
+        "detail": "No secret material detected.",
+        "evidence": "0 actual secret matches",
+        "runtime": false
+      },
+      {
+        "id": "SEC-04",
+        "group": "Headers",
+        "title": "Browser security headers",
+        "status": "FAIL",
+        "detail": "Security headers remain incomplete.",
+        "evidence": "Content-Security-Policy, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, Cross-Origin-Opener-Policy, Cross-Origin-Resource-Policy",
+        "runtime": false
+      },
+      {
+        "id": "SEC-05",
+        "group": "Session",
+        "title": "Persistent browser session",
+        "status": "CONDITIONAL",
+        "detail": "Session persistence requires XSS controls.",
+        "evidence": "persistSession:true",
+        "runtime": false
+      },
+      {
+        "id": "SEC-06",
+        "group": "Session",
+        "title": "Idle session timeout",
+        "status": "PASS",
+        "detail": "Thirty-minute idle timeout exists.",
+        "evidence": "30 minutes",
+        "runtime": false
+      },
+      {
+        "id": "SEC-07",
+        "group": "Session",
+        "title": "Sensitive action revalidation",
+        "status": "PASS",
+        "detail": "Sensitive storage actions revalidate identity.",
+        "evidence": "getUser plus profile recheck",
+        "runtime": false
+      },
+      {
+        "id": "SEC-08",
+        "group": "Database",
+        "title": "Owner activity scoping",
+        "status": "PASS",
+        "detail": "Activity reads and writes use owner scope.",
+        "evidence": "owner_id equals user.id",
+        "runtime": false
+      },
+      {
+        "id": "SEC-09",
+        "group": "Database",
+        "title": "Anonymous profile isolation",
+        "status": "BLOCKED",
+        "detail": "Run the live anonymous probe.",
+        "evidence": "authenticated browser required",
+        "runtime": true
+      },
+      {
+        "id": "SEC-10",
+        "group": "Database",
+        "title": "Anonymous activity isolation",
+        "status": "BLOCKED",
+        "detail": "Run the live anonymous probe.",
+        "evidence": "network runtime required",
+        "runtime": true
+      },
+      {
+        "id": "SEC-11",
+        "group": "Database",
+        "title": "Authenticated row isolation",
+        "status": "BLOCKED",
+        "detail": "Run owner-scoped row checks.",
+        "evidence": "owner session required",
+        "runtime": true
+      },
+      {
+        "id": "SEC-12",
+        "group": "Storage",
+        "title": "Anonymous storage isolation",
+        "status": "BLOCKED",
+        "detail": "Run the live storage probe.",
+        "evidence": "network runtime required",
+        "runtime": true
+      },
+      {
+        "id": "SEC-13",
+        "group": "Storage",
+        "title": "Personal folder isolation",
+        "status": "BLOCKED",
+        "detail": "Run authenticated folder checks.",
+        "evidence": "owner session required",
+        "runtime": true
+      },
+      {
+        "id": "SEC-14",
+        "group": "Policy",
+        "title": "Database policy definitions",
+        "status": "BLOCKED",
+        "detail": "Policy SQL is unavailable.",
+        "evidence": "Dashboard or migration required",
+        "runtime": false
+      },
+      {
+        "id": "SEC-15",
+        "group": "Policy",
+        "title": "Storage policy definitions",
+        "status": "BLOCKED",
+        "detail": "Storage policy SQL is unavailable.",
+        "evidence": "Dashboard or migration required",
+        "runtime": false
+      },
+      {
+        "id": "SEC-16",
+        "group": "Policy",
+        "title": "Cross-account isolation",
+        "status": "BLOCKED",
+        "detail": "Second test account required.",
+        "evidence": "no secondary identity",
+        "runtime": false
+      },
+      {
+        "id": "SEC-17",
+        "group": "Policy",
+        "title": "Security RPC privileges",
+        "status": "BLOCKED",
+        "detail": "RPC grants remain unverified.",
+        "evidence": "function definition required",
+        "runtime": false
+      }
+    ],
+    "status_counts": {
+      "PASS": 6,
+      "FAIL": 1,
+      "CONDITIONAL": 1,
+      "BLOCKED": 9
+    }
+  },
+  "runtime_design": {
+    "anonymous_read_probes": [
+      "ekh_staff_profiles",
+      "ekh_activities",
+      "ekh-staff-files"
+    ],
+    "authenticated_read_probes": [
+      "getUser",
+      "ekh_staff_profiles",
+      "ekh_activities",
+      "ekh-staff-files"
+    ],
+    "database_writes": 0,
+    "storage_writes": 0,
+    "rpc_writes": 0,
+    "token_exports": 0,
+    "policy_sql_available": false,
+    "cross_account_test_available": false
+  },
+  "findings": [
+    {
+      "id": "RLS-01",
+      "severity": "HIGH",
+      "title": "Security headers remain incomplete",
+      "detail": "CSP and related controls are absent.",
+      "action": "Add headers before deployment."
+    },
+    {
+      "id": "RLS-02",
+      "severity": "HIGH",
+      "title": "Policy definitions remain unavailable",
+      "detail": "Frontend code cannot prove RLS.",
+      "action": "Export policy SQL evidence."
+    },
+    {
+      "id": "RLS-03",
+      "severity": "HIGH",
+      "title": "Cross-account isolation remains untested",
+      "detail": "One owner account proves little.",
+      "action": "Use a second test account."
+    },
+    {
+      "id": "RLS-04",
+      "severity": "MEDIUM",
+      "title": "Persistent sessions increase XSS impact",
+      "detail": "Tokens persist inside browser storage.",
+      "action": "Pair persistence with strong CSP."
+    },
+    {
+      "id": "RLS-05",
+      "severity": "MEDIUM",
+      "title": "Security RPC remains opaque",
+      "detail": "Function grants remain unknown.",
+      "action": "Review SECURITY DEFINER settings."
+    },
+    {
+      "id": "RLS-06",
+      "severity": "PASS",
+      "title": "Publishable key usage is correct",
+      "detail": "No elevated browser key exists.",
+      "action": "Retain publishable key only."
+    },
+    {
+      "id": "RLS-07",
+      "severity": "PASS",
+      "title": "Sensitive writes revalidate identity",
+      "detail": "Storage mutations recheck user roles.",
+      "action": "Retain revalidation controls."
+    },
+    {
+      "id": "RLS-08",
+      "severity": "PASS",
+      "title": "Activities use owner scoping",
+      "detail": "Reads and updates filter owners.",
+      "action": "Enforce matching RLS policies."
+    }
+  ],
+  "checks": {
+    "route_added": true,
+    "view_added": true,
+    "six_pages": true,
+    "seventeen_checks": true,
+    "zero_broken_routes": true,
+    "modular_css": true,
+    "modular_js": true,
+    "zero_inline_css": true,
+    "zero_inline_js": true,
+    "auth_gate_preserved": true,
+    "preview_bypass_preserved": true,
+    "thirty_five_staff_preserved": true,
+    "no_images_added": true,
+    "read_only_verification": true
+  },
+  "candidate_status": "HOLD — policy SQL and cross-account evidence required."
+}

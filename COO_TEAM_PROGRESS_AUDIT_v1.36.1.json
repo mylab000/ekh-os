@@ -1,0 +1,183 @@
+{
+  "release": "v1.36.1",
+  "build_id": "EKH-OS-COOTP-20260731-001",
+  "date": "2026-07-31",
+  "scope": "Publish COO team progress checkpoint",
+  "source": {
+    "uploaded_name": "Ringkasan_COO_Checkpoint_Progress_31_Julai_2026(1).docx",
+    "review_date": "2026-07-31",
+    "sha256": "41a872b9d361006b6f766ab5518f279480f670c8d59716119537a1046320f599",
+    "paragraphs": 45,
+    "direct_contact_claimed": false,
+    "new_progress_confirmed": false
+  },
+  "counts": {
+    "completed_records": 5,
+    "active_person_records": 23,
+    "holds": 5,
+    "blocker_controls": 5,
+    "decisions_required": 6,
+    "next_actions": 3,
+    "dossier_pages": 6
+  },
+  "team": [
+    {
+      "name": "Jeff",
+      "role": "Application Engineer",
+      "project": "Smart Adventure",
+      "assignment": "Manages runtime architecture and integration."
+    },
+    {
+      "name": "Candice",
+      "role": "Technology Director",
+      "project": "Command Centre",
+      "assignment": "Coordinates Command Centre documentation."
+    },
+    {
+      "name": "Baran",
+      "role": "Database DevOps Operator",
+      "project": "SA-QB7000",
+      "assignment": "Controls database safety gates."
+    },
+    {
+      "name": "Kyo",
+      "role": "Technical Verification Specialist",
+      "project": "Smart Adventure",
+      "assignment": "Runs runtime regression verification."
+    },
+    {
+      "name": "Reo",
+      "role": "Education Director",
+      "project": "English Adventure",
+      "assignment": "Audits English Adventure content."
+    },
+    {
+      "name": "Ilica",
+      "role": "Curriculum Validator",
+      "project": "English Adventure",
+      "assignment": "Reviews CEFR curriculum alignment."
+    },
+    {
+      "name": "Alya",
+      "role": "Question Bank QA",
+      "project": "SA-QB7000",
+      "assignment": "Controls question-bank audit integrity."
+    },
+    {
+      "name": "Blanc",
+      "role": "Worksheet Studio Lead",
+      "project": "Worksheet Studio",
+      "assignment": "Repackages and verifies Worksheet Studio."
+    },
+    {
+      "name": "Xion",
+      "role": "Lead Web Developer",
+      "project": "EKH OS",
+      "assignment": "Develops website navigation systems."
+    },
+    {
+      "name": "Kamal",
+      "role": "Creative Director",
+      "project": "Visual Production",
+      "assignment": "Produces required visual assets."
+    },
+    {
+      "name": "Farah",
+      "role": "Visual Illustration Lead",
+      "project": "Cuddle Paws",
+      "assignment": "Protects illustration identity standards."
+    },
+    {
+      "name": "Zenon",
+      "role": "Digital Asset Designer",
+      "project": "Digital Assets",
+      "assignment": "Prepares transparent digital assets."
+    },
+    {
+      "name": "Lei",
+      "role": "Product Video Specialist",
+      "project": "Video Production",
+      "assignment": "Develops storyboards and video plans."
+    },
+    {
+      "name": "Arian",
+      "role": "Multimedia Director",
+      "project": "Application Audio",
+      "assignment": "Reviews application audio requirements."
+    },
+    {
+      "name": "Mario",
+      "role": "Marketing Director",
+      "project": "Commercial Strategy",
+      "assignment": "Directs copywriting and positioning."
+    },
+    {
+      "name": "Zack",
+      "role": "Content Strategy Lead",
+      "project": "Content System",
+      "assignment": "Plans content strategy and cadence."
+    },
+    {
+      "name": "Syakila",
+      "role": "Social Language Analyst",
+      "project": "Social Copy",
+      "assignment": "Reviews natural social-language usage."
+    },
+    {
+      "name": "Paula",
+      "role": "Digital Market Researcher",
+      "project": "Market Intelligence",
+      "assignment": "Researches markets, pricing, positioning."
+    },
+    {
+      "name": "Arden",
+      "role": "Technical Release Lead",
+      "project": "Release Readiness",
+      "assignment": "Supports release-readiness controls."
+    },
+    {
+      "name": "Vera",
+      "role": "Test Automation Engineer",
+      "project": "Test Automation",
+      "assignment": "Supports automated technical validation."
+    },
+    {
+      "name": "Nara",
+      "role": "English Language QA",
+      "project": "Language Quality",
+      "assignment": "Supports English language QA."
+    },
+    {
+      "name": "Elio",
+      "role": "Standards Mapping Researcher",
+      "project": "Curriculum Evidence",
+      "assignment": "Maintains curriculum evidence mapping."
+    },
+    {
+      "name": "Luna",
+      "role": "Assessment Researcher",
+      "project": "Assessment Validation",
+      "assignment": "Validates progression and assessment."
+    }
+  ],
+  "checks": {
+    "coo_route_preserved": true,
+    "six_dossier_pages": true,
+    "separate_team_files": true,
+    "team_selector_options": true,
+    "source_digest_present": true,
+    "english_only_progress_page": true,
+    "critical_path_updated": true,
+    "published_update_added": true,
+    "zero_broken_routes": true,
+    "ten_departments_preserved": true,
+    "staff_drive_35_preserved": true,
+    "auth_gate_preserved": true,
+    "preview_auth_bypassed": true,
+    "no_images_added": true
+  },
+  "supabase_writes_added": 0,
+  "production_writes_added": 0,
+  "images_generated_or_added": 0,
+  "deployment_status": "BLOCKED — GitHub connector write permission remains unavailable."
+}

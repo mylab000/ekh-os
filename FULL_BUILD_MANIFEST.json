@@ -1,0 +1,214 @@
+{
+  "release": "v1.36.1",
+  "package": "FULL_BUILD_WITH_LOGIN",
+  "entry_file": "index.html",
+  "login_gate": "enabled",
+  "asset_structure": "complete",
+  "files": [
+    {
+      "path": "00_EKH_OS_XION_HANDOFF.md",
+      "bytes": 25352,
+      "sha256": "14789e3e31e85802d059cc112e5eeb5b3aa609b5b25a70f53f5c388926cb8d3a"
+    },
+    {
+      "path": "01_NEW_CHAT_PROMPT_XION.md",
+      "bytes": 9013,
+      "sha256": "ff3539a59f8b959faafe9a918fc175938df7f832a1e61ba298b0ff06c7d8ea2b"
+    },
+    {
+      "path": "404.html",
+      "bytes": 541237,
+      "sha256": "83923820ffd8ea76b9cb9bb933861ed115323f6e38218341ace6369f454d32da"
+    },
+    {
+      "path": "BROWSER_MOBILE_TEST_PLAN_v1.34.0.md",
+      "bytes": 293,
+      "sha256": "5a3603eb0324c78fe53bfb2d61b5946869880a02fb8691f60988f0c86742348c"
+    },
+    {
+      "path": "CHECKSUMS_SHA256_v1.36.1.txt",
+      "bytes": 2755,
+      "sha256": "940023333fd7e05f6489747e983f2b5e835ee0a61449ef7d77f9202ca8cb48a0"
+    },
+    {
+      "path": "CLOUDFLARE_DEPLOYMENT_ATTEMPT_v1.36.0.json",
+      "bytes": 1470,
+      "sha256": "840c890051873e3b725e700f1ec50203389eebeb0809d58fcd106ef3a94e62f9"
+    },
+    {
+      "path": "CLOUDFLARE_DEPLOYMENT_GATE_v1.36.0.md",
+      "bytes": 1023,
+      "sha256": "3d6befad0a0a9322e55f4b9f9f7219c87bc0b30f1a5c597c79c14a455ac13b52"
+    },
+    {
+      "path": "CLOUDFLARE_DEPLOYMENT_MANIFEST_v1.36.1.json",
+      "bytes": 3698,
+      "sha256": "7ce20c9caa7cf58adb356902cfd6bbe2fcd8d444f3cf6df724f2af781448a80a"
+    },
+    {
+      "path": "COO_TEAM_PROGRESS_AUDIT_v1.36.1.json",
+      "bytes": 5294,
+      "sha256": "e7b6175e2e3e4e46eb20965f98574f66d0384c3b06079f9ca37be1d307e170ba"
+    },
+    {
+      "path": "COO_TEAM_PROGRESS_BUILD_EVIDENCE_v1.36.1.json",
+      "bytes": 443,
+      "sha256": "eae7c249e5b2480537bf5d4855927135ad04558fdfacbad1bb099d22b6c9cba0"
+    },
+    {
+      "path": "README_BUILD_FIRST_v1.34.0.md",
+      "bytes": 162,
+      "sha256": "6fa6bd3b2348a8f8d7d1bc5ebbfa1c884655252a724c139a9fdccc70081458c7"
+    },
+    {
+      "path": "README_BUILD_FIRST_v1.36.1.md",
+      "bytes": 318,
+      "sha256": "12de003843c9ebfd5530abea9035255bbec8bd3caaf7390b4f2dbde418c294e7"
+    },
+    {
+      "path": "README_OPEN_FIRST.txt",
+      "bytes": 639,
+      "sha256": "691365bc1f471c88e482f72c22e3ace649171dc569c61cbcaf91fd8bb5a7c742"
+    },
+    {
+      "path": "REGRESSION_CHECKLIST_v1.34.0.md",
+      "bytes": 573,
+      "sha256": "89a753d3f63b7aac089cd7045757028ecac515b61f3ff847e60674128eac15a4"
+    },
+    {
+      "path": "REGRESSION_CHECKLIST_v1.36.1.md",
+      "bytes": 938,
+      "sha256": "43f311fb2709a93951772e2a8e7593f5eb007e93634b61e5c136fdcaca12db3b"
+    },
+    {
+      "path": "RELEASE_NOTES_v1.34.0.md",
+      "bytes": 1217,
+      "sha256": "c551b40df9f334c971595de3ab92b2d25aa55a0bc660ff6b1bda0747aebe8acf"
+    },
+    {
+      "path": "RELEASE_NOTES_v1.36.1.md",
+      "bytes": 1457,
+      "sha256": "242b7f9d302fc2322ad837704c9ddcf59077e17349092d5cfcdba9abbfcd6358"
+    },
+    {
+      "path": "SECURITY_RLS_TEST_PLAN_v1.36.0.md",
+      "bytes": 309,
+      "sha256": "c29cb9c794fbb421cfdbeb914c3fa9f93984ffa1f538eed55a4124c7c8bc2177"
+    },
+    {
+      "path": "SECURITY_RLS_VERIFICATION_REPORT_v1.36.0.json",
+      "bytes": 8577,
+      "sha256": "1ad34c55c61ff059f165157b2c7372817f74152b5dae9580be4a4083808ae7c0"
+    },
+    {
+      "path": "_headers",
+      "bytes": 1094,
+      "sha256": "0a0c26f065cb0e97989cf981b0ccc115d3a92b30bfbe9754a97485d2748137a2"
+    },
+    {
+      "path": "assets/css/ekh-os-authenticated-runtime.v1.36.1.css",
+      "bytes": 17113,
+      "sha256": "9619249e584f53f70a70841a2851951bab73ba46aeb74797da7f31f155b76b84"
+    },
+    {
+      "path": "assets/css/ekh-os-browser-mobile-testing.v1.36.1.css",
+      "bytes": 12523,
+      "sha256": "8ffe5e34f00108e043be525b6bed732fe0491551315d308cda63d909bdcd42bb"
+    },
+    {
+      "path": "assets/css/ekh-os-cloudflare-deployment.v1.36.1.css",
+      "bytes": 11917,
+      "sha256": "1419c040d2de2e3115123fef0fce178db3fe76a4baa3910ee221ce2d1998864d"
+    },
+    {
+      "path": "assets/css/ekh-os-coo-progress.v1.36.1.css",
+      "bytes": 17665,
+      "sha256": "0c3719981f08eed1b44e83f4d0811924c8bf75ba781c63e0c84eb2a9b7cf126d"
+    },
+    {
+      "path": "assets/css/ekh-os-navigation-audit.v1.36.1.css",
+      "bytes": 19231,
+      "sha256": "4d3b8cfa7f3245c1316d5c79cd412651836a2af28df0ca38fb2ead15110ba491"
+    },
+    {
+      "path": "assets/css/ekh-os-preview.v1.36.1.css",
+      "bytes": 772281,
+      "sha256": "ec2c0ee9a9810b8b99c4e3796389d9fc657aa4de8dd3e25e23e4ce749d2f5f3f"
+    },
+    {
+      "path": "assets/css/ekh-os-security-rls.v1.36.1.css",
+      "bytes": 15193,
+      "sha256": "f617dac03efe73043593ecd237f114a8867dbb72d70273eaaed36df4eafdf6ef"
+    },
+    {
+      "path": "assets/css/ekh-os.v1.36.1.css",
+      "bytes": 771888,
+      "sha256": "63fcae531b2c8bc0de04c0b8fb64c38f26650e89af2059468640093b8091f0fa"
+    },
+    {
+      "path": "assets/js/ekh-os-authenticated-runtime.v1.36.1.js",
+      "bytes": 24339,
+      "sha256": "1173dfe4ddfd4672a1a75c4c6a896af4877aeb1158bc8085be701381d434af6f"
+    },
+    {
+      "path": "assets/js/ekh-os-browser-mobile-testing.v1.36.1.js",
+      "bytes": 10683,
+      "sha256": "3625ec473a1ff1155977d5fbcd2491dd92c908d2acf0e1292f6a2a8dbab4ef43"
+    },
+    {
+      "path": "assets/js/ekh-os-cloudflare-deployment.v1.36.1.js",
+      "bytes": 10931,
+      "sha256": "e09462ac650ebb393b76a5831ff0fe419380dc032816e4d3c185d5d94fd9e582"
+    },
+    {
+      "path": "assets/js/ekh-os-coo-progress.v1.36.1.js",
+      "bytes": 10460,
+      "sha256": "1e189263fe353da7e1485cd4662c5481249beb65bc764d1994ff14161f28507a"
+    },
+    {
+      "path": "assets/js/ekh-os-core.v1.36.1.js",
+      "bytes": 29603,
+      "sha256": "7b336057bad25686e197bfecbd5d4d143ce61218d0d901c9bd630fd13f322b84"
+    },
+    {
+      "path": "assets/js/ekh-os-features-preview.v1.36.1.js",
+      "bytes": 423675,
+      "sha256": "a2e656673e8d522f3c82332ce7c690a6daeca37816e704087affc2abbf645aed"
+    },
+    {
+      "path": "assets/js/ekh-os-features.v1.36.1.js",
+      "bytes": 422465,
+      "sha256": "57594a4d652434fdf64a330d0af5f58842c3a49dabaf8c48c8edf24bf54cad6c"
+    },
+    {
+      "path": "assets/js/ekh-os-microcopy.v1.36.1.js",
+      "bytes": 15826,
+      "sha256": "d2ae92a8b04c5c144cc9a199cba4c0d1b6ca8c1e14a97ae33402ac4388d26951"
+    },
+    {
+      "path": "assets/js/ekh-os-navigation-audit.v1.36.1.js",
+      "bytes": 23571,
+      "sha256": "75a5e32b03aa3ae7c881da0352141caee01a79d572b9a7c6d8c75f5ddbe04ee6"
+    },
+    {
+      "path": "assets/js/ekh-os-security-rls.v1.36.1.js",
+      "bytes": 19020,
+      "sha256": "e91f2063138e39cb13cd1e84a3c6a727267d5775e7494fd87132779b26c95ce0"
+    },
+    {
+      "path": "deploy-cloudflare-pages.v1.36.1.yml",
+      "bytes": 3555,
+      "sha256": "1bfc06e0659d396ede611f7c2cb34d71e57c8c3e42dc43e4b4d1ffa0939fd101"
+    },
+    {
+      "path": "ekh-os-config.js",
+      "bytes": 183,
+      "sha256": "6cf1b10d62e7148bc600e0b1dc97e6984636f87b2e0ba573cd1662c947b3bee5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 541237,
+      "sha256": "83923820ffd8ea76b9cb9bb933861ed115323f6e38218341ace6369f454d32da"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+name: Deploy EKH OS to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: ekh-os-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy production
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Prepare deployment package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          mkdir -p dist
+          unzip -q deploy/ekh-os-v1.36.1-cloudflare.zip -d dist
+          test -f dist/index.html
+          test -f dist/404.html
+          test -f dist/_headers
+          test -f dist/ekh-os-config.js
+          test -f dist/assets/css/ekh-os.v1.36.1.css
+          test -f dist/assets/js/ekh-os-core.v1.36.1.js
+
+          cat > dist/deployment-evidence.json <<EOF
+          {
+            "release": "v1.36.1",
+            "build_id": "EKH-OS-COOTP-20260731-001",
+            "repository": "${GITHUB_REPOSITORY}",
+            "branch": "${GITHUB_REF_NAME}",
+            "commit_sha": "${GITHUB_SHA}",
+            "workflow_run_id": "${GITHUB_RUN_ID}",
+            "workflow_run_number": "${GITHUB_RUN_NUMBER}",
+            "workflow_attempt": "${GITHUB_RUN_ATTEMPT}",
+            "deployed_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+            "cloudflare_project": "englishkidshub",
+            "live_domain": "https://os.englishkidshub.com",
+            "source_package": "deploy/ekh-os-v1.36.1-cloudflare.zip"
+          }
+          EOF
+
+      - name: Deploy to Cloudflare Pages
+        id: cloudflare-deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=englishkidshub --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify live custom domain
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://os.englishkidshub.com"
+          ok=0
+          for attempt in $(seq 1 18); do
+            body="$(curl -fsSL --max-time 20 "$url" || true)"
+            evidence="$(curl -fsSL --max-time 20 "$url/deployment-evidence.json" || true)"
+            if grep -q "EKH-OS-COOTP-20260731-001" <<<"$body" && grep -q "${GITHUB_SHA}" <<<"$evidence"; then
+              ok=1
+              break
+            fi
+            sleep 10
+          done
+          test "$ok" -eq 1
+
+          headers="$(curl -fsSI --max-time 20 "$url")"
+          grep -qi '^content-security-policy:' <<<"$headers"
+          grep -qi '^x-content-type-options: nosniff' <<<"$headers"
+          grep -qi '^referrer-policy:' <<<"$headers"
+          grep -qi '^permissions-policy:' <<<"$headers"
+          grep -qi '^cross-origin-opener-policy:' <<<"$headers"
+          grep -qi '^cross-origin-resource-policy:' <<<"$headers"
+
+          curl -fsSI --max-time 20 "$url/assets/css/ekh-os.v1.36.1.css" >/dev/null
+          curl -fsSI --max-time 20 "$url/assets/js/ekh-os-core.v1.36.1.js" >/dev/null
+
+      - name: Publish deployment summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## EKH OS production deployment"
+            echo "- Release: v1.36.1"
+            echo "- Build: EKH-OS-COOTP-20260731-001"
+            echo "- Commit: ${GITHUB_SHA}"
+            echo "- Project: englishkidshub"
+            echo "- Domain: https://os.englishkidshub.com"
+          } >> "$GITHUB_STEP_SUMMARY"

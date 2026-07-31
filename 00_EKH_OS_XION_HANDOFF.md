@@ -584,3 +584,329 @@ Live deployment verification: NOT COMPLETED
 ```text
 Audit and stabilise EKH OS dropdown page architecture after v1.10.1 handoff
 ```
+
+---
+
+## Latest release — v1.24.0 Organisation People Dossier
+
+- Build ID: `EKH-OS-OPD-20260731-001`
+- Source: v1.23.5 Heritage Office Archive Theme
+- Batch 2 started.
+- Organisation rebuilt as six swipeable office-file pages.
+- Ten department files and ten department routes preserved.
+- Existing directory/search/drawer controllers preserved.
+- Owner approval includes local `Sign here` and JSON export.
+- No images or canvas added.
+- Static JavaScript validation: full 32 PASS; preview 33 PASS; light 1 PASS.
+- Deployment and authorised runtime evidence remain pending.
+
+
+---
+
+## v1.24.1 correction
+
+- Oliver's official organisation role is **Application Lead**.
+- Do not label Oliver as `Ceritera Application Lead`.
+- Oliver's focus is general application development and application-level coordination.
+- The separate Ceritera project remains closed and is not part of Oliver's role title.
+
+
+---
+
+## v1.24.2 — Handwritten Digital Approval Mark
+
+- All four dossier `Sign here` surfaces now use one shared handwritten renderer.
+- Owner name remains typed text; no signature image or canvas is stored.
+- Styling: Oxblood ink, enlarged initials, connected cursive words and inline SVG flourish.
+- Existing local approval controllers and records remain unchanged.
+- Empty fields remain visibly unsigned.
+
+
+---
+
+## v1.24.3 — Signature Cleanup
+
+- Removed all decorative signature flourish SVG lines.
+- Removed the signature watermark caption.
+- Keep the owner signature as simple typed text only.
+- Do not restore decorative signature graphics, watermark captions, images or canvas.
+
+
+---
+
+## v1.25.0 — Staff Drive Archive Dossier
+
+- Staff Drive rebuilt as six swipeable archive pages.
+- Existing authenticated Supabase Storage controller IDs are preserved.
+- Upload, refresh, filters, search, sort, download, archive and restore remain connected.
+- Selected file metadata feeds Evidence Review and Owner Approval.
+- Approval uses simple typed signature text with no watermark or decorative flourish.
+- No images, picture or canvas added.
+- Authorised runtime and deployment evidence remain pending.
+
+
+---
+
+## v1.25.1 — Master Staff Register 35 Sync
+
+- Official website master register contains 35 unique names.
+- Nara added to English overview.
+- Arden and Vera added to Technical QA & Release overview.
+- Azuar Fahmi and Mia included in dynamic Master Staff Register.
+- Staff Drive dropdown and staff search use all 35 names.
+- Supabase rows override matching local directory records.
+- RLS and access grants remain authoritative.
+- Oliver remains Application Lead.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.26.0 — My Activities Daily Dossier
+
+- My Activities rebuilt as six swipeable daily-file pages.
+- Existing authenticated Supabase activity list remains the source.
+- Add, refresh, filters, search, project, priority, complete, snooze, edit and cancel hooks are preserved.
+- Selected activities receive a dedicated detail page and local owner note.
+- Daily Review and Owner Approval are local dossier records only.
+- Week, Month and Agenda reference views remain separate from live records.
+- No images, picture or canvas added.
+- Authorised runtime and deployment evidence remain pending.
+
+
+---
+
+## v1.27.0 — System Control & Readiness Dossier
+
+- System rebuilt as six swipeable control-file pages.
+- Existing Overview, Audit, Reports, Settings and Readiness controllers are preserved.
+- Activity, Reports, Settings and Production Readiness sidebar aliases redirect to the correct dossier page.
+- Owner Release Decision is local only and cannot deploy.
+- No images, picture or canvas added.
+- Authorised runtime and deployment evidence remain pending.
+
+
+---
+
+## v1.28.0 — Task Calendar Planning & Schedule Dossier
+
+- Task Calendar rebuilt as six swipeable planning-file pages.
+- Original reference week, seven days and eight tasks are preserved.
+- Add Task still uses `openSupabaseActivityModalFromCalendar`.
+- My Activities remains the authenticated live record interface.
+- Capacity review distinguishes high-load days from exact time conflicts.
+- Schedule approval is local only and cannot update Supabase.
+- No images, picture or canvas added.
+- Authorised runtime and deployment evidence remain pending.
+
+
+---
+
+## v1.28.2 — Task Detail Propagation Correction
+
+- Reverted to the original v1.28.0 Task Calendar dossier design.
+- Removed the additional downstream workflow strips from v1.28.1.
+- Clicking a Page 02 task opens Page 03 and propagates the task through Pages 03–06.
+- Capacity and approval records remain task-specific.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.29.0 — Decision Rooms Authority Dossier
+
+- Decision Rooms rebuilt as six swipeable governance-file pages.
+- Three room files populate Decision File, Evidence & Options, Authority Review and Owner Decision.
+- Room notes, authority reviews and decisions are stored separately by room.
+- Existing new-room and legacy room-detail controller hooks are preserved through a hidden compatibility bridge.
+- No images, picture or canvas added.
+- Authorised runtime and deployment evidence remain pending.
+
+
+---
+
+## v1.29.1 — Single-Owner Advisory Perspectives
+
+- Azuar Fahmi is the only human user.
+- Page 05 now records owner-entered AI advisory perspectives.
+- Perspective fields: position, reasoning, evidence, recommendation and source.
+- No online, chat, typing, voting or read-receipt simulation.
+- Page 06 remains owner-only.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.29.2 — Magazine Swipe Advisory Perspectives
+
+- Page 05 displays one advisory perspective at a time.
+- Advisory navigation supports swipe, Previous, Next and position dots.
+- Nested advisory swipes do not change the main dossier page.
+- Editable perspective fields and room-specific storage are preserved.
+- Single-owner authority and Page 06 decision controls are preserved.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.29.3 — Clean Advisory Magazine Page
+
+- Removed Single-Owner Boundary from Page 05.
+- Removed Owner Authority section from Page 05.
+- Preserved the magazine-style advisory carousel.
+- Preserved editable advisory fields and owner synthesis note.
+- Preserved Owner Decision on Page 06.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.30.0 — All Department Dossiers
+
+- All ten Organisation department pages use the six-page dossier pattern.
+- Department route IDs remain unchanged.
+- Page 03 team rows open Page 04 selected staff files.
+- Staff notes are local and stored by department/staff.
+- Page 05 contains department workstreams, evidence and controls.
+- Page 06 contains a local owner review and JSON export.
+- Organisation overview, Operational Principles, Master Staff Register and Staff Drive 35-name dropdown are preserved.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.30.1 — Five-Word Editorial Microcopy
+
+- Visible sentences use five words maximum.
+- The rule covers dynamic content.
+- Original copy remains in tooltips.
+- User-entered fields remain untouched.
+- Six editorial lenses were applied: Haikal, Mario, Mia, Candice, Zenon and Kamal.
+- Browser audit: `window.EKHFiveWordMicrocopy.audit()`.
+- Static simulation reports zero violations.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.30.2 — English Person-Level Dependencies
+
+- All visible interface copy is English.
+- Department-level dependency strips were removed.
+- Every staff assignment has separate dependencies.
+- Page 03 shows each person's dependencies.
+- Page 04 updates dependencies by selection.
+- Malay Language separates Reo and Candice by person.
+- Five-word microcopy remains active.
+- No images, picture or canvas added.
+
+
+---
+
+## v1.31.0 — Performance Refactor
+
+- Extracted all inline CSS into one cacheable stylesheet.
+- Extracted all inline JavaScript into deferred runtime bundles.
+- Added a lightweight idle-first microcopy scan.
+- Added CDN and Supabase preconnect hints.
+- Added immutable asset cache headers.
+- Added a production-only Cloudflare package.
+- Added a safe public Supabase config file only.
+- Preserved all dossiers, routes and controller IDs.
+- No images, private keys or production writes added.
+
+
+---
+
+## v1.32.0 — Navigation Audit Dossier
+
+- Build ID: EKH-OS-NAVD-20260731-001
+- Added System → Navigation Audit.
+- Added six audit pages.
+- Inventoried 36 baseline routes.
+- Confirmed zero broken targets.
+- Identified deep-link and history gaps.
+- Palette covers 11 baseline routes.
+- No route behaviour changed.
+- No images were added.
+
+
+---
+
+## v1.33.0 — Authenticated Supabase Runtime Dossier
+
+- Build ID: EKH-OS-ASRD-20260731-001
+- Added System → Authenticated Runtime.
+- Added six dossier pages.
+- Added nine read-only checks.
+- Automatic run follows `ekh-auth-ready`.
+- Manual rerun and access refresh exist.
+- Evidence export excludes tokens.
+- No database, Storage or RPC writes.
+- Authorised live evidence remains pending.
+
+
+---
+
+## v1.34.0 — Browser & Mobile Testing Dossier
+
+- Build ID: EKH-OS-BMTD-20260731-001
+- Actual Chromium 144 testing completed.
+- Seven viewport profiles passed.
+- Five touch profiles passed.
+- Four authentication-gate profiles passed.
+- Firefox and WebKit remain blocked.
+- Physical devices remain blocked.
+- No screenshots were created.
+
+
+---
+
+## v1.35.0 — Security & RLS Verification Dossier
+
+- Build ID: EKH-OS-SRLS-20260731-001
+- Added System → Security & RLS Verification.
+- Added six dossier pages.
+- Added seventeen security checks.
+- Verification runtime uses read-only probes.
+- No database, Storage or RPC writes.
+- Policy SQL and second-account evidence remain blocked.
+- Security headers remain a high-priority finding.
+
+
+---
+
+## v1.36.0 Cloudflare Deployment Dossier
+
+- Build ID: EKH-OS-CFDP-20260731-001
+- Project: englishkidshub
+- Domain: https://os.englishkidshub.com
+- GitHub workflow deploys versioned ZIP.
+- Live evidence is generated during deployment.
+
+
+## v1.36.0 deployment attempt
+
+- Status: BLOCKED.
+- GitHub branch creation: 403.
+- GitHub file write: 403.
+- Commit created: no.
+- GitHub Actions triggered: no.
+- Cloudflare deployment created: no.
+- Production package remains ready.
+
+
+---
+
+## v1.36.1 — COO Team Progress Dossier
+
+- Build ID: EKH-OS-COOTP-20260731-001
+- Updated Work → COO Progress Board.
+- Published checkpoint: 31 July 2026.
+- Added six dossier pages.
+- Separated 23 active person files.
+- Updated Current Critical Path.
+- Updated Recently Published Updates.
+- Preserved English-only interface.
+- Original DOCX is not deployed.
+- Deployment remains blocked.
