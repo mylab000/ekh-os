@@ -1,0 +1,130 @@
+{
+  "release": "v1.36.2",
+  "build_id": "EKH-OS-FULL-OP-20260731-001",
+  "package": "full-operation-portable",
+  "source_release": "v1.36.1",
+  "entry_file": "index.html",
+  "secure_login": "enabled",
+  "protected_workspace": "enabled",
+  "login_gate_id": "ekhAuthGate",
+  "workspace_shell_id": "ekhAppShell",
+  "embedded_stylesheet_bytes": 866017,
+  "embedded_javascript_count": 10,
+  "embedded_javascript_files": [
+    {
+      "source": "ekh-os-config.js",
+      "bytes": 215,
+      "sha256": "4075b1ac03a81ed4aa8bdbbf75c7591a33849d4c6b510bb86910c1cc0995bbf8"
+    },
+    {
+      "source": "assets/js/ekh-os-core.v1.36.1.js",
+      "bytes": 29641,
+      "sha256": "9c06342ff539414398627ec0292aa73b5a515f963b9fc62dc40d3c80146e9043"
+    },
+    {
+      "source": "assets/js/ekh-os-microcopy.v1.36.1.js",
+      "bytes": 15869,
+      "sha256": "ce87f387096b5981bc1736fd08d9320e83fb7653a8d9bc92ac2abdecf9850834"
+    },
+    {
+      "source": "assets/js/ekh-os-features.v1.36.1.js",
+      "bytes": 422507,
+      "sha256": "0b9af3d61ae13b1df24177b94b750b9931c25ea1d15daf096c05b8743f0c3b57"
+    },
+    {
+      "source": "assets/js/ekh-os-navigation-audit.v1.36.1.js",
+      "bytes": 23621,
+      "sha256": "487d1ecd56bc7fe90f0a8ee3eff9b5ee82dd3c8b0a207f49b6cdb7881cb95746"
+    },
+    {
+      "source": "assets/js/ekh-os-authenticated-runtime.v1.36.1.js",
+      "bytes": 24394,
+      "sha256": "a8fbbf4a37ecd9de284e86d510cb80a28573d11d92d8c72e6b4e40d0a0d98310"
+    },
+    {
+      "source": "assets/js/ekh-os-browser-mobile-testing.v1.36.1.js",
+      "bytes": 10739,
+      "sha256": "5ce5b0f1f07c78478ab5716d0ab0626e592d5793210675d504383c8e03575a20"
+    },
+    {
+      "source": "assets/js/ekh-os-security-rls.v1.36.1.js",
+      "bytes": 19066,
+      "sha256": "665b28c779185ccf4d03b7796f3ee84dfb2ddb537f93bffcc8bcc0095c886e83"
+    },
+    {
+      "source": "assets/js/ekh-os-cloudflare-deployment.v1.36.1.js",
+      "bytes": 10986,
+      "sha256": "09723c942c567d424c206dcbee8d0c1ccc63bcd8f2cf1a4be6d144f2817eec48"
+    },
+    {
+      "source": "assets/js/ekh-os-coo-progress.v1.36.1.js",
+      "bytes": 10506,
+      "sha256": "3e6f715228e06f3656b920d5496a8bda5d1c60755a4e9f2c6c75150ea8ee6d7b"
+    }
+  ],
+  "external_runtime_dependencies": [
+    "Official Supabase browser SDK"
+  ],
+  "remaining_local_css_dependencies": [],
+  "remaining_local_javascript_dependencies": [],
+  "javascript_syntax": [
+    {
+      "file": "ekh-os-authenticated-runtime.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-browser-mobile-testing.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-cloudflare-deployment.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-coo-progress.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-core.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-features-preview.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-features.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-microcopy.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-navigation-audit.v1.36.1.js",
+      "status": "PASS"
+    },
+    {
+      "file": "ekh-os-security-rls.v1.36.1.js",
+      "status": "PASS"
+    }
+  ],
+  "duplicate_dom_ids": 0,
+  "visual_test": {
+    "status": "PASS",
+    "viewport": "1366x768",
+    "body_background": "rgb(243, 239, 229)",
+    "gate_background_image": "radial-gradient(circle at 14% 8%, color(srgb 0.207843 0.368627 0.313726 / 0.26), rgba(0, 0, 0, 0) 31%), radial-gradient(circle at 92% 92%, color(srgb 0.180392 0.670588 0.72549 / 0.21), rgba(0, 0, 0, 0) 34%), linear-gradient(rgba(255, 255, 255, 0.035) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, rgba(0, 0, 0, 0) 1px), none",
+    "gate_display": "grid",
+    "heading_font_px": 68,
+    "layout_display": "grid",
+    "form_background": "rgb(255, 255, 255)",
+    "email_input_height_px": 48,
+    "submit_button_height_px": 50,
+    "javascript": "disabled to isolate visual layer"
+  },
+  "passwords_embedded": 0,
+  "service_role_keys_embedded": 0,
+  "images_added": 0,
+  "operation_note": "The fully styled secure login gate appears first. The complete EKH OS workspace opens after successful authentication."
+}
