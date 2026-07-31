@@ -1,0 +1,52 @@
+EKH OS — FOLDER BERSIH UNTUK GITHUB DAN CLOUDFLARE
+
+FOLDER INI SAHAJA YANG PERLU DIGUNAKAN.
+
+KANDUNGAN
+1. index.html
+2. 404.html
+3. _headers
+4. _redirects
+5. .github/workflows/deploy-cloudflare-pages.yml
+
+WEBSITE
+- Full-operation EKH OS.
+- Secure Supabase login aktif.
+- Semua tema, warna, CSS dan JavaScript dalaman sudah dibenamkan.
+- Tiada folder assets diperlukan.
+- Workspace penuh dibuka selepas login berjaya.
+
+SEBELUM UPLOAD
+Di repository GitHub, buka:
+Settings > Secrets and variables > Actions
+
+Pastikan dua Repository secrets ini wujud:
+1. CLOUDFLARE_API_TOKEN
+2. CLOUDFLARE_ACCOUNT_ID
+
+API token Cloudflare mesti mempunyai:
+Account > Cloudflare Pages > Edit
+
+PROJECT CLOUDFLARE
+Project name mesti tepat:
+englishkidshub
+
+CARA GUNA
+1. Padam atau disable workflow Cloudflare lama.
+2. Upload SEMUA KANDUNGAN folder ini ke root repository.
+3. Pastikan folder .github turut dimuat naik.
+4. Commit ke branch main.
+5. Buka GitHub > Actions.
+6. Pilih Deploy EKH OS to Cloudflare Pages.
+7. Semak run terbaru.
+
+JANGAN
+- Jangan upload fail ZIP sebagai website.
+- Jangan upload index.html sahaja.
+- Jangan campurkan dengan build modular lama.
+- Jangan simpan dua workflow Cloudflare aktif serentak.
+
+ALIRAN WEBSITE
+1. Secure login akan muncul dahulu.
+2. Login menggunakan akaun Supabase pemilik.
+3. Selepas login, full operational workspace akan dibuka.

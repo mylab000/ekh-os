@@ -1,0 +1,18 @@
+WORKFLOW LAMA
+
+Pastikan hanya satu workflow Cloudflare aktif.
+
+Workflow baharu:
+.github/workflows/deploy-cloudflare-pages.yml
+
+Workflow GitHub Pages bernama:
+pages build and deployment
+
+Workflow itu berasingan daripada Cloudflare.
+
+Untuk mengelakkan kekeliruan:
+- disable GitHub Pages jika domain utama menggunakan Cloudflare Pages; atau
+- biarkan GitHub Pages aktif, tetapi faham ia bukan deployment Cloudflare.
+
+Jangan simpan dua fail workflow yang sama-sama menjalankan:
+cloudflare/wrangler-action
